@@ -1,4 +1,4 @@
-using UnityEngine;
+﻿using UnityEngine;
 #if ENABLE_INPUT_SYSTEM
 using UnityEngine.InputSystem;
 #endif
@@ -59,7 +59,9 @@ namespace StarterAssets
 		public void JumpInput(bool newJumpState)
 		{
 			jump = newJumpState;
-		}
+            Debug.Log("🟢 Jump input: " + newJumpState);
+        
+        }
 
 		public void SprintInput(bool newSprintState)
 		{
