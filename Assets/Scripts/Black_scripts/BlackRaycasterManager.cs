@@ -2,9 +2,25 @@
 
 public class BlackRaycasterManager : MonoBehaviour
 {
-    [SerializeField] private Camera playerCamera; // Assign Main Camera in Inspector
+    private Camera playerCamera; // Assign Main Camera in Inspector
     [SerializeField] private float maxDistance = 3.0f; // Raycast range
 
+    void Start()
+    {
+       
+        
+            playerCamera = Camera.main;
+
+            if (playerCamera != null)
+            {
+                Debug.Log("🎯 Assigned camera automatically: " + playerCamera.name);
+            }
+            else
+            {
+                Debug.LogWarning("⚠️ No MainCamera found for BlackRaycasterManager!");
+            }
+        
+    }
     public GameObject GetRaycastHit()
     {
         if (playerCamera == null)

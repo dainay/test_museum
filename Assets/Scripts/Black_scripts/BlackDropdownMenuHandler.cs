@@ -2,8 +2,8 @@
 
 public class BlackDropdownMenuHandler : MonoBehaviour
 {
-    [SerializeField] private BlackRaycasterManager raycasterManager;
-    [SerializeField] private Camera mainCamera;      // Основная камера игрока
+    private BlackRaycasterManager raycasterManager;
+    private Camera mainCamera;      // Основная камера игрока
     [SerializeField] private Camera dropdownCamera;  // Камера для выпадающего меню
 
     private CanvasGroup[] allCanvasGroups;
@@ -11,7 +11,40 @@ public class BlackDropdownMenuHandler : MonoBehaviour
     private GameObject playerCanvasObject;
 
     void Start()
-    {
+    { 
+        //find main camera
+        mainCamera = Camera.main;
+        if (mainCamera != null)
+        {
+            Debug.Log("[Dropdown] Main camera assigned automatically: " + mainCamera.name);
+        }
+        else
+        {
+            Debug.LogWarning("[Dropdown] ⚠️ Main camera not found!");
+        }
+
+        //find raycasterManager in Player
+        GameObject player = GameObject.FindWithTag("Player");
+
+        if (player != null)
+        {
+            raycasterManager = player.GetComponentInChildren<BlackRaycasterManager>();
+
+            if (raycasterManager != null)
+            {
+                Debug.Log("🔍 RaycasterManager найден внутри Player: " + raycasterManager.name);
+            }
+            else
+            {
+                Debug.LogWarning("⚠️ Player найден, но внутри нет BlackRaycasterManager");
+            }
+        }
+        else
+        {
+            Debug.LogWarning("❌ Объект с тегом Player не найден!");
+        }
+
+        //collect canvas
         GameObject[] canvasObjects = GameObject.FindGameObjectsWithTag("CanvasPainter");
         allCanvasGroups = new CanvasGroup[canvasObjects.Length];
 

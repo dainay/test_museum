@@ -17,9 +17,6 @@ public class SceneInit : MonoBehaviour
         bool show = VictoryTracker.Instance.HasWon(salleName);
         Debug.Log("🎨 Scene: " + salleName + " — show painting info: " + show);
 
-        foreach (GameObject canvas in infoCanvases)
-        {
-            canvas.SetActive(show);
-        }
+        PaintingInfoManager.Instance.SetAllActive(show);
     }
 }

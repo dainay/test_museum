@@ -63,12 +63,7 @@ public class GameManagerDropdown : MonoBehaviour
         VictoryTracker.Instance.SetVictory(salleName);
 
         // ✅ Активируем все Canvas с описанием
-        GameObject[] infoCanvases = GameObject.FindGameObjectsWithTag("PaintingInfo");
-
-        foreach (GameObject canvas in infoCanvases)
-        {
-            canvas.SetActive(true);
-        }
+        PaintingInfoManager.Instance.SetAllActive(true);
 
         Debug.Log("🎨 Painting Info shown and registered for: " + salleName);
         Invoke("ReturnToMainCamera", 3.4f);
