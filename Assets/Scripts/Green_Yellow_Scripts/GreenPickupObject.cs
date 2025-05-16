@@ -2,75 +2,64 @@ using UnityEngine;
 
 public class GreenPickupObject : MonoBehaviour
 {
-    public float raycastRange = 10f; // Distance du Raycast
-    public Transform cameraTransform; // Référence de la caméra
-    public float holdDistance = 1f; // Distance à laquelle l'objet est tenu
+    [SerializeField] private float raycastRange = 10f;
+    [SerializeField] private Transform cameraTransform;
+    [SerializeField] private float holdDistance = 3.5f;
 
-    private GameObject heldObject = null; // Objet actuellement tenu
-    private Rigidbody heldObjectRb = null; // Rigidbody de l'objet tenu
+    private GameObject heldObject;
+    private Rigidbody heldObjectRb;
 
     void Update()
     {
-        if (Input.GetMouseButtonDown(0)) // Clic gauche pour ramasser/lâcher
+        if (Input.GetMouseButtonDown(0))
         {
             if (heldObject == null)
-            {
                 TryPickupObject();
-            }
             else
-            {
                 DropObject();
-            }
         }
-
         if (heldObject != null)
-        {
             MoveHeldObject();
-        }
     }
 
-    void TryPickupObject()
+    private void TryPickupObject()
     {
-        RaycastHit hit;
-        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-
-        if (Physics.Raycast(ray, out hit, raycastRange))
+        Ray ray = Camera.main.ViewportPointToRay(Vector3.one * 0.5f); 
+        if (Physics.Raycast(ray, out RaycastHit hit, raycastRange) && hit.collider.CompareTag("GreenPickup"))
         {
-            if (hit.collider.CompareTag("GreenPickup")) // Vérifie si l'objet a le tag "Pickup"
-            {
-                heldObject = hit.collider.gameObject;
-                heldObjectRb = heldObject.GetComponent<Rigidbody>();
-
-                if (heldObjectRb != null)
-                {
-                    heldObjectRb.useGravity = false; // Désactive la gravité pour éviter la chute
-                    heldObjectRb.isKinematic = true; // Empêche les interactions physiques
-                }
-            }
+            PickUp(hit.collider.gameObject);
         }
     }
 
-    void MoveHeldObject()
+    private void PickUp(GameObject objectToPickup)
     {
-        // Augmente la distance et ajuste l'offset pour être plus bas et à droite
-        Vector3 offset = cameraTransform.right * 2f + cameraTransform.up * -1f;
-        float farDistance = 3.5f; // L'objet sera plus loin
+        heldObject = objectToPickup;
+        heldObjectRb = heldObject.GetComponent<Rigidbody>();
+        if (heldObjectRb != null)
+        {
+            heldObjectRb.useGravity = false;
+            heldObjectRb.isKinematic = true;
+        }
+    }
 
-        // Nouvelle position de l'objet
-        Vector3 targetPosition = cameraTransform.position + cameraTransform.forward * farDistance + offset;
-
-        // Appliquer la position et la rotation
+    private void MoveHeldObject()
+    {
+        Vector3 targetPosition = cameraTransform.position + cameraTransform.forward * holdDistance + GetObjectOffset();
         heldObject.transform.position = targetPosition;
         heldObject.transform.rotation = cameraTransform.rotation;
     }
 
+    private Vector3 GetObjectOffset()
+    {
+        return cameraTransform.right * 1.5f + cameraTransform.up * -1f;
+    }
 
-    void DropObject()
+    private void DropObject()
     {
         if (heldObjectRb != null)
         {
-            heldObjectRb.useGravity = true; // Réactive la gravité
-            heldObjectRb.isKinematic = false; // Permet à l'objet de retomber
+            heldObjectRb.useGravity = true;
+            heldObjectRb.isKinematic = false;
         }
 
         heldObject = null;

@@ -1,29 +1,29 @@
 using UnityEngine;
-using UnityEngine.UI;  // Import pour Text UI classique
+using UnityEngine.UI;
 
 public class CanvasLightController : MonoBehaviour
 {
-    public GameObject panel;  // Panneau contenant le texte
-    public Text messageText;  // Texte affiché (Text UI classique)
-    public float displayDuration = 2f;  // Temps d'affichage
+    public GameObject panel; 
+    public Text messageText;  
+    public float displayDuration = 2f; 
 
     void Start()
     {
-        panel.SetActive(false);  // Cache le panneau au départ
+        panel.SetActive(false);
     }
 
-    // Fonction pour afficher le Canvas avec un message
+
     public void ShowCanvas(string message)
     {
-        messageText.text = message;  // Met à jour le texte
-        panel.SetActive(true);  // Affiche le panneau
-        CancelInvoke(nameof(HideCanvas));  // Annule toute fermeture en attente
-        Invoke(nameof(HideCanvas), displayDuration);  // Masque après X secondes
+        messageText.text = message;  
+        panel.SetActive(true);  
+        CancelInvoke(nameof(HideCanvas));  
+        Invoke(nameof(HideCanvas), displayDuration); 
     }
 
-    // Fonction pour cacher le Canvas
+
     void HideCanvas()
     {
-        panel.SetActive(false);  // Cache le panneau
+        panel.SetActive(false);
     }
 }

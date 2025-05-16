@@ -2,20 +2,19 @@ using UnityEngine;
 
 public class GreenCameraLookAt : MonoBehaviour
 {
-    public Transform target; // 🎯 L'objet vers lequel tourner (boîte en bois)
-    public float rotationSpeed = 2.0f; // 🌪️ Vitesse de rotation
+    public Transform target;
+    public float rotationSpeed = 2.0f;
     private bool shouldRotate = false;
 
     private Quaternion targetRotation;
-    private bool allowUserControl = false; // Flag pour permettre à l'utilisateur de reprendre le contrôle
-    public GameObject objectToDrop; // L'objet qui va tomber (à assigner dans l'Inspector)
-    public float fallSpeed = 5f; // Vitesse de chute de l'objet
+    private bool allowUserControl = false; 
+    public GameObject objectToDrop; 
+    public float fallSpeed = 5f; 
 
-    private bool isFalling = false; // Flag pour savoir si l'objet est en train de tomber
+    private bool isFalling = false;
 
     void Update()
     {
-        // Si l'utilisateur a le contrôle, on ne fait rien
         if (allowUserControl)
         {
             return;
@@ -23,24 +22,16 @@ public class GreenCameraLookAt : MonoBehaviour
 
         if (shouldRotate && target != null)
         {
-            // 🔄 Calculer la rotation cible
             Vector3 direction = target.position - transform.position;
-            direction.y = 0; // Garde la caméra droite (évite qu'elle regarde trop en haut/bas)
+            direction.y = 0;
             targetRotation = Quaternion.LookRotation(direction);
-
-            // 🎥 Rotation fluide
             transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, rotationSpeed * Time.deltaTime);
 
-            // ✅ Arrêt de la rotation quand elle est proche de la cible
             if (Quaternion.Angle(transform.rotation, targetRotation) < 1f)
             {
                 shouldRotate = false;
                 Debug.Log("🎥 Rotation terminée !");
-
-                // 🎮 Reprend le contrôle de la caméra pour l'utilisateur
-                Invoke("AllowUserControl", 0.5f); // Un petit délai pour éviter une transition trop abrupte
-
-                // Commence la chute de l'objet après la rotation
+                Invoke("AllowUserControl", 0.5f);
                 StartObjectFall();
             }
         }
@@ -52,14 +43,13 @@ public class GreenCameraLookAt : MonoBehaviour
         shouldRotate = true;
     }
 
-    // Permet à l'utilisateur de reprendre le contrôle après la rotation
+
     void AllowUserControl()
     {
         allowUserControl = true;
         Debug.Log("🎮 Contrôle caméra rétabli !");
     }
 
-    // Déclenche la chute de l'objet
     void StartObjectFall()
     {
         if (objectToDrop != null)
@@ -73,11 +63,8 @@ public class GreenCameraLookAt : MonoBehaviour
     {
         if (isFalling && objectToDrop != null)
         {
-            // Appliquer une chute vers le bas
             objectToDrop.transform.position += Vector3.down * fallSpeed * Time.deltaTime;
-
-            // Optionnel : Si tu veux arrêter l'objet lorsqu'il touche le sol (en utilisant une hauteur minimale)
-            if (objectToDrop.transform.position.y <= 0f) // suppose que le sol est à y=0
+            if (objectToDrop.transform.position.y <= 0f)
             {
                 objectToDrop.transform.position = new Vector3(objectToDrop.transform.position.x, 0f, objectToDrop.transform.position.z);
                 isFalling = false;
