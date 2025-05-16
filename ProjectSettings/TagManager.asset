@@ -12,6 +12,12 @@ TagManager:
   - CanvasPainter
   - GlassBlack
   - WinCamera
+  - Layout
+  - Interview
+  - Fade
+  - Hint
+  - PlayerCanvas
+  - PaintingInfo
   layers:
   - Default
   - TransparentFX

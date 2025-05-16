@@ -8,6 +8,7 @@ public class BlackDropdownMenuHandler : MonoBehaviour
 
     private CanvasGroup[] allCanvasGroups;
     private bool isDropdownActive = false;
+    private GameObject playerCanvasObject;
 
     void Start()
     {
@@ -17,6 +18,13 @@ public class BlackDropdownMenuHandler : MonoBehaviour
         for (int i = 0; i < canvasObjects.Length; i++)
         {
             allCanvasGroups[i] = canvasObjects[i].GetComponent<CanvasGroup>();
+        }
+
+        playerCanvasObject = GameObject.FindWithTag("PlayerCanvas");
+
+        if (playerCanvasObject == null)
+        {
+            Debug.LogWarning("[Dropdown] No PlayerCanvas found in scene");
         }
     }
 
@@ -49,6 +57,12 @@ public class BlackDropdownMenuHandler : MonoBehaviour
             }
 
             DeactivateAllCanvasGroups();
+
+            if (playerCanvasObject != null)
+            {
+                playerCanvasObject.SetActive(false); 
+                Debug.Log("[Dropdown] PlayerCanvas disabled");
+            }
 
             // Активируем только нужный дочерний CanvasGroup
             foreach (Transform child in hitObject.transform)
@@ -96,6 +110,12 @@ public class BlackDropdownMenuHandler : MonoBehaviour
 
         mainCamera.gameObject.SetActive(true);
         dropdownCamera.gameObject.SetActive(false);
+
+        if (playerCanvasObject != null)
+        {
+            playerCanvasObject.SetActive(true); 
+            Debug.Log("[Dropdown] PlayerCanvas enabled");
+        }
 
         ReactivateAllCanvasGroups();
         EnableCursor(false);
