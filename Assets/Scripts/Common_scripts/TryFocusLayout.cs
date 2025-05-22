@@ -15,6 +15,9 @@ public class TryFocusLayout : MonoBehaviour
 
     private bool isInLayoutMode = false;
 
+    [SerializeField] private GameObject interviewCanvas;
+
+
     void Awake()
     {
         // Найдём камеру layout внутри себя
@@ -114,6 +117,13 @@ public class TryFocusLayout : MonoBehaviour
 
         if (staticPreviewImage != null)
             staticPreviewImage.enabled = true;
+
+        if (interviewCanvas != null && interviewCanvas.activeSelf)
+        {
+            interviewCanvas.SetActive(false);
+            Debug.Log("❌ Interview canvas deactivated");
+        }
+
 
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;

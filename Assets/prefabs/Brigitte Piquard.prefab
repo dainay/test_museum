@@ -3566,6 +3566,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32956f13233806f42a51e96428542ba5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interviewCanvas: {fileID: 3704395867256695240}
 --- !u!114 &7203696373511224816
 MonoBehaviour:
   m_ObjectHideFlags: 0
