@@ -9,65 +9,65 @@ public class GreenCheckObjects : MonoBehaviour
     private static HashSet<string> requiredObjects = new HashSet<string> { "violette", "ballon", "feuille" };
     private static HashSet<string> placedObjects = new HashSet<string>();
 
-    public GreenCameraLookAt cameraScript; 
+    public GreenCameraLookAt cameraScript;
+
+    public Camera mainCamera;
+    public Camera victoryCamera;
 
     void Start()
+{
+    RenderSettings.ambientLight = Color.white;
+
+    if (mainCamera == null)
+        mainCamera = GameObject.Find("MainCamera")?.GetComponent<Camera>();
+
+    if (victoryCamera == null)
+        victoryCamera = GameObject.Find("VictoryCamera")?.GetComponent<Camera>();
+
+    if (cameraScript == null)
+        cameraScript = FindObjectOfType<GreenCameraLookAt>();
+
+    if (mainCamera == null || victoryCamera == null)
     {
-
-        RenderSettings.ambientLight = Color.white;
-
-        spotLight = transform.Find("SpotLight")?.GetComponent<Light>();
-
-        if (spotLight == null)
-        {
-            Debug.LogWarning("⚠️ Aucune lumière 'SpotLight' trouvée !");
-        }
-        else
-        {
-            spotLight.intensity = 0;
-        }
-
-        if (cameraScript == null)
-        {
-            Debug.LogError("CameraLookAt n'est pas assigné dans CheckObjects !");
-        }
+        Debug.LogError(" Les caméras ne sont pas correctement assignées !");
     }
+
+    spotLight = transform.Find("SpotLight")?.GetComponent<Light>();
+
+    if (spotLight == null)
+        Debug.LogWarning("⚠️ Aucune lumière 'SpotLight' trouvée !");
+    else
+        spotLight.intensity = 0;
+}
+
+
     void OnTriggerStay(Collider other)
     {
-        if (spotLight == null) return;
+        if (spotLight == null || other.gameObject.CompareTag("Player")) return;
 
         string objName = other.gameObject.name;
 
-   
-        if (other.gameObject.CompareTag("Player")) return;
-
-        
-        if (requiredObjects.Contains(objName))
+        if (requiredObjects.Contains(objName) && !placedObjects.Contains(objName))
         {
-            
-            if (!placedObjects.Contains(objName))
-            {
-                spotLight.intensity = 50;
-                spotLight.color = Color.green;  
-                placedObjects.Add(objName);
-                Debug.Log($"{objName} ajouté ");
-            }
+            spotLight.intensity = 50;
+            spotLight.color = Color.green;
+            placedObjects.Add(objName);
+            Debug.Log($"{objName} ajouté");
         }
-        else
+        else if (!requiredObjects.Contains(objName))
         {
-          
             spotLight.intensity = 100;
-            spotLight.color = Color.red;  
+            spotLight.color = Color.red;
             isObjectPlaced = true;
         }
 
-       
         CheckWinCondition();
     }
 
     void OnTriggerExit(Collider other)
     {
         if (spotLight == null) return;
+
         string objName = other.gameObject.name;
 
         if (isObjectPlaced)
@@ -82,27 +82,39 @@ public class GreenCheckObjects : MonoBehaviour
 
     void CheckWinCondition()
     {
-       
         if (placedObjects.SetEquals(requiredObjects))
         {
-            Debug.Log("Victoire");
             Invoke("Victory", 3f);
         }
     }
+void Victory()
+{
+    RenderSettings.ambientLight = Color.white;
 
-    void Victory()
+    if (mainCamera != null && victoryCamera != null)
     {
-
-        RenderSettings.ambientLight = Color.white;
-
-        if (cameraScript != null)
-        {
-            cameraScript.StartCameraRotation();
-        }
-        else
-        {
-            Debug.LogError("La caméra n'est pas assignée dans l'Inspector !");
-        }
+        mainCamera.enabled = false;
+        victoryCamera.enabled = true;
+        Invoke("ReturnToMainCamera", 3f);
     }
+    else
+    {
+        Debug.LogError("Les caméras ne sont pas correctement assignées !");
+    }
+
+    if (cameraScript != null)
+    {
+        cameraScript.StartCameraRotation();
+    }
+}
+
+void ReturnToMainCamera()
+{
+    if (mainCamera != null && victoryCamera != null)
+    {
+        victoryCamera.enabled = false;
+        mainCamera.enabled = true;
+    }
+}
 
 }

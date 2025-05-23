@@ -7,18 +7,29 @@ public class GreenCameraLookAt : MonoBehaviour
     private bool shouldRotate = false;
 
     private Quaternion targetRotation;
-    private bool allowUserControl = false; 
-    public GameObject objectToDrop; 
-    public float fallSpeed = 5f; 
+    private bool allowUserControl = false;
+
+    public GameObject objectToDrop;
+    public float fallSpeed = 50f;
 
     private bool isFalling = false;
 
+    void Start()
+    {
+        GameObject playerCameraRoot = GameObject.Find("PlayerCameraRoot");
+        if (playerCameraRoot != null)
+        {
+            target = playerCameraRoot.transform;
+        }
+        else
+        {
+            Debug.LogError("PlayerCameraRoot introuvable dans la scène !");
+        }
+    }
+
     void Update()
     {
-        if (allowUserControl)
-        {
-            return;
-        }
+        if (allowUserControl) return;
 
         if (shouldRotate && target != null)
         {
@@ -30,7 +41,7 @@ public class GreenCameraLookAt : MonoBehaviour
             if (Quaternion.Angle(transform.rotation, targetRotation) < 1f)
             {
                 shouldRotate = false;
-                Debug.Log("🎥 Rotation terminée !");
+    
                 Invoke("AllowUserControl", 0.5f);
                 StartObjectFall();
             }
@@ -39,37 +50,30 @@ public class GreenCameraLookAt : MonoBehaviour
 
     public void StartCameraRotation()
     {
-        Debug.Log("🎥 La caméra commence à tourner !");
+    
         shouldRotate = true;
+         StartObjectFall();
     }
-
 
     void AllowUserControl()
     {
         allowUserControl = true;
-        Debug.Log("🎮 Contrôle caméra rétabli !");
+   
     }
-
-    void StartObjectFall()
+void StartObjectFall()
+{
+    if (objectToDrop != null)
     {
-        if (objectToDrop != null)
+        Rigidbody rb = objectToDrop.GetComponent<Rigidbody>();
+        if (rb != null)
         {
-            isFalling = true;
-            Debug.Log("🔻 L'objet commence à tomber !");
+            rb.useGravity = true;
+            rb.velocity = new Vector3(0, -fallSpeed, 0);
         }
-    }
+        isFalling = false;
 
-    void FixedUpdate()
-    {
-        if (isFalling && objectToDrop != null)
-        {
-            objectToDrop.transform.position += Vector3.down * fallSpeed * Time.deltaTime;
-            if (objectToDrop.transform.position.y <= 0f)
-            {
-                objectToDrop.transform.position = new Vector3(objectToDrop.transform.position.x, 0f, objectToDrop.transform.position.z);
-                isFalling = false;
-                Debug.Log("🔻 L'objet a touché le sol !");
-            }
-        }
     }
+}
+
+
 }
