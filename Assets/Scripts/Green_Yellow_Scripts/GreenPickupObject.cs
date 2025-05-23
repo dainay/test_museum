@@ -2,15 +2,26 @@ using UnityEngine;
 
 public class GreenPickupObject : MonoBehaviour
 {
-    [SerializeField] private float raycastRange = 10f;
-    [SerializeField] private Transform cameraTransform;
-    [SerializeField] private float holdDistance = 3.5f;
+    private float raycastRange = 10f;
+    private float holdDistance = 2f;
 
+    private Transform cameraTransform; 
     private GameObject heldObject;
     private Rigidbody heldObjectRb;
 
+ void Awake()
+{
+    cameraTransform = GameObject.Find("MainCamera")?.transform;
+
+    if (cameraTransform == null)
+    {
+        Debug.LogError("Pas de mainCamera");
+    }
+}
+
     void Update()
     {
+
         if (Input.GetMouseButtonDown(0))
         {
             if (heldObject == null)
@@ -18,18 +29,23 @@ public class GreenPickupObject : MonoBehaviour
             else
                 DropObject();
         }
+
         if (heldObject != null)
             MoveHeldObject();
     }
 
-    private void TryPickupObject()
+   private void TryPickupObject()
+{
+    Ray ray = new Ray(cameraTransform.position, cameraTransform.forward);
+    if (Physics.Raycast(ray, out RaycastHit hit, raycastRange))
     {
-        Ray ray = Camera.main.ViewportPointToRay(Vector3.one * 0.5f); 
-        if (Physics.Raycast(ray, out RaycastHit hit, raycastRange) && hit.collider.CompareTag("GreenPickup"))
+        if (hit.collider.CompareTag("GreenPickup"))
         {
             PickUp(hit.collider.gameObject);
         }
     }
+}
+
 
     private void PickUp(GameObject objectToPickup)
     {
@@ -41,7 +57,6 @@ public class GreenPickupObject : MonoBehaviour
             heldObjectRb.isKinematic = true;
         }
     }
-
     private void MoveHeldObject()
     {
         Vector3 targetPosition = cameraTransform.position + cameraTransform.forward * holdDistance + GetObjectOffset();
@@ -61,7 +76,6 @@ public class GreenPickupObject : MonoBehaviour
             heldObjectRb.useGravity = true;
             heldObjectRb.isKinematic = false;
         }
-
         heldObject = null;
         heldObjectRb = null;
     }
