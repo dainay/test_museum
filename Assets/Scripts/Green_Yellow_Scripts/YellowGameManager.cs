@@ -2,20 +2,21 @@ using UnityEngine;
 
 public class YellowGameManager : MonoBehaviour
 {
-    public YellowSign[] signs; // Références à tous les signes
-    private int correctSignsCount = 0; // Nombre de signes correctement remplis
-    public YellowCameraLookAt yellowCameraLookAt; // Référence au script de la caméra de la salle jaune
+    public YellowSign[] signs;
+    public YellowCameraLookAt yellowCameraLookAt;
+
+    public Camera mainCamera;
+    public Camera victoryCamera;
 
     void Start()
     {
-        // Initialisation
-        correctSignsCount = 0;
+        if (mainCamera != null) mainCamera.gameObject.SetActive(true);
+        if (victoryCamera != null) victoryCamera.gameObject.SetActive(false);
     }
 
-    // Appelée chaque fois qu'un signe est vérifié comme complété
     public void CheckVictory()
     {
-        correctSignsCount = 0;
+        int correctSignsCount = 0;
 
         foreach (YellowSign sign in signs)
         {
@@ -25,17 +26,41 @@ public class YellowGameManager : MonoBehaviour
             }
         }
 
-        // Si tous les signes sont complétés
         if (correctSignsCount == signs.Length)
         {
-            // Affiche le message de victoire
             Debug.Log("Victoire ! Toutes les tablettes sont correctement placées.");
 
-            // Appelle la méthode pour faire tourner la caméra et faire tomber l'objet
+            SwitchToVictoryCamera();
+            Invoke(nameof(SwitchBackToMainCamera), 3f);
+
             if (yellowCameraLookAt != null)
             {
-                yellowCameraLookAt.OnYellowRoomVictory(); // Déclenche la séquence de la caméra
+                yellowCameraLookAt.DropObjectNow();
             }
+        }
+    }
+
+    void SwitchToVictoryCamera()
+    {
+        if (mainCamera != null)
+        {
+            mainCamera.gameObject.SetActive(false);
+        }
+        if (victoryCamera != null)
+        {
+            victoryCamera.gameObject.SetActive(true);
+        }
+    }
+
+    void SwitchBackToMainCamera()
+    {
+        if (victoryCamera != null)
+        {
+            victoryCamera.gameObject.SetActive(false);
+        }
+        if (mainCamera != null)
+        {
+            mainCamera.gameObject.SetActive(true);
         }
     }
 }
