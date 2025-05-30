@@ -67,6 +67,7 @@ void StartObjectFall()
         Rigidbody rb = objectToDrop.GetComponent<Rigidbody>();
         if (rb != null)
         {
+            rb.isKinematic = false;
             rb.useGravity = true;
             rb.velocity = new Vector3(0, -fallSpeed, 0);
         }

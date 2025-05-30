@@ -8,9 +8,12 @@ public class GreenPickupObject : MonoBehaviour
     private Transform cameraTransform; 
     private GameObject heldObject;
     private Rigidbody heldObjectRb;
+private LayerMask pickupLayerMask;
 
  void Awake()
 {
+    pickupLayerMask = LayerMask.GetMask("Pickupable");
+
     cameraTransform = GameObject.Find("MainCamera")?.transform;
 
     if (cameraTransform == null)
@@ -34,10 +37,10 @@ public class GreenPickupObject : MonoBehaviour
             MoveHeldObject();
     }
 
-   private void TryPickupObject()
+private void TryPickupObject()
 {
     Ray ray = new Ray(cameraTransform.position, cameraTransform.forward);
-    if (Physics.Raycast(ray, out RaycastHit hit, raycastRange))
+    if (Physics.Raycast(ray, out RaycastHit hit, raycastRange, pickupLayerMask))
     {
         if (hit.collider.CompareTag("GreenPickup"))
         {
@@ -45,6 +48,7 @@ public class GreenPickupObject : MonoBehaviour
         }
     }
 }
+
 
 
     private void PickUp(GameObject objectToPickup)
