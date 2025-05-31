@@ -3,7 +3,7 @@ using UnityEngine;
 public class GreenPickupObject : MonoBehaviour
 {
     private float raycastRange = 10f;
-    private float holdDistance = 2f;
+    private float holdDistance = 3.0f;
 
     private Transform cameraTransform; 
     private GameObject heldObject;
@@ -70,8 +70,9 @@ private void TryPickupObject()
 
     private Vector3 GetObjectOffset()
     {
-        return cameraTransform.right * 1.5f + cameraTransform.up * -1f;
+    return cameraTransform.right * 1f + cameraTransform.up * -0.8f;
     }
+    
 
     private void DropObject()
     {

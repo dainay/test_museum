@@ -12,7 +12,6 @@ public class GreenCameraLookAt : MonoBehaviour
     public GameObject objectToDrop;
     public float fallSpeed = 50f;
 
-    private bool isFalling = false;
 
     void Start()
     {
@@ -71,7 +70,6 @@ void StartObjectFall()
             rb.useGravity = true;
             rb.velocity = new Vector3(0, -fallSpeed, 0);
         }
-        isFalling = false;
 
     }
 }

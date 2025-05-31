@@ -14,7 +14,7 @@ public class GreenCheckObjects : MonoBehaviour
     public Camera mainCamera;
     public Camera victoryCamera;
 
-    void Start()
+void Start()
 {
     RenderSettings.ambientLight = Color.white;
 
@@ -29,17 +29,14 @@ public class GreenCheckObjects : MonoBehaviour
 
     if (mainCamera == null || victoryCamera == null)
     {
-        Debug.LogError(" Les caméras ne sont pas correctement assignées !");
+        Debug.LogError("Les caméras ne sont pas correctement assignées !");
     }
-
     spotLight = transform.Find("SpotLight")?.GetComponent<Light>();
-
-    if (spotLight == null)
-        Debug.LogWarning("⚠️ Aucune lumière 'SpotLight' trouvée !");
-    else
+    if (spotLight != null)
+    {
         spotLight.intensity = 0;
+    }
 }
-
 
     void OnTriggerStay(Collider other)
     {

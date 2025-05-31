@@ -1,31 +1,30 @@
 using UnityEngine;
+using System.Collections;
 
 public class GreenRaycastClickHandler : MonoBehaviour
 {
-    public CanvasLightController canvasController;  // Référence au CanvasLightController
+    public CanvasLightController canvasController;
 
-    public float raycastRange = 10f;  // Distance du Raycast
+    public float raycastRange = 10f; 
 
-    private Light sceneLight;  // Lumière principale
-    private float originalIntensity;  // Intensité originale de la lumière
+    private Light sceneLight; 
+    private float originalIntensity; 
 
-    private Light[] objectLights1;  // Groupe Fruits
-    private Light[] objectLights2;  // Groupe Animaux
-    private Light[] objectLights3;  // Groupe Objets
+    private Light[] objectLights1; 
+    private Light[] objectLights2; 
+    private Light[] objectLights3;
 
-    private bool isGroup1On = false;  // État du groupe Fruits
-    private bool isGroup2On = false;  // État du groupe Animaux
-    private bool isGroup3On = false;  // État du groupe Objets
+    private bool isGroup1On = false;
+    private bool isGroup2On = false;
+    private bool isGroup3On = false;
+
+    private Coroutine blinkCoroutine1;
+    private Coroutine blinkCoroutine2;
+    private Coroutine blinkCoroutine3;
 
     void Start()
     {
-        // Trouver le CanvasLightController
         canvasController = FindObjectOfType<CanvasLightController>();
-
-        // // Définir l'ambient light à une couleur gris foncé (RGB: 50, 50, 50)
-        // RenderSettings.ambientLight = new Color(50f / 255f, 50f / 255f, 50f / 255f);
-
-        // Trouver la lumière principale
         GameObject lightObject = GameObject.Find("lightscene");
         if (lightObject != null)
         {
@@ -36,19 +35,15 @@ public class GreenRaycastClickHandler : MonoBehaviour
         {
             Debug.LogWarning("Aucune lumière nommée 'lightscene' trouvée !");
         }
+        string[] objectNames1 = { "bougie", "banane", "feuille" }; 
+        string[] objectNames2 = { "violette", "cuillere", "orange" }; 
+        string[] objectNames3 = { "book", "ballon", "potion" }; 
 
-        // Définition des groupes d'objets
-        string[] objectNames1 = { "bougie", "banane", "feuille" };  // Groupe Fruits
-        string[] objectNames2 = { "violette", "cuillere", "orange" };  // Groupe Animaux
-        string[] objectNames3 = { "book", "ballon", "potion" };  // Groupe Objets
-
-        // Initialisation des lumières avec des couleurs différentes
-        objectLights1 = InitializeLights(objectNames1, Color.yellow);  // Fruits -> Jaune
-        objectLights2 = InitializeLights(objectNames2, Color.blue);    // Animaux -> Bleu
-        objectLights3 = InitializeLights(objectNames3, Color.green);   // Objets -> Vert
+        objectLights1 = InitializeLights(objectNames1, Color.yellow);
+        objectLights2 = InitializeLights(objectNames2, Color.blue); 
+        objectLights3 = InitializeLights(objectNames3, Color.green);
     }
 
-    // Fonction pour initialiser les lumières des objets
     Light[] InitializeLights(string[] objectNames, Color color)
     {
         Light[] lights = new Light[objectNames.Length];
@@ -58,12 +53,12 @@ public class GreenRaycastClickHandler : MonoBehaviour
             GameObject obj = GameObject.Find(objectNames[i]);
             if (obj != null)
             {
-                Light objLight = obj.GetComponentInChildren<Light>();  // Recherche la lumière de l'objet
+                Light objLight = obj.GetComponentInChildren<Light>(); 
                 if (objLight != null)
                 {
                     lights[i] = objLight;
-                    objLight.intensity = 0;  // Éteindre par défaut
-                    objLight.color = color;  // Appliquer la couleur
+                    objLight.intensity = 0;
+                    objLight.color = color;
                 }
                 else
                 {
@@ -80,7 +75,6 @@ public class GreenRaycastClickHandler : MonoBehaviour
 
     void Update()
     {
-        // Gérer les clics de souris
         if (Input.GetMouseButtonDown(0))
         {
             RaycastHit hit;
@@ -89,60 +83,100 @@ public class GreenRaycastClickHandler : MonoBehaviour
             if (Physics.Raycast(ray, out hit, raycastRange))
             {
                 string objectName = hit.collider.gameObject.name;
-
-                // Si un interrupteur est cliqué, basculer les groupes
                 if (objectName == "Interrupteur1")
                 {
-                    ToggleGroup(ref isGroup1On, objectLights1);
+                    ToggleGroup(ref isGroup1On, objectLights1, ref blinkCoroutine1);
                 }
                 else if (objectName == "Interrupteur2")
                 {
-                    ToggleGroup(ref isGroup2On, objectLights2);
+                    ToggleGroup(ref isGroup2On, objectLights2, ref blinkCoroutine2);
                 }
                 else if (objectName == "Interrupteur3")
                 {
-                    ToggleGroup(ref isGroup3On, objectLights3);
+                    ToggleGroup(ref isGroup3On, objectLights3, ref blinkCoroutine3);
                 }
             }
         }
     }
 
-    // Fonction pour basculer l'état des groupes
-    void ToggleGroup(ref bool groupState, Light[] objectLights)
+    void ToggleGroup(ref bool groupState, Light[] objectLights, ref Coroutine blinkCoroutine)
     {
         groupState = !groupState;
-        ToggleLights(objectLights, groupState);
 
-        // Modifier l'intensité de la lumière principale
-        sceneLight.intensity = (isGroup1On || isGroup2On || isGroup3On) ? 0 : originalIntensity;
+        if (groupState)
+        {
+            if (blinkCoroutine == null)
+                blinkCoroutine = StartCoroutine(BlinkLights(objectLights));
+        }
+        else
+        {
+            if (blinkCoroutine != null)
+            {
+                StopCoroutine(blinkCoroutine);
+                blinkCoroutine = null;
+            }
+            SetLightsIntensity(objectLights, 0);
+        }
 
-        // Afficher un message sur le Canvas
-        string message = sceneLight.intensity == 0 ? "💡 Lumière éteinte !" : "💡 Lumière allumée !";
+        bool anyGroupOn = isGroup1On || isGroup2On || isGroup3On;
+
+        if (sceneLight != null)
+        {
+            if (anyGroupOn)
+            {
+                sceneLight.enabled = false;
+            }
+            else
+            {
+                sceneLight.enabled = true;
+                sceneLight.intensity = originalIntensity;
+            }
+        }
+
+        RenderSettings.ambientLight = anyGroupOn
+    ? new Color(68f / 255f, 70f / 255f, 82f / 255f)
+    : new Color(174f / 255f, 176f / 255f, 202f / 255f);
+
+        string message = !sceneLight.enabled ? "Lumière éteinte" : "Lumière allumée";
 
         if (canvasController != null)
         {
-            canvasController.ShowCanvas(message);  // Afficher le message sur le Canvas
+            canvasController.ShowCanvas(message);
         }
 
         Debug.Log(message);
     }
 
-    // Fonction pour basculer les lumières des objets
-    void ToggleLights(Light[] lights, bool state)
+    IEnumerator BlinkLights(Light[] lights)
     {
-        foreach (Light objLight in lights)
+        float duration = 1.5f;
+        float maxIntensity = 20f;
+        float minIntensity = 0.5f;
+
+        while (true)
         {
-            if (objLight != null)
+
+            for (float t = 0; t < duration; t += Time.deltaTime)
             {
-                objLight.intensity = state ? 10 : 0;  // Allumer ou éteindre la lumière
-                RenderSettings.ambientLight = state ? new Color(50f / 255f, 50f / 255f, 50f / 255f) : Color.white;
+                float intensity = Mathf.Lerp(minIntensity, maxIntensity, t / duration);
+                SetLightsIntensity(lights, intensity);
+                yield return null;
+            }
+            for (float t = 0; t < duration; t += Time.deltaTime)
+            {
+                float intensity = Mathf.Lerp(maxIntensity, minIntensity, t / duration);
+                SetLightsIntensity(lights, intensity);
+                yield return null;
             }
         }
-
-        // Modifier l'ambient light en fonction de l'état
-
-
-        Debug.Log(state ? "Lumières allumées - Ambient Light : Blanche" : "Lumières éteintes - Ambient Light : 50,50,50");
     }
 
+    void SetLightsIntensity(Light[] lights, float intensity)
+    {
+        foreach (Light l in lights)
+        {
+            if (l != null)
+                l.intensity = intensity;
+        }
+    }
 }
