@@ -22,6 +22,7 @@ public class GreenRaycastClickHandler : MonoBehaviour
     private Coroutine blinkCoroutine2;
     private Coroutine blinkCoroutine3;
 
+
     void Start()
     {
         canvasController = FindObjectOfType<CanvasLightController>();
@@ -41,7 +42,7 @@ public class GreenRaycastClickHandler : MonoBehaviour
 
         objectLights1 = InitializeLights(objectNames1, Color.yellow);
         objectLights2 = InitializeLights(objectNames2, Color.blue); 
-        objectLights3 = InitializeLights(objectNames3, Color.green);
+        objectLights3 = InitializeLights(objectNames3,new Color(0.5f, 0f, 0.5f));
     }
 
     Light[] InitializeLights(string[] objectNames, Color color)
@@ -73,31 +74,48 @@ public class GreenRaycastClickHandler : MonoBehaviour
         return lights;
     }
 
-    void Update()
-    {
-        if (Input.GetMouseButtonDown(0))
-        {
-            RaycastHit hit;
-            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+    // void Update()
+    // {
+    //     if (Input.GetMouseButtonDown(0))
+    //     {
+    //         RaycastHit hit;
+    //         Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
 
-            if (Physics.Raycast(ray, out hit, raycastRange))
-            {
-                string objectName = hit.collider.gameObject.name;
-                if (objectName == "Interrupteur1")
-                {
-                    ToggleGroup(ref isGroup1On, objectLights1, ref blinkCoroutine1);
-                }
-                else if (objectName == "Interrupteur2")
-                {
-                    ToggleGroup(ref isGroup2On, objectLights2, ref blinkCoroutine2);
-                }
-                else if (objectName == "Interrupteur3")
-                {
-                    ToggleGroup(ref isGroup3On, objectLights3, ref blinkCoroutine3);
-                }
-            }
-        }
+    //         if (Physics.Raycast(ray, out hit, raycastRange))
+    //         {
+    //             string objectName = hit.collider.gameObject.name;
+    //             if (objectName == "Interrupteur1")
+    //             {
+    //                 ToggleGroup(ref isGroup1On, objectLights1, ref blinkCoroutine1);
+    //             }
+    //             else if (objectName == "Interrupteur2")
+    //             {
+    //                 ToggleGroup(ref isGroup2On, objectLights2, ref blinkCoroutine2);
+    //             }
+    //             else if (objectName == "Interrupteur3")
+    //             {
+    //                 ToggleGroup(ref isGroup3On, objectLights3, ref blinkCoroutine3);
+    //             }
+    //         }
+    //     }
+    // }
+
+void Update()
+{
+    if (Input.GetKeyDown(KeyCode.K))
+    {
+        ToggleGroup(ref isGroup1On, objectLights1, ref blinkCoroutine1);
     }
+    if (Input.GetKeyDown(KeyCode.L))
+    {
+        ToggleGroup(ref isGroup2On, objectLights2, ref blinkCoroutine2);
+    }
+    if (Input.GetKeyDown(KeyCode.J))
+    {
+        ToggleGroup(ref isGroup3On, objectLights3, ref blinkCoroutine3);
+    }
+}
+
 
     void ToggleGroup(ref bool groupState, Light[] objectLights, ref Coroutine blinkCoroutine)
     {
@@ -170,6 +188,26 @@ public class GreenRaycastClickHandler : MonoBehaviour
             }
         }
     }
+
+    public void ActivateGroupByObject(string objectName)
+{
+    if (objectLights1 != null && System.Array.Exists(objectLights1, l => l != null && l.transform.parent.name == objectName))
+    {
+        if (!isGroup1On)
+            ToggleGroup(ref isGroup1On, objectLights1, ref blinkCoroutine1);
+    }
+    else if (objectLights2 != null && System.Array.Exists(objectLights2, l => l != null && l.transform.parent.name == objectName))
+    {
+        if (!isGroup2On)
+            ToggleGroup(ref isGroup2On, objectLights2, ref blinkCoroutine2);
+    }
+    else if (objectLights3 != null && System.Array.Exists(objectLights3, l => l != null && l.transform.parent.name == objectName))
+    {
+        if (!isGroup3On)
+            ToggleGroup(ref isGroup3On, objectLights3, ref blinkCoroutine3);
+    }
+}
+
 
     void SetLightsIntensity(Light[] lights, float intensity)
     {
