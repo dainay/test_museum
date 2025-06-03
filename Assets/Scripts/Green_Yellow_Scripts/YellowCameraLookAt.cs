@@ -2,46 +2,18 @@ using UnityEngine;
 
 public class YellowCameraLookAt : MonoBehaviour
 {
-    public Transform target; // L'objet vers lequel tourner
+    public Transform target;
     public float rotationSpeed = 2.0f;
 
-    private bool shouldRotate = false;
-    private Quaternion targetRotation;
-    private bool allowUserControl = false;
-
-    public GameObject objectToDrop; // L'objet à faire tomber
-    public float groundY = 5.0f; // Hauteur du sol
+    public float groundY = 5.0f;
     private bool isFalling = false;
+
+    public GameObject objectToDrop;
 
     void Start()
     {
-        // Cache la boule au début
         if (objectToDrop != null)
-        {
             objectToDrop.SetActive(false);
-        }
-    }
-
-    void Update()
-    {
-        if (allowUserControl)
-            return;
-
-        if (shouldRotate && target != null)
-        {
-            Vector3 direction = target.position - transform.position;
-            direction.y = 0;
-            targetRotation = Quaternion.LookRotation(direction);
-            transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, rotationSpeed * Time.deltaTime);
-
-            if (Quaternion.Angle(transform.rotation, targetRotation) < 1f)
-            {
-                shouldRotate = false;
-                Debug.Log("🎥 Rotation terminée !");
-                Invoke("AllowUserControl", 0.5f);
-                StartObjectFall();
-            }
-        }
     }
 
     void FixedUpdate()
@@ -64,21 +36,9 @@ public class YellowCameraLookAt : MonoBehaviour
                 );
 
                 isFalling = false;
-                Debug.Log("🔻 L'objet a touché le sol, gravité désactivée !");
+                Debug.Log("🔻 L'objet a touché le sol !");
             }
         }
-    }
-
-    public void StartCameraRotation()
-    {
-        Debug.Log("🎥 La caméra commence à tourner !");
-        shouldRotate = true;
-    }
-
-    void AllowUserControl()
-    {
-        allowUserControl = true;
-        Debug.Log("🎮 Contrôle caméra rétabli !");
     }
 
     void StartObjectFall()
@@ -97,14 +57,11 @@ public class YellowCameraLookAt : MonoBehaviour
         }
     }
 
-    // À appeler depuis YellowGameManager quand victoire
-    public void OnYellowRoomVictory()
+    public void DropObjectNow()
     {
         if (objectToDrop != null)
-        {
-            objectToDrop.SetActive(true); // Montre la boule
-        }
+            objectToDrop.SetActive(true);
 
-        StartCameraRotation();
+        StartObjectFall();
     }
 }

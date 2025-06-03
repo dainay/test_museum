@@ -12,7 +12,6 @@ public class GreenCameraLookAt : MonoBehaviour
     public GameObject objectToDrop;
     public float fallSpeed = 50f;
 
-    private bool isFalling = false;
 
     void Start()
     {
@@ -67,10 +66,10 @@ void StartObjectFall()
         Rigidbody rb = objectToDrop.GetComponent<Rigidbody>();
         if (rb != null)
         {
+            rb.isKinematic = false;
             rb.useGravity = true;
             rb.velocity = new Vector3(0, -fallSpeed, 0);
         }
-        isFalling = false;
 
     }
 }

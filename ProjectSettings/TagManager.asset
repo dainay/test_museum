@@ -18,11 +18,14 @@ TagManager:
   - Hint
   - PlayerCanvas
   - PaintingInfo
+  - GreenPickup
+  - Pickup
+  - Switch
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Pickupable
   - Water
   - UI
   - 

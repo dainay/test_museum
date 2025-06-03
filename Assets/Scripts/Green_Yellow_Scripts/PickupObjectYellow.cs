@@ -2,56 +2,62 @@ using UnityEngine;
 
 public class PickupObjectYellow : MonoBehaviour
 {
-    public float raycastRange = 10f; 
-    public Transform cameraTransform;
-    public float holdDistance = 10f; 
+    public float raycastRange = 10f;
+    public float holdDistance = 10f;
+
     public Transform sign1Transform;
     public Transform sign2Transform;
     public Transform sign3Transform;
     public Transform sign4Transform;
-    public GameObject player;
+
+    public float maxDistanceToSign = 3f;
 
     private GameObject heldObject = null;
     private Rigidbody heldObjectRb = null;
-    public float maxDistanceToSign = 3f;
     private bool isObjectPlacedOnSign = false;
 
     void Update()
     {
+        Transform cam = GetPlayerCamera();
+        if (cam == null) return;
+
         if (Input.GetMouseButtonDown(0))
         {
-            Debug.Log("Clic détecté!");
-
             if (heldObject == null)
-                TryPickupObject();
+                TryPickupObject(cam);
             else
                 DropObject();
         }
 
         if (heldObject != null)
         {
-            KeepObjectCentered();
+            KeepObjectCentered(cam);
             PlaceObjectOnSignIfClose();
         }
 
         if (isObjectPlacedOnSign)
         {
-            TryPickupObjectFromSign();
+            TryPickupObjectFromSign(cam);
         }
     }
 
-    void TryPickupObject()
+    Transform GetPlayerCamera()
     {
-        RaycastHit hit;
-        Ray ray = new Ray(cameraTransform.position, cameraTransform.forward);
-
-       
-        Debug.DrawRay(cameraTransform.position, cameraTransform.forward * raycastRange, Color.red, 1.5f);
-
-        if (Physics.Raycast(ray, out hit, raycastRange))
+        GameObject player = GameObject.FindWithTag("Player");
+        if (player != null)
         {
-            Debug.Log("Raycast hit: " + hit.collider.name); 
+            Camera cam = player.GetComponentInChildren<Camera>();
+            if (cam != null)
+                return cam.transform;
+        }
+        return null;
+    }
 
+    void TryPickupObject(Transform cam)
+    {
+        Ray ray = new Ray(cam.position, cam.forward);
+        if (Physics.Raycast(ray, out RaycastHit hit, raycastRange))
+        {
             if (hit.collider.CompareTag("PickupYellow"))
             {
                 heldObject = hit.collider.gameObject;
@@ -61,66 +67,31 @@ public class PickupObjectYellow : MonoBehaviour
                 {
                     heldObjectRb.useGravity = false;
                     heldObjectRb.isKinematic = true;
-
-                    Debug.Log("Objet ramassé: " + heldObject.name); 
-                }
-                else
-                {
-                    Debug.LogWarning("L'objet n'a pas de Rigidbody attaché!");
                 }
             }
-            else
-            {
-                Debug.LogWarning("Raycast ne touche pas un objet avec le tag 'PickupYellow'.");
-            }
-        }
-        else
-        {
-            Debug.LogWarning("Le Raycast n'a pas touché d'objet.");
         }
     }
 
-void KeepObjectCentered()
-{
-    Vector3 targetPosition = cameraTransform.position + cameraTransform.forward * holdDistance;
+    void KeepObjectCentered(Transform cam)
+    {
+        Vector3 targetPosition = cam.position + cam.forward * holdDistance + cam.up * -0.5f;
+        heldObject.transform.position = targetPosition;
 
-   
-    targetPosition += cameraTransform.up *-0.5f; 
-
-
-    heldObject.transform.position = targetPosition;
-
- 
-    Quaternion lookRotation = Quaternion.LookRotation(cameraTransform.forward);
-    heldObject.transform.rotation = lookRotation * Quaternion.Euler(-40, 180, 0);
-}
-
-
+        Quaternion lookRotation = Quaternion.LookRotation(cam.forward);
+        heldObject.transform.rotation = lookRotation * Quaternion.Euler(-40, 180, 0);
+    }
 
     void PlaceObjectOnSignIfClose()
     {
-        // Vérifie la distance avec chaque panneau pour placer l'objet
-        float distanceToSign1 = Vector3.Distance(heldObject.transform.position, sign1Transform.position);
-        float distanceToSign2 = Vector3.Distance(heldObject.transform.position, sign2Transform.position);
-        float distanceToSign3 = Vector3.Distance(heldObject.transform.position, sign3Transform.position);
-        float distanceToSign4 = Vector3.Distance(heldObject.transform.position, sign4Transform.position);
+        float d1 = Vector3.Distance(heldObject.transform.position, sign1Transform.position);
+        float d2 = Vector3.Distance(heldObject.transform.position, sign2Transform.position);
+        float d3 = Vector3.Distance(heldObject.transform.position, sign3Transform.position);
+        float d4 = Vector3.Distance(heldObject.transform.position, sign4Transform.position);
 
-        if (distanceToSign1 <= maxDistanceToSign)
-        {
-            PlaceOnSign(sign1Transform);
-        }
-        else if (distanceToSign2 <= maxDistanceToSign)
-        {
-            PlaceOnSign(sign2Transform);
-        }
-        else if (distanceToSign3 <= maxDistanceToSign)
-        {
-            PlaceOnSign(sign3Transform);
-        }
-        else if (distanceToSign4 <= maxDistanceToSign)
-        {
-            PlaceOnSign(sign4Transform);
-        }
+        if (d1 <= maxDistanceToSign) PlaceOnSign(sign1Transform);
+        else if (d2 <= maxDistanceToSign) PlaceOnSign(sign2Transform);
+        else if (d3 <= maxDistanceToSign) PlaceOnSign(sign3Transform);
+        else if (d4 <= maxDistanceToSign) PlaceOnSign(sign4Transform);
     }
 
     void PlaceOnSign(Transform signTransform)
@@ -134,7 +105,6 @@ void KeepObjectCentered()
         isObjectPlacedOnSign = true;
         heldObject = null;
         heldObjectRb = null;
-        Debug.Log("Objet placé sur le panneau: " + signTransform.name); 
     }
 
     void DropObject()
@@ -145,24 +115,21 @@ void KeepObjectCentered()
             heldObjectRb.isKinematic = false;
         }
 
-        Debug.Log("Objet lâché: " + heldObject.name); 
         heldObject = null;
         heldObjectRb = null;
     }
 
-    void TryPickupObjectFromSign()
+    void TryPickupObjectFromSign(Transform cam)
     {
-        float distanceToSign1 = Vector3.Distance(cameraTransform.position, sign1Transform.position);
-        float distanceToSign2 = Vector3.Distance(cameraTransform.position, sign2Transform.position);
-        float distanceToSign3 = Vector3.Distance(cameraTransform.position, sign3Transform.position);
-        float distanceToSign4 = Vector3.Distance(cameraTransform.position, sign4Transform.position);
+        float d1 = Vector3.Distance(cam.position, sign1Transform.position);
+        float d2 = Vector3.Distance(cam.position, sign2Transform.position);
+        float d3 = Vector3.Distance(cam.position, sign3Transform.position);
+        float d4 = Vector3.Distance(cam.position, sign4Transform.position);
 
-        if (distanceToSign1 <= maxDistanceToSign || distanceToSign2 <= maxDistanceToSign || distanceToSign3 <= maxDistanceToSign || distanceToSign4 <= maxDistanceToSign)
+        if (d1 <= maxDistanceToSign || d2 <= maxDistanceToSign || d3 <= maxDistanceToSign || d4 <= maxDistanceToSign)
         {
-            RaycastHit hit;
-            Ray ray = new Ray(cameraTransform.position, cameraTransform.forward);
-
-            if (Physics.Raycast(ray, out hit, raycastRange))
+            Ray ray = new Ray(cam.position, cam.forward);
+            if (Physics.Raycast(ray, out RaycastHit hit, raycastRange))
             {
                 if (hit.collider.CompareTag("PickupYellow"))
                 {

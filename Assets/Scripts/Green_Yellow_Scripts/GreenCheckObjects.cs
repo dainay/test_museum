@@ -5,17 +5,24 @@ public class GreenCheckObjects : MonoBehaviour
 {
     private Light spotLight;
     private bool isObjectPlaced = false;
+private GreenRaycastClickHandler raycastHandler;
 
-    private static HashSet<string> requiredObjects = new HashSet<string> { "violette", "ballon", "feuille" };
+    private static HashSet<string> requiredObjects = new HashSet<string> { "violette", "ballon", "bougie" };
     private static HashSet<string> placedObjects = new HashSet<string>();
 
     public GreenCameraLookAt cameraScript;
+    public CanvasLightController canvasController;
+
 
     public Camera mainCamera;
     public Camera victoryCamera;
 
-    void Start()
+void Start()
 {
+    raycastHandler = FindObjectOfType<GreenRaycastClickHandler>();
+
+    canvasController = FindObjectOfType<CanvasLightController>();
+
     RenderSettings.ambientLight = Color.white;
 
     if (mainCamera == null)
@@ -29,40 +36,46 @@ public class GreenCheckObjects : MonoBehaviour
 
     if (mainCamera == null || victoryCamera == null)
     {
-        Debug.LogError(" Les caméras ne sont pas correctement assignées !");
+        Debug.LogError("Les caméras ne sont pas correctement assignées !");
     }
 
     spotLight = transform.Find("SpotLight")?.GetComponent<Light>();
-
-    if (spotLight == null)
-        Debug.LogWarning("⚠️ Aucune lumière 'SpotLight' trouvée !");
-    else
+    if (spotLight != null)
+    {
         spotLight.intensity = 0;
+    }
 }
-
 
     void OnTriggerStay(Collider other)
     {
+
         if (spotLight == null || other.gameObject.CompareTag("Player")) return;
 
         string objName = other.gameObject.name;
 
-        if (requiredObjects.Contains(objName) && !placedObjects.Contains(objName))
-        {
-            spotLight.intensity = 50;
-            spotLight.color = Color.green;
-            placedObjects.Add(objName);
-            Debug.Log($"{objName} ajouté");
-        }
-        else if (!requiredObjects.Contains(objName))
-        {
-            spotLight.intensity = 100;
-            spotLight.color = Color.red;
-            isObjectPlaced = true;
-        }
 
-        CheckWinCondition();
+
+      if (requiredObjects.Contains(objName) && !placedObjects.Contains(objName))
+{
+    spotLight.intensity = 50;
+    spotLight.color = Color.green;
+    placedObjects.Add(objName);
+    Debug.Log($"{objName} ajouté");
+
+    if (canvasController != null)
+    {
+        canvasController.ShowCanvas("Bravo, vous avez trouvé l'objet");
     }
+
+    if (raycastHandler != null)
+    {
+        raycastHandler.ActivateGroupByObject(objName);
+    }
+}
+
+    CheckWinCondition(); // Tu peux aussi le mettre ici directement
+}
+    
 
     void OnTriggerExit(Collider other)
     {
