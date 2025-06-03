@@ -20,6 +20,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SalleJaune.unity
     guid: d9d199f00c341c84dbe48c3727a1200d
+  - enabled: 1
+    path: Assets/pinkroom/pinkroom.unity
+    guid: f0f18f8962c9a4d50aabe346a8789eee
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: 9e7be553448fa2546aea5752021cbcf7,
       type: 2}

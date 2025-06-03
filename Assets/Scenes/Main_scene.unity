@@ -1583,6 +1583,11 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: eea50349a07184843871be316e94bec2, type: 2}
+    - target: {fileID: 7063078023722455611, guid: 5c1c92b450a47384693224bf8fa20432,
+        type: 3}
+      propertyPath: targetScene
+      value: pinkroom
+      objectReference: {fileID: 0}
     - target: {fileID: 7770639846852479532, guid: 5c1c92b450a47384693224bf8fa20432,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
