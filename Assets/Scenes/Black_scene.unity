@@ -11222,7 +11222,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: ea5180fbfc4a7ad43936f306a7d8b8ed, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 20276889d5f0856408d2a96771e3477b, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -13175,6 +13175,74 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 445a820630c419443aa575feedf5a23d, type: 3}
+--- !u!1001 &1495271003
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 546462375177608863, guid: a807cdc5e2c0f9c4dac3f75227b368bb,
+        type: 3}
+      propertyPath: m_Name
+      value: PLAYER
+      objectReference: {fileID: 0}
+    - target: {fileID: 4654286719319294852, guid: a807cdc5e2c0f9c4dac3f75227b368bb,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -21.99
+      objectReference: {fileID: 0}
+    - target: {fileID: 4654286719319294852, guid: a807cdc5e2c0f9c4dac3f75227b368bb,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 3.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4654286719319294852, guid: a807cdc5e2c0f9c4dac3f75227b368bb,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 3.82
+      objectReference: {fileID: 0}
+    - target: {fileID: 4654286719319294852, guid: a807cdc5e2c0f9c4dac3f75227b368bb,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7004112
+      objectReference: {fileID: 0}
+    - target: {fileID: 4654286719319294852, guid: a807cdc5e2c0f9c4dac3f75227b368bb,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4654286719319294852, guid: a807cdc5e2c0f9c4dac3f75227b368bb,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.71373963
+      objectReference: {fileID: 0}
+    - target: {fileID: 4654286719319294852, guid: a807cdc5e2c0f9c4dac3f75227b368bb,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4654286719319294852, guid: a807cdc5e2c0f9c4dac3f75227b368bb,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4654286719319294852, guid: a807cdc5e2c0f9c4dac3f75227b368bb,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -91.08
+      objectReference: {fileID: 0}
+    - target: {fileID: 4654286719319294852, guid: a807cdc5e2c0f9c4dac3f75227b368bb,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: a807cdc5e2c0f9c4dac3f75227b368bb, type: 3}
 --- !u!1 &1500117798
 GameObject:
   m_ObjectHideFlags: 0
@@ -16578,7 +16646,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1949115316
 Transform:
@@ -17528,7 +17596,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 329, y: 309}
+  m_AnchoredPosition: {x: 329, y: 221}
   m_SizeDelta: {x: 247.8, y: 444.75}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1001 &364283296960263042
@@ -17725,23 +17793,17 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Peinte \xE0 la R\xE9sidence du Maine, cette toile est l\u2019expression
-    brute des \xE9motions d\u2019Alexandra Mayolle. \r\nLes couleurs s\u2019y m\xEAlent
-    en un ensemble harmonieux et contrast\xE9. Des nuances de bleu d\xE9corent les
-    coins en haut \xE0 gauche et en bas \xE0 droite de la toile, tandis que les deux
-    autres coins oppos\xE9s sont peints de diff\xE9rentes teintes de jaune. Au centre,
-    le rouge et le violet se d\xE9tachent sur un fond vert, marron et blanc. De fins
-    fils noirs segmentent les couleurs, cr\xE9ant une atmosph\xE8re \xE0 la fois
-    compl\xE8te et complexe.\r\nAlexandra, de sa main gauche, retranscrit ainsi son
-    monde sur une toile color\xE9e et abstraite aux tons vari\xE9s. Pour elle, la
-    peinture est une forme d\u2019expression honn\xEAte et transparente, o\xF9 chaque
-    \xE9motion se transforme en un nuancier diversifi\xE9. \r\n\r\n\u201CL\u2019art
-    d\u2019Alexandra est un m\xE9lange entre couleur et \xE9nigme.\u201D - Denise
-    Latour Daudin Mayolle, m\xE8re de l\u2019artiste\r\n\r\nApr\xE8s un accident,
-    Alexandra Mayolle, droiti\xE8re, a \xE9t\xE9 contrainte de peindre de la main
-    gauche.\r\n\r\nSon art a connu de nombreuses \xE9volutions : apr\xE8s avoir commenc\xE9
-    par dessiner des portraits et des sujets figuratifs, elle se consacre aujourd\u2019hui
-    \xE0 la peinture abstraite."
+  m_text: "N\xE9 \xE0 \xC9pinal en 1983, Thomas Fleury est tailleur de pierres de
+    formation, mais c\u2019est dans le dessin qu\u2019il construit ses mondes les
+    plus fascinants. Autodidacte, il d\xE9bute tr\xE8s jeune avec la peinture \xE0
+    l\u2019huile, avant de se tourner vers l\u2019encre de Chine et les Rotring,
+    outils devenus sa signature.\r\nSes \u0153uvres sont de v\xE9ritables explorations
+    graphiques, o\xF9 se d\xE9ploient de vastes cit\xE9s imaginaires. Tant\xF4t merveilleuses,
+    tant\xF4t inqui\xE9tantes, ces villes labyrinthiques s'\xE9tendent sur de grands
+    formats, peupl\xE9es de cr\xE9atures hybrides, de silhouettes \xE9nigmatiques
+    et d\u2019architectures qui semblent d\xE9fier les lois de la gravit\xE9. Chaque
+    trait est pr\xE9cis, chaque d\xE9tail compte. Le regard s\u2019y perd avec fascination,
+    comme happ\xE9 dans un r\xEAve \xE9veill\xE9.. \r\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 603f9c33538968642a3abb523b88a91b, type: 2}
   m_sharedMaterial: {fileID: -2012617884002664389, guid: 603f9c33538968642a3abb523b88a91b,
@@ -17805,7 +17867,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: -138.63535, w: -456.35397}
+  m_margin: {x: 0, y: 0, z: -138.63535, w: -278.7907}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -18517,7 +18579,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 121ac1ef52ec7ce429180eab35328b00, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 57bda2f0b14b14243817ff54b07331ce, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -19728,8 +19790,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0, y: 75}
-  m_SizeDelta: {x: 245.5, y: 289.5}
+  m_AnchoredPosition: {x: -0, y: 113.7}
+  m_SizeDelta: {x: 245.5, y: 380.02}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &7807367233684522104
 GameObject:
@@ -19866,7 +19928,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Alexandra Mayotte
+  m_text: Thomas Fleury
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: b75111684e41db845ab8d6616ebc2457, type: 2}
   m_sharedMaterial: {fileID: 6038102970468927338, guid: b75111684e41db845ab8d6616ebc2457,
@@ -20108,3 +20170,4 @@ SceneRoots:
   - {fileID: 362211893}
   - {fileID: 718903937839081102}
   - {fileID: 500805022}
+  - {fileID: 1495271003}
