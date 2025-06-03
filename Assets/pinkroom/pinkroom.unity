@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
+  m_SkyboxMaterial: {fileID: 2100000, guid: cf09bdd74268f184498d51e302193dbf, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -345,11 +345,31 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -8671818393418226782, guid: 5bb8b355356304305918087c62c4e4fe,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: bfb38d30fd79d462986f3bb47af66776, type: 2}
+    - target: {fileID: -8294908022144530371, guid: 5bb8b355356304305918087c62c4e4fe,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: bfb38d30fd79d462986f3bb47af66776, type: 2}
     - target: {fileID: 919132149155446097, guid: 5bb8b355356304305918087c62c4e4fe,
         type: 3}
       propertyPath: m_Name
       value: treepinkroom
       objectReference: {fileID: 0}
+    - target: {fileID: 1937876482655162735, guid: 5bb8b355356304305918087c62c4e4fe,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: bfb38d30fd79d462986f3bb47af66776, type: 2}
+    - target: {fileID: 8311693207012442225, guid: 5bb8b355356304305918087c62c4e4fe,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: bfb38d30fd79d462986f3bb47af66776, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -455,7 +475,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
   m_LocalPosition: {x: -12.391, y: -2.0146, z: 0.47894}
-  m_LocalScale: {x: 25.554134, y: 4.859527, z: 0.24156219}
+  m_LocalScale: {x: 25.554134, y: 7.7543473, z: 0.24156219}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -1629,11 +1649,31 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -8671818393418226782, guid: 5bb8b355356304305918087c62c4e4fe,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: bfb38d30fd79d462986f3bb47af66776, type: 2}
+    - target: {fileID: -8294908022144530371, guid: 5bb8b355356304305918087c62c4e4fe,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: bfb38d30fd79d462986f3bb47af66776, type: 2}
     - target: {fileID: 919132149155446097, guid: 5bb8b355356304305918087c62c4e4fe,
         type: 3}
       propertyPath: m_Name
       value: treepinkroom (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1937876482655162735, guid: 5bb8b355356304305918087c62c4e4fe,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: bfb38d30fd79d462986f3bb47af66776, type: 2}
+    - target: {fileID: 8311693207012442225, guid: 5bb8b355356304305918087c62c4e4fe,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: bfb38d30fd79d462986f3bb47af66776, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1738,8 +1778,8 @@ Transform:
   m_GameObject: {fileID: 581159006}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0.16789693, z: -0, w: 0.98580456}
-  m_LocalPosition: {x: 6.8594, y: 0.35506, z: -1.1391}
-  m_LocalScale: {x: 3.392025, y: 2.2789607, z: 0.25480002}
+  m_LocalPosition: {x: 6.84, y: 0.35506, z: -1.07}
+  m_LocalScale: {x: 3.392025, y: 3.5189433, z: 0.25480002}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -2312,8 +2352,8 @@ Transform:
   m_GameObject: {fileID: 1100334837}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.28559, y: 0.35506, z: -7.38}
-  m_LocalScale: {x: 3.392025, y: 2.2789607, z: 0.25480002}
+  m_LocalPosition: {x: 0.28559, y: 0.35506, z: -7.18}
+  m_LocalScale: {x: 3.392025, y: 3.4008932, z: 0.25480002}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -2654,7 +2694,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.10935, y: -2.0146, z: -11.42}
-  m_LocalScale: {x: 25.554134, y: 4.859527, z: 0.24156219}
+  m_LocalScale: {x: 25.554134, y: 7.7543473, z: 0.24156219}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -2815,11 +2855,31 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -8671818393418226782, guid: 5bb8b355356304305918087c62c4e4fe,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: bfb38d30fd79d462986f3bb47af66776, type: 2}
+    - target: {fileID: -8294908022144530371, guid: 5bb8b355356304305918087c62c4e4fe,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: bfb38d30fd79d462986f3bb47af66776, type: 2}
     - target: {fileID: 919132149155446097, guid: 5bb8b355356304305918087c62c4e4fe,
         type: 3}
       propertyPath: m_Name
       value: treepinkroom (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1937876482655162735, guid: 5bb8b355356304305918087c62c4e4fe,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: bfb38d30fd79d462986f3bb47af66776, type: 2}
+    - target: {fileID: 8311693207012442225, guid: 5bb8b355356304305918087c62c4e4fe,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: bfb38d30fd79d462986f3bb47af66776, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2925,7 +2985,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.10935, y: -2.0146, z: 13.053}
-  m_LocalScale: {x: 25.554134, y: 4.859527, z: 0.24156219}
+  m_LocalScale: {x: 25.554134, y: 7.7543473, z: 0.24156219}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -3423,7 +3483,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 12.299, y: -2.0146, z: 0.47894}
-  m_LocalScale: {x: 25.554134, y: 4.859527, z: 0.24156219}
+  m_LocalScale: {x: 25.554134, y: 7.7543473, z: 0.24156219}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -4542,8 +4602,8 @@ Light:
   serializedVersion: 10
   m_Type: 1
   m_Shape: 0
-  m_Color: {r: 0.8238426, g: 0.5029815, b: 0.8396226, a: 1}
-  m_Intensity: 1.33
+  m_Color: {r: 0.9056604, g: 0.55638736, b: 0.34603062, a: 1}
+  m_Intensity: 1
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -4601,13 +4661,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1929590619}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.40821788, y: -0.23456968, z: 0.10938163, w: 0.8754261}
-  m_LocalPosition: {x: -4.46, y: 8.23, z: 11.62}
+  m_LocalRotation: {x: 0.102890655, y: -0.95724684, z: -0.25489938, w: -0.090102}
+  m_LocalPosition: {x: -4.38, y: 7.97, z: 11.47}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+  m_LocalEulerAnglesHint: {x: -30.434, y: -188.003, z: -10.09}
 --- !u!1 &1997026866
 GameObject:
   m_ObjectHideFlags: 0
@@ -5054,8 +5114,8 @@ Transform:
   m_GameObject: {fileID: 2035969504}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 0.39662793, z: -0, w: 0.9179795}
-  m_LocalPosition: {x: -6.6705, y: 0.35506, z: -1.0945}
-  m_LocalScale: {x: 3.392025, y: 2.2789607, z: 0.25480002}
+  m_LocalPosition: {x: -6.37, y: 0.35506, z: -0.81}
+  m_LocalScale: {x: 3.392025, y: 3.1941912, z: 0.25480002}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
