@@ -128,7 +128,7 @@ public class wr_SphereController : MonoBehaviour
         
         // Now animate the wall
         Vector3 startPos = controlledWall.transform.position;
-        Vector3 endPos = startPos + Vector3.down * 7f;
+        Vector3 endPos = startPos + Vector3.down * 14f;
         float elapsed = 0f;
 
         while (elapsed < animationDuration)
