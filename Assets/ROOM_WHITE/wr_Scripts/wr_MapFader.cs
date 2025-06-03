@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class MapFader : MonoBehaviour
 {
-    [SerializeField] private Transform player;
+    private Transform player; // No longer serialized
     [SerializeField] private float maxDistance = 15f;
     [SerializeField] private SpriteRenderer mapRenderer;
 
@@ -12,6 +12,17 @@ public class MapFader : MonoBehaviour
 
     void Start()
     {
+        // Find player by tag
+        GameObject playerObject = GameObject.FindWithTag("Player");
+        
+        if (playerObject == null)
+        {
+            Debug.LogError("Player not found. Make sure a GameObject with tag 'Player' exists.");
+            enabled = false; // Disable script to prevent errors
+            return;
+        }
+        
+        player = playerObject.transform;
         initialColor = mapRenderer.color;
         initialColor.a = minAlpha;
         mapRenderer.color = initialColor;
@@ -19,6 +30,9 @@ public class MapFader : MonoBehaviour
 
     void Update()
     {
+        // Skip if player is null (e.g., not found)
+        if (player == null) return;
+
         float distance = Vector3.Distance(transform.position, player.position);
         float normalizedDistance = Mathf.Clamp01(distance / maxDistance);
         
