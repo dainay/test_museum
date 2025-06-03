@@ -25,6 +25,12 @@ public class PaintingInfoManager : MonoBehaviour
         Debug.Log("📦 Сохранено PaintingInfo: " + infoCanvases.Count);
     }
 
+    public List<GameObject> GetInfoCanvases()
+    {
+        return infoCanvases;
+    }
+
+
     public void SetAllActive(bool state)
     {
         foreach (var canvas in infoCanvases)

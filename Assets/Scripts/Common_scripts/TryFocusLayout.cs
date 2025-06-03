@@ -10,16 +10,24 @@ public class TryFocusLayout : MonoBehaviour
     private GameObject videoPlayerObject;
     private VideoPlayer videoPlayer;
 
-    private RawImage staticPreviewImage;
+    [SerializeField] private RawImage staticPreviewImage;
     private RawImage videoDisplayImage;
 
     private bool isInLayoutMode = false;
 
     [SerializeField] private GameObject interviewCanvas;
 
+    public GameObject[] allLayouts;
+    private GameObject playerCanvas;
+
+
 
     void Awake()
     {
+        allLayouts = GameObject.FindGameObjectsWithTag("Layout");
+        playerCanvas = GameObject.FindWithTag("PlayerCanvas");
+
+
         // Найдём камеру layout внутри себя
         layoutCamera = GetComponentInChildren<Camera>(includeInactive: true);
 
@@ -32,27 +40,20 @@ public class TryFocusLayout : MonoBehaviour
         videoPlayerObject = GetComponentInChildren<VideoPlayer>()?.gameObject;
         videoPlayer = videoPlayerObject?.GetComponent<VideoPlayer>();
 
-        // Найдём все RawImage
-        RawImage[] rawImages = GetComponentsInChildren<RawImage>(includeInactive: true);
-        foreach (var img in rawImages)
-        {
-            if (img.name.ToLower().Contains("preview"))
-                staticPreviewImage = img;
-            else if (img.name.ToLower().Contains("video"))
-                videoDisplayImage = img;
-        }
 
         // Начальное состояние
         if (videoPlayerObject != null) videoPlayerObject.SetActive(false);
         if (staticPreviewImage != null) staticPreviewImage.enabled = true;
         if (videoDisplayImage != null) videoDisplayImage.enabled = false;
         if (layoutCamera != null) layoutCamera.gameObject.SetActive(false);
+
+         
     }
 
     public void EnterLayoutMode()
     {
         // Деактивировать все layout-объекты кроме текущего
-        GameObject[] allLayouts = GameObject.FindGameObjectsWithTag("Layout");
+        
         foreach (GameObject layout in allLayouts)
         {
             if (layout != this.gameObject)
@@ -62,7 +63,6 @@ public class TryFocusLayout : MonoBehaviour
         }
 
         // 💥 Отключаем Canvas игрока
-        GameObject playerCanvas = GameObject.FindWithTag("PlayerCanvas");
         if (playerCanvas != null)
         {
             playerCanvas.SetActive(false);
@@ -129,7 +129,6 @@ public class TryFocusLayout : MonoBehaviour
         Cursor.lockState = CursorLockMode.Locked;
 
         // ✅ Возвращаем Canvas игрока
-        GameObject playerCanvas = GameObject.FindWithTag("PlayerCanvas");
         if (playerCanvas != null)
         {
             playerCanvas.SetActive(true);
@@ -137,7 +136,7 @@ public class TryFocusLayout : MonoBehaviour
         }
 
         // Вернём остальные layout обратно
-        GameObject[] allLayouts = GameObject.FindGameObjectsWithTag("Layout");
+       
         foreach (GameObject layout in allLayouts)
         {
             if (layout != this.gameObject)
