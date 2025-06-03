@@ -23,7 +23,7 @@ RenderSettings:
   m_AmbientSkyColor: {r: 0.212, g: 0.227, b: 0.259, a: 1}
   m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
   m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
-  m_AmbientIntensity: 2
+  m_AmbientIntensity: 1.5
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
   m_SkyboxMaterial: {fileID: 2100000, guid: 03508cedbca52224e942ef88bc0aab0b, type: 2}
@@ -923,6 +923,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 121777680}
     m_Modifications:
+    - target: {fileID: 5586036807930096125, guid: b713615301d238b44b2e9f606410fcc9,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7470395397071682203, guid: b713615301d238b44b2e9f606410fcc9,
         type: 3}
       propertyPath: m_Name
@@ -3257,6 +3262,11 @@ PrefabInstance:
       propertyPath: MoveSpeed
       value: 8
       objectReference: {fileID: 0}
+    - target: {fileID: 1878340902189193017, guid: a807cdc5e2c0f9c4dac3f75227b368bb,
+        type: 3}
+      propertyPath: SprintSpeed
+      value: 12
+      objectReference: {fileID: 0}
     - target: {fileID: 2836467078513967909, guid: a807cdc5e2c0f9c4dac3f75227b368bb,
         type: 3}
       propertyPath: m_Enabled
@@ -3444,7 +3454,7 @@ Light:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingLayerMask: 1
-  m_Lightmapping: 2
+  m_Lightmapping: 1
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
@@ -3656,7 +3666,7 @@ PrefabInstance:
     - target: {fileID: 8722288118407586569, guid: 784cdfbc3d8a278478471e7b81472c4a,
         type: 3}
       propertyPath: sphereActivationRadius
-      value: 5
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 9128011908195327228, guid: 784cdfbc3d8a278478471e7b81472c4a,
         type: 3}
@@ -4820,7 +4830,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.021, y: 0.020000055, z: 0.020000001}
+  m_Size: {x: 0.021, y: 0.08, z: 0.020000001}
   m_Center: {x: -0.0000000037252903, y: 0.00000047683716, z: -9.313226e-10}
 --- !u!4 &1387964550 stripped
 Transform:
@@ -5320,6 +5330,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1996033473}
     m_Modifications:
+    - target: {fileID: 5586036807930096125, guid: b713615301d238b44b2e9f606410fcc9,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7470395397071682203, guid: b713615301d238b44b2e9f606410fcc9,
         type: 3}
       propertyPath: m_Name
@@ -5674,6 +5689,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 963355691}
     m_Modifications:
+    - target: {fileID: 5586036807930096125, guid: b713615301d238b44b2e9f606410fcc9,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7470395397071682203, guid: b713615301d238b44b2e9f606410fcc9,
         type: 3}
       propertyPath: m_Name
@@ -8590,7 +8610,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &2519944466014034160
 Transform:
@@ -10737,7 +10757,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: c160e5ff9888cdc49a101a719e7b7c2c, type: 2}
+  - {fileID: 2100000, guid: 159a6fe5441f38046bd5281eb806cd3b, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -11721,7 +11741,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!65 &7178114114438839112
 BoxCollider:
@@ -11931,7 +11951,7 @@ PrefabInstance:
     - target: {fileID: 8722288118407586569, guid: 784cdfbc3d8a278478471e7b81472c4a,
         type: 3}
       propertyPath: sphereActivationRadius
-      value: 7
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 9128011908195327228, guid: 784cdfbc3d8a278478471e7b81472c4a,
         type: 3}
