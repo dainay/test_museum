@@ -1,5 +1,10 @@
 fileFormatVersion: 2
+<<<<<<<< Updated upstream:Assets/Scenes/spawn_boring.unity.meta
 guid: b09a1bcc0c3d9de4c968a47c75177ce9
+========
+guid: bbe796de541750f4a8ad9ce24185b4ec
+folderAsset: yes
+>>>>>>>> Stashed changes:Assets/BASIC_MUSEUM/bs_Matherials.meta
 DefaultImporter:
   externalObjects: {}
   userData: 
