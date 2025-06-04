@@ -27,6 +27,7 @@ public class FadeStarter : MonoBehaviour
         {
             Debug.LogWarning("[FadeStarter] Fade object not found");
         }
+
     }
 
     private IEnumerator FadeFromBlack(CanvasGroup group)

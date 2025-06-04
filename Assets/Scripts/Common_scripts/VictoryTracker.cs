@@ -7,6 +7,7 @@ public class VictoryTracker : MonoBehaviour
 
     private Dictionary<string, bool> victories = new Dictionary<string, bool>();
 
+    [SerializeField] private ScoreTracker scoreTracker;
     void Awake()
     {
         if (Instance == null)
@@ -17,12 +18,24 @@ public class VictoryTracker : MonoBehaviour
         {
             Destroy(gameObject);
         }
+
+
+        if (scoreTracker == null)
+        {
+            Debug.LogWarning("⚠️ ScoreTracker не привязан в инспекторе!");
+        }
+
     }
 
     public void SetVictory(string salleName)
     {
         victories[salleName] = true;
         Debug.Log("🏆 Victoire enregistrée pour: " + salleName);
+
+        if (scoreTracker != null)
+        {
+            scoreTracker.UpdateUI(salleName);
+        }
     }
 
     public bool HasWon(string salleName)
