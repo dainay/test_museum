@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< Updated upstream:Assets/BASIC_MUSEUM/bs_Matherials.meta
 guid: bbe796de541750f4a8ad9ce24185b4ec
+========
+guid: e6e73cdce4a7d904a98b7945962376e1
+>>>>>>>> Stashed changes:Assets/BASIC_MUSEUM/bs_Matherials/bs_Wallpaper_no_map.meta
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}
