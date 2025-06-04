@@ -10,7 +10,7 @@ public class wr_SphereController : MonoBehaviour
     
     [Header("Emission Settings")]
     [SerializeField] private Color glowEmissionColor = Color.red;
-    private float maxEmissionIntensity = 2f;
+    private float maxEmissionIntensity = 4f;
     private MaterialPropertyBlock materialProps;
     private Color baseColor;
     
