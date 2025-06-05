@@ -5,26 +5,19 @@ public class GreenCameraLookAt : MonoBehaviour
     public Transform target;
     public float rotationSpeed = 2.0f;
     private bool shouldRotate = false;
-
     private Quaternion targetRotation;
     private bool allowUserControl = false;
-
-    public GameObject objectToDrop;
-    public float fallSpeed = 50f;
-
+    public GameObject objectToAppear; 
 
     void Start()
+{
+    objectToAppear.SetActive(false);
+    if (objectToAppear != null)
     {
-        GameObject playerCameraRoot = GameObject.Find("PlayerCameraRoot");
-        if (playerCameraRoot != null)
-        {
-            target = playerCameraRoot.transform;
-        }
-        else
-        {
-            Debug.LogError("PlayerCameraRoot introuvable dans la scène !");
-        }
+        objectToAppear.SetActive(false);
     }
+}
+
 
     void Update()
     {
@@ -40,39 +33,24 @@ public class GreenCameraLookAt : MonoBehaviour
             if (Quaternion.Angle(transform.rotation, targetRotation) < 1f)
             {
                 shouldRotate = false;
-    
                 Invoke("AllowUserControl", 0.5f);
-                StartObjectFall();
+                ShowObject();
             }
         }
     }
 
-    public void StartCameraRotation()
-    {
-    
-        shouldRotate = true;
-         StartObjectFall();
-    }
 
     void AllowUserControl()
     {
         allowUserControl = true;
-   
     }
-void StartObjectFall()
-{
-    if (objectToDrop != null)
-    {
-        Rigidbody rb = objectToDrop.GetComponent<Rigidbody>();
-        if (rb != null)
-        {
-            rb.isKinematic = false;
-            rb.useGravity = true;
-            rb.velocity = new Vector3(0, -fallSpeed, 0);
-        }
 
+ public void ShowObject()
+{
+    if (objectToAppear != null)
+    {
+        objectToAppear.SetActive(true);
     }
 }
-
 
 }

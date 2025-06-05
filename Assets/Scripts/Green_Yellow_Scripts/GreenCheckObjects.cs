@@ -5,7 +5,9 @@ public class GreenCheckObjects : MonoBehaviour
 {
     private Light spotLight;
     private bool isObjectPlaced = false;
-private GreenRaycastClickHandler raycastHandler;
+
+    public Material defaultMaterial;
+    public GreenRaycastClickHandler raycastClickHandler;
 
     private static HashSet<string> requiredObjects = new HashSet<string> { "violette", "ballon", "bougie" };
     private static HashSet<string> placedObjects = new HashSet<string>();
@@ -13,69 +15,75 @@ private GreenRaycastClickHandler raycastHandler;
     public GreenCameraLookAt cameraScript;
     public CanvasLightController canvasController;
 
-
     public Camera mainCamera;
     public Camera victoryCamera;
 
-void Start()
-{
-    raycastHandler = FindObjectOfType<GreenRaycastClickHandler>();
+    public Material greenMaterial;
+    public Material redMaterial;
 
-    canvasController = FindObjectOfType<CanvasLightController>();
-
-    RenderSettings.ambientLight = Color.white;
-
-    if (mainCamera == null)
-        mainCamera = GameObject.Find("MainCamera")?.GetComponent<Camera>();
-
-    if (victoryCamera == null)
-        victoryCamera = GameObject.Find("VictoryCamera")?.GetComponent<Camera>();
-
-    if (cameraScript == null)
-        cameraScript = FindObjectOfType<GreenCameraLookAt>();
-
-    if (mainCamera == null || victoryCamera == null)
+    private Dictionary<string, string> objectToTarget = new Dictionary<string, string>
     {
-        Debug.LogError("Les caméras ne sont pas correctement assignées !");
-    }
+        { "ballon", "Cylindre1" },
+        { "potion", "Cylindre1" },
+        { "book", "Cylindre1" },
+        { "violette", "Cylindre2" },
+        { "cuillere", "Cylindre2" },
+        { "orange", "Cylindre2" },
+        { "bougie", "Cylindre3" },
+        { "banane", "Cylindre3" },
+        { "feuille", "Cylindre3" }
+    };
 
-    spotLight = transform.Find("SpotLight")?.GetComponent<Light>();
-    if (spotLight != null)
+    void Start()
     {
-        spotLight.intensity = 0;
+        raycastClickHandler = FindObjectOfType<GreenRaycastClickHandler>();
+        canvasController = FindObjectOfType<CanvasLightController>();
+        RenderSettings.ambientLight = Color.white;
+
+        if (mainCamera == null)
+            mainCamera = GameObject.Find("MainCamera")?.GetComponent<Camera>();
+
+        if (victoryCamera == null)
+            victoryCamera = GameObject.Find("VictoryCamera")?.GetComponent<Camera>();
+
+        if (cameraScript == null)
+            cameraScript = FindObjectOfType<GreenCameraLookAt>();
+
+        if (mainCamera == null || victoryCamera == null)
+            Debug.LogError("Les caméras ne sont pas correctement assignées !");
+
+        spotLight = transform.Find("SpotLight")?.GetComponent<Light>();
+        if (spotLight != null)
+            spotLight.intensity = 0;
     }
-}
 
     void OnTriggerStay(Collider other)
     {
-
         if (spotLight == null || other.gameObject.CompareTag("Player")) return;
 
         string objName = other.gameObject.name;
 
+        if (requiredObjects.Contains(objName) && !placedObjects.Contains(objName))
+        {
+            spotLight.intensity = 50;
+            spotLight.color = Color.green;
+            placedObjects.Add(objName);
+            raycastClickHandler?.TurnOffLightsForObject(objName); 
 
+            SetTargetObjectMaterial(objName, true);
+            canvasController?.ShowCanvas("Bravo, vous avez trouvé l'objet");
+            ScoreManager.Instance?.AddPoint();
 
-      if (requiredObjects.Contains(objName) && !placedObjects.Contains(objName))
-{
-    spotLight.intensity = 50;
-    spotLight.color = Color.green;
-    placedObjects.Add(objName);
-    Debug.Log($"{objName} ajouté");
-
-    if (canvasController != null)
-    {
-        canvasController.ShowCanvas("Bravo, vous avez trouvé l'objet");
+            CheckWinCondition();
+        }
+        else if (!requiredObjects.Contains(objName))
+        {
+            SetTargetObjectMaterial(objName, false);
+            canvasController?.ShowCanvas("Ce n'est pas un objet attendu !");
+            spotLight.intensity = 50;
+            spotLight.color = Color.red;
+        }
     }
-
-    if (raycastHandler != null)
-    {
-        raycastHandler.ActivateGroupByObject(objName);
-    }
-}
-
-    CheckWinCondition(); // Tu peux aussi le mettre ici directement
-}
-    
 
     void OnTriggerExit(Collider other)
     {
@@ -83,13 +91,20 @@ void Start()
 
         string objName = other.gameObject.name;
 
-        if (isObjectPlaced)
+        if (objectToTarget.TryGetValue(objName, out string targetName))
         {
-            isObjectPlaced = false;
-            spotLight.intensity = 0;
+            ApplyMaterialToTarget(targetName, defaultMaterial);
         }
 
-        placedObjects.Remove(objName);
+        spotLight.intensity = 0;
+        spotLight.color = Color.white;
+
+        if (requiredObjects.Contains(objName) && placedObjects.Contains(objName))
+        {
+            placedObjects.Remove(objName);
+            ScoreManager.Instance?.RemovePoint();
+        }
+
         CheckWinCondition();
     }
 
@@ -97,37 +112,71 @@ void Start()
     {
         if (placedObjects.SetEquals(requiredObjects))
         {
-            Invoke("Victory", 3f);
+            Invoke("Victory", 0f);
         }
     }
-void Victory()
-{
-    RenderSettings.ambientLight = Color.white;
 
-    if (mainCamera != null && victoryCamera != null)
+    void Victory()
     {
-        mainCamera.enabled = false;
-        victoryCamera.enabled = true;
-        Invoke("ReturnToMainCamera", 3f);
-    }
-    else
-    {
-        Debug.LogError("Les caméras ne sont pas correctement assignées !");
+        RenderSettings.ambientLight = new Color(68f / 255f, 70f / 255f, 82f / 255f);
+
+        if (mainCamera != null && victoryCamera != null)
+        {
+            mainCamera.enabled = false;
+            victoryCamera.enabled = true;
+            Invoke("ReturnToMainCamera", 3f);
+        }
+        else
+        {
+            Debug.LogError("Les caméras ne sont pas correctement assignées !");
+        }
+
+        if (cameraScript != null)
+        {
+            cameraScript.ShowObject();
+        }
     }
 
-    if (cameraScript != null)
+    void ReturnToMainCamera()
     {
-        cameraScript.StartCameraRotation();
+        if (mainCamera != null && victoryCamera != null)
+        {
+            victoryCamera.enabled = false;
+            mainCamera.enabled = true;
+        }
     }
-}
 
-void ReturnToMainCamera()
-{
-    if (mainCamera != null && victoryCamera != null)
+    private void ApplyMaterialToTarget(string targetName, Material material)
     {
-        victoryCamera.enabled = false;
-        mainCamera.enabled = true;
-    }
-}
+        GameObject target = GameObject.Find(targetName);
 
+        if (target != null)
+        {
+            Renderer rend = target.GetComponentInChildren<Renderer>();
+            if (rend != null)
+            {
+                rend.material = material;
+            }
+            else
+            {
+                Debug.LogWarning($"Pas de Renderer trouvé dans l'objet cible {targetName}");
+            }
+        }
+        else
+        {
+            Debug.LogWarning($"Objet cible {targetName} introuvable !");
+        }
+    }
+
+    private void SetTargetObjectMaterial(string placedObjectName, bool correct)
+    {
+        if (objectToTarget.TryGetValue(placedObjectName, out string targetName))
+        {
+            ApplyMaterialToTarget(targetName, correct ? greenMaterial : redMaterial);
+        }
+        else
+        {
+            Debug.LogWarning($"Aucun cylindre mappé pour l'objet {placedObjectName}");
+        }
+    }
 }
