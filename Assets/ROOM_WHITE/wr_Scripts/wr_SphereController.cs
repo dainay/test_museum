@@ -10,6 +10,7 @@ public class wr_SphereController : MonoBehaviour
     
     [Header("Emission Settings")]
     [SerializeField] private Color glowEmissionColor = Color.red;
+    [SerializeField] private float maxIntensityDistance = 1f;
     private float maxEmissionIntensity = 4f;
     private MaterialPropertyBlock materialProps;
     private Color baseColor;
@@ -17,6 +18,10 @@ public class wr_SphereController : MonoBehaviour
     [Header("Interaction Settings")]
     [SerializeField] private float sphereActivationRadius = 5f;
     private float animationDuration = 2f;
+
+    [Header("Animation Settings")]
+    [SerializeField] private float minAnimationSpeed = 0.1f;
+    [SerializeField] private float maxAnimationSpeed = 1f;
 
     private Renderer sphereRenderer;
     private Collider sphereCollider;
@@ -57,27 +62,33 @@ public class wr_SphereController : MonoBehaviour
 
     void Update()
     {
-        // Skip update if we're animating or not activated
         if (isAnimating || !isActivated) return;
         
         float distance = Vector3.Distance(transform.position, playerCamera.transform.position);
-        bool isInRange = distance <= sphereActivationRadius;
+        float normalizedDistance = Mathf.Clamp01(distance / sphereActivationRadius);
+        float proximityFactor = 1 - normalizedDistance; // 1 = close, 0 = far
 
-        // Emission intensity based on proximity
-        if (isInRange)
+        // Set emission intensity with adjustable peak distance
+        if (distance <= sphereActivationRadius)
         {
-            float normalizedDistance = Mathf.Clamp01(distance / sphereActivationRadius);
-            float intensity = (1 - normalizedDistance) * maxEmissionIntensity;
+            // Calculate intensity with adjustable peak
+            float intensity = CalculateAdjustedIntensity(distance);
             SetEmissionColor(glowEmissionColor * intensity);
         }
         else
         {
-            // Set to base color with low intensity (0.02)
             SetEmissionColor(baseColor * 0.02f);
         }
 
+        // Set animation speed based on proximity
+        if (sphereAnimator != null)
+        {
+            float animationSpeed = Mathf.Lerp(minAnimationSpeed, maxAnimationSpeed, proximityFactor);
+            sphereAnimator.SetFloat("proximityFactor", animationSpeed);
+        }
+
         // Interaction
-        if (Input.GetMouseButtonDown(0) && isInRange && isActivated)
+        if (Input.GetMouseButtonDown(0) && distance <= sphereActivationRadius && isActivated)
         {
             Ray ray = playerCamera.ViewportPointToRay(new Vector3(0.5f, 0.5f, 0));
             if (Physics.Raycast(ray, out RaycastHit hit, sphereActivationRadius))
@@ -87,6 +98,27 @@ public class wr_SphereController : MonoBehaviour
                     DeactivateSphere();
                 }
             }
+        }
+    }
+
+    // New method to calculate intensity with adjustable peak
+    private float CalculateAdjustedIntensity(float distance)
+    {
+        // Calculate the distance where intensity should start decreasing
+        float peakStartDistance = Mathf.Max(0, maxIntensityDistance);
+        
+        // If we're beyond the peak distance, intensity decreases linearly to activation radius
+        if (distance > peakStartDistance)
+        {
+            float range = sphereActivationRadius - peakStartDistance;
+            float t = Mathf.Clamp01((distance - peakStartDistance) / range);
+            return Mathf.Lerp(maxEmissionIntensity, 0, t);
+        }
+        // If we're within the peak distance, intensity decreases as we get closer to the sphere
+        else
+        {
+            float t = Mathf.Clamp01(distance / peakStartDistance);
+            return Mathf.Lerp(maxEmissionIntensity, maxEmissionIntensity * 0.5f, t);
         }
     }
 
