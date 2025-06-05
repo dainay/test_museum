@@ -9,7 +9,7 @@ public class GreenCheckObjects : MonoBehaviour
     public Material defaultMaterial;
     public GreenRaycastClickHandler raycastClickHandler;
 
-    private static HashSet<string> requiredObjects = new HashSet<string> { "violette", "ballon", "bougie" };
+    private static HashSet<string> requiredObjects = new HashSet<string> { "violette", "ballon", "feuille" };
     private static HashSet<string> placedObjects = new HashSet<string>();
 
     public GreenCameraLookAt cameraScript;

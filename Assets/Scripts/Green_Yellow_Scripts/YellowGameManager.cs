@@ -8,10 +8,13 @@ public class YellowGameManager : MonoBehaviour
     public Camera mainCamera;
     public Camera victoryCamera;
 
+    public GameObject victoryBall; 
+
     void Start()
     {
         if (mainCamera != null) mainCamera.gameObject.SetActive(true);
         if (victoryCamera != null) victoryCamera.gameObject.SetActive(false);
+        if (victoryBall != null) victoryBall.SetActive(false); 
     }
 
     public void CheckVictory()
@@ -30,6 +33,8 @@ public class YellowGameManager : MonoBehaviour
         {
             Debug.Log("Victoire ! Toutes les tablettes sont correctement placées.");
 
+            if (victoryBall != null) victoryBall.SetActive(true); 
+
             SwitchToVictoryCamera();
             Invoke(nameof(SwitchBackToMainCamera), 3f);
 
@@ -42,25 +47,13 @@ public class YellowGameManager : MonoBehaviour
 
     void SwitchToVictoryCamera()
     {
-        if (mainCamera != null)
-        {
-            mainCamera.gameObject.SetActive(false);
-        }
-        if (victoryCamera != null)
-        {
-            victoryCamera.gameObject.SetActive(true);
-        }
+        if (mainCamera != null) mainCamera.gameObject.SetActive(false);
+        if (victoryCamera != null) victoryCamera.gameObject.SetActive(true);
     }
 
     void SwitchBackToMainCamera()
     {
-        if (victoryCamera != null)
-        {
-            victoryCamera.gameObject.SetActive(false);
-        }
-        if (mainCamera != null)
-        {
-            mainCamera.gameObject.SetActive(true);
-        }
+        if (victoryCamera != null) victoryCamera.gameObject.SetActive(false);
+        if (mainCamera != null) mainCamera.gameObject.SetActive(true);
     }
 }
