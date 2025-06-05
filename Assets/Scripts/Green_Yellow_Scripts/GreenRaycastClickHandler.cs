@@ -5,13 +5,14 @@ public class GreenRaycastClickHandler : MonoBehaviour
 {
     public CanvasLightController canvasController;
 
-    public float raycastRange = 10f; 
+    public Camera mainCamera;
+    public Camera managerCamera;
 
-    private Light sceneLight; 
-    private float originalIntensity; 
+    public float raycastRange = 10f;
 
-    private Light[] objectLights1; 
-    private Light[] objectLights2; 
+    private Light sceneLight;
+    private Light[] objectLights1;
+    private Light[] objectLights2;
     private Light[] objectLights3;
 
     private bool isGroup1On = false;
@@ -22,6 +23,9 @@ public class GreenRaycastClickHandler : MonoBehaviour
     private Coroutine blinkCoroutine2;
     private Coroutine blinkCoroutine3;
 
+    public Material greenMaterial;
+    public Material redMaterial;
+
 
     void Start()
     {
@@ -30,19 +34,22 @@ public class GreenRaycastClickHandler : MonoBehaviour
         if (lightObject != null)
         {
             sceneLight = lightObject.GetComponent<Light>();
-            originalIntensity = sceneLight.intensity;
+            sceneLight.enabled = false;
         }
         else
         {
             Debug.LogWarning("Aucune lumière nommée 'lightscene' trouvée !");
         }
-        string[] objectNames1 = { "bougie", "banane", "feuille" }; 
-        string[] objectNames2 = { "violette", "cuillere", "orange" }; 
-        string[] objectNames3 = { "book", "ballon", "potion" }; 
 
-        objectLights1 = InitializeLights(objectNames1, Color.yellow);
-        objectLights2 = InitializeLights(objectNames2, Color.blue); 
-        objectLights3 = InitializeLights(objectNames3,new Color(0.5f, 0f, 0.5f));
+        RenderSettings.ambientLight = new Color(51f / 255f, 58f / 255f, 84f / 255f);
+
+        string[] objectNames1 = { "bougie", "banane", "feuille" };
+        string[] objectNames2 = { "violette", "cuillere", "orange" };
+        string[] objectNames3 = { "book", "ballon", "potion" };
+
+        objectLights1 = InitializeLights(objectNames1, new Color(0.9f, 0.4f, 0.1f));
+        objectLights2 = InitializeLights(objectNames2, new Color(0f, 1f, 1f));
+        objectLights3 = InitializeLights(objectNames3, Color.magenta);
     }
 
     Light[] InitializeLights(string[] objectNames, Color color)
@@ -54,7 +61,7 @@ public class GreenRaycastClickHandler : MonoBehaviour
             GameObject obj = GameObject.Find(objectNames[i]);
             if (obj != null)
             {
-                Light objLight = obj.GetComponentInChildren<Light>(); 
+                Light objLight = obj.GetComponentInChildren<Light>();
                 if (objLight != null)
                 {
                     lights[i] = objLight;
@@ -74,96 +81,77 @@ public class GreenRaycastClickHandler : MonoBehaviour
         return lights;
     }
 
-    // void Update()
-    // {
-    //     if (Input.GetMouseButtonDown(0))
-    //     {
-    //         RaycastHit hit;
-    //         Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-
-    //         if (Physics.Raycast(ray, out hit, raycastRange))
-    //         {
-    //             string objectName = hit.collider.gameObject.name;
-    //             if (objectName == "Interrupteur1")
-    //             {
-    //                 ToggleGroup(ref isGroup1On, objectLights1, ref blinkCoroutine1);
-    //             }
-    //             else if (objectName == "Interrupteur2")
-    //             {
-    //                 ToggleGroup(ref isGroup2On, objectLights2, ref blinkCoroutine2);
-    //             }
-    //             else if (objectName == "Interrupteur3")
-    //             {
-    //                 ToggleGroup(ref isGroup3On, objectLights3, ref blinkCoroutine3);
-    //             }
-    //         }
-    //     }
-    // }
-
-void Update()
+   public void SetObjectColor(string objectName, bool isCorrect)
 {
-    if (Input.GetKeyDown(KeyCode.K))
+    GameObject obj = GameObject.Find(objectName);
+
+    if (obj != null)
     {
-        ToggleGroup(ref isGroup1On, objectLights1, ref blinkCoroutine1);
-    }
-    if (Input.GetKeyDown(KeyCode.L))
-    {
-        ToggleGroup(ref isGroup2On, objectLights2, ref blinkCoroutine2);
-    }
-    if (Input.GetKeyDown(KeyCode.J))
-    {
-        ToggleGroup(ref isGroup3On, objectLights3, ref blinkCoroutine3);
+        Renderer rend = obj.GetComponentInChildren<Renderer>();
+
+        if (rend != null)
+        {
+            rend.material = isCorrect ? greenMaterial : redMaterial;
+        }
     }
 }
 
 
-    void ToggleGroup(ref bool groupState, Light[] objectLights, ref Coroutine blinkCoroutine)
+
+    void Update()
     {
-        groupState = !groupState;
+        if (sceneLight != null && sceneLight.enabled)
+            sceneLight.enabled = false;
 
-        if (groupState)
+        if (Input.GetMouseButtonDown(0))
         {
-            if (blinkCoroutine == null)
-                blinkCoroutine = StartCoroutine(BlinkLights(objectLights));
-        }
-        else
-        {
-            if (blinkCoroutine != null)
+            if (Camera.main != null)
+{
+
+            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+            if (Physics.Raycast(ray, out RaycastHit hit, raycastRange))
             {
-                StopCoroutine(blinkCoroutine);
-                blinkCoroutine = null;
+                string objectName = hit.collider.gameObject.name;
+                if (objectName == "Interrupteur1")
+                {
+                    ToggleGroup(ref isGroup1On, objectLights1, ref blinkCoroutine1);
+                }
+                else if (objectName == "Interrupteur2")
+                {
+                    ToggleGroup(ref isGroup2On, objectLights2, ref blinkCoroutine2);
+                }
+                else if (objectName == "Interrupteur3")
+                {
+                    ToggleGroup(ref isGroup3On, objectLights3, ref blinkCoroutine3);
+                }
             }
-            SetLightsIntensity(objectLights, 0);
-        }
-
-        bool anyGroupOn = isGroup1On || isGroup2On || isGroup3On;
-
-        if (sceneLight != null)
-        {
-            if (anyGroupOn)
-            {
-                sceneLight.enabled = false;
-            }
-            else
-            {
-                sceneLight.enabled = true;
-                sceneLight.intensity = originalIntensity;
-            }
-        }
-
-        RenderSettings.ambientLight = anyGroupOn
-    ? new Color(68f / 255f, 70f / 255f, 82f / 255f)
-    : new Color(174f / 255f, 176f / 255f, 202f / 255f);
-
-        string message = !sceneLight.enabled ? "Lumière éteinte" : "Lumière allumée";
-
-        if (canvasController != null)
-        {
-            canvasController.ShowCanvas(message);
-        }
-
-        Debug.Log(message);
+        }}
     }
+
+    
+void ToggleGroup(ref bool groupState, Light[] objectLights, ref Coroutine blinkCoroutine)
+{
+    groupState = !groupState;
+
+    if (groupState)
+    {
+        if (blinkCoroutine == null)
+            blinkCoroutine = StartCoroutine(BlinkLights(objectLights));
+    }
+    else
+    {
+        if (blinkCoroutine != null)
+        {
+            StopCoroutine(blinkCoroutine);
+            blinkCoroutine = null;
+        }
+        SetLightsIntensity(objectLights, 0);
+    }
+
+    string message = groupState ? "Trouvé les objets !" : "Les objets ne s'illuminent plus";
+    canvasController?.ShowCanvas(message);
+    Debug.Log(message);
+}
 
     IEnumerator BlinkLights(Light[] lights)
     {
@@ -173,7 +161,6 @@ void Update()
 
         while (true)
         {
-
             for (float t = 0; t < duration; t += Time.deltaTime)
             {
                 float intensity = Mathf.Lerp(minIntensity, maxIntensity, t / duration);
@@ -189,26 +176,6 @@ void Update()
         }
     }
 
-    public void ActivateGroupByObject(string objectName)
-{
-    if (objectLights1 != null && System.Array.Exists(objectLights1, l => l != null && l.transform.parent.name == objectName))
-    {
-        if (!isGroup1On)
-            ToggleGroup(ref isGroup1On, objectLights1, ref blinkCoroutine1);
-    }
-    else if (objectLights2 != null && System.Array.Exists(objectLights2, l => l != null && l.transform.parent.name == objectName))
-    {
-        if (!isGroup2On)
-            ToggleGroup(ref isGroup2On, objectLights2, ref blinkCoroutine2);
-    }
-    else if (objectLights3 != null && System.Array.Exists(objectLights3, l => l != null && l.transform.parent.name == objectName))
-    {
-        if (!isGroup3On)
-            ToggleGroup(ref isGroup3On, objectLights3, ref blinkCoroutine3);
-    }
-}
-
-
     void SetLightsIntensity(Light[] lights, float intensity)
     {
         foreach (Light l in lights)
@@ -217,4 +184,48 @@ void Update()
                 l.intensity = intensity;
         }
     }
+
+    public void ActivateGroupByObject(string objectName)
+    {
+        if (objectLights1 != null && System.Array.Exists(objectLights1, l => l != null && l.transform.parent.name == objectName))
+        {
+            if (!isGroup1On)
+                ToggleGroup(ref isGroup1On, objectLights1, ref blinkCoroutine1);
+        }
+        else if (objectLights2 != null && System.Array.Exists(objectLights2, l => l != null && l.transform.parent.name == objectName))
+        {
+            if (!isGroup2On)
+                ToggleGroup(ref isGroup2On, objectLights2, ref blinkCoroutine2);
+        }
+        else if (objectLights3 != null && System.Array.Exists(objectLights3, l => l != null && l.transform.parent.name == objectName))
+        {
+            if (!isGroup3On)
+                ToggleGroup(ref isGroup3On, objectLights3, ref blinkCoroutine3);
+        }
+    }
+
+   public void TurnOffLightsForObject(string objectName)
+{
+    Light[][] lightGroups = { objectLights1, objectLights2, objectLights3 };
+
+    foreach (var group in lightGroups)
+    {
+        foreach (var light in group)
+        {
+            if (light != null && light.transform.parent.name == objectName)
+            {
+                foreach (var lightInGroup in group)
+                {
+                    if (lightInGroup != null)
+                    {
+                        lightInGroup.intensity = 0;
+                        lightInGroup.enabled = false;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
 }
