@@ -12891,9 +12891,10 @@ GameObject:
   - component: {fileID: 1910625822}
   - component: {fileID: 1910625826}
   - component: {fileID: 1910625827}
+  - component: {fileID: 1910625828}
   m_Layer: 0
   m_Name: SphereVictoryYellow
-  m_TagString: PickupYellow
+  m_TagString: Prix
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13023,6 +13024,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 48cce05300e5848b1817245e5e04ddc3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1910625828
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1910625821}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97b741f2e4087884091606a1266f739a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  salleName: yellow
 --- !u!1 &1911420772
 GameObject:
   m_ObjectHideFlags: 0
