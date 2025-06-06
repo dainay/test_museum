@@ -906,6 +906,35 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!1 &405826978 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 5732fcb5d4d3e5a4b90c60c30ccb930b,
+    type: 3}
+  m_PrefabInstance: {fileID: 1344396102}
+  m_PrefabAsset: {fileID: 0}
+--- !u!136 &405826980
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 405826978}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.0007
+  m_Height: 0.003
+  m_Direction: 2
+  m_Center: {x: 0, y: 0, z: 0.0011000779}
 --- !u!65 &421955395
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1596,6 +1625,31 @@ PrefabInstance:
       value: 0.004429817
       objectReference: {fileID: 0}
     - target: {fileID: 3668064849468262736, guid: 3389f5cc635d30141a2ecc16c28b8793,
+        type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4278255873
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000835618388113018, guid: 3389f5cc635d30141a2ecc16c28b8793,
+        type: 3}
+      propertyPath: m_text
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000835618388113018, guid: 3389f5cc635d30141a2ecc16c28b8793,
+        type: 3}
+      propertyPath: m_fontColor.b
+      value: 0.003921569
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000835618388113018, guid: 3389f5cc635d30141a2ecc16c28b8793,
+        type: 3}
+      propertyPath: m_fontColor.g
+      value: 0.003921569
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000835618388113018, guid: 3389f5cc635d30141a2ecc16c28b8793,
+        type: 3}
+      propertyPath: m_fontColor.r
+      value: 0.003921569
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000835618388113018, guid: 3389f5cc635d30141a2ecc16c28b8793,
         type: 3}
       propertyPath: m_fontColor32.rgba
       value: 4278255873
@@ -2589,6 +2643,26 @@ PrefabInstance:
         type: 3}
       propertyPath: m_text
       value: Snoopy
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000835618388113018, guid: 3389f5cc635d30141a2ecc16c28b8793,
+        type: 3}
+      propertyPath: m_fontColor.b
+      value: 0.003921569
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000835618388113018, guid: 3389f5cc635d30141a2ecc16c28b8793,
+        type: 3}
+      propertyPath: m_fontColor.g
+      value: 0.003921569
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000835618388113018, guid: 3389f5cc635d30141a2ecc16c28b8793,
+        type: 3}
+      propertyPath: m_fontColor.r
+      value: 0.003921569
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000835618388113018, guid: 3389f5cc635d30141a2ecc16c28b8793,
+        type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4278255873
       objectReference: {fileID: 0}
     - target: {fileID: 6365022097284298506, guid: 3389f5cc635d30141a2ecc16c28b8793,
         type: 3}
@@ -3665,6 +3739,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalRotation.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8728702555015501220, guid: a807cdc5e2c0f9c4dac3f75227b368bb,
+        type: 3}
+      propertyPath: field of view
+      value: 55
+      objectReference: {fileID: 0}
+    - target: {fileID: 9139314847134022035, guid: a807cdc5e2c0f9c4dac3f75227b368bb,
+        type: 3}
+      propertyPath: m_Lens.FieldOfView
+      value: 55
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5141,7 +5225,11 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 5732fcb5d4d3e5a4b90c60c30ccb930b,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 405826980}
   m_SourcePrefab: {fileID: 100100000, guid: 5732fcb5d4d3e5a4b90c60c30ccb930b, type: 3}
 --- !u!1 &1380649636
 GameObject:
@@ -7167,6 +7255,26 @@ PrefabInstance:
         type: 3}
       propertyPath: m_text
       value: "L\u2019\xE9pouvantail distingu\xE9"
+      objectReference: {fileID: 0}
+    - target: {fileID: 4916180120825023323, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_fontColor.b
+      value: 0.003921569
+      objectReference: {fileID: 0}
+    - target: {fileID: 4916180120825023323, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_fontColor.g
+      value: 0.003921569
+      objectReference: {fileID: 0}
+    - target: {fileID: 4916180120825023323, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_fontColor.r
+      value: 0.003921569
+      objectReference: {fileID: 0}
+    - target: {fileID: 4916180120825023323, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4278255873
       objectReference: {fileID: 0}
     - target: {fileID: 5150336306682347031, guid: 518dafb9ccee39747a410d95cb36e6f5,
         type: 3}
