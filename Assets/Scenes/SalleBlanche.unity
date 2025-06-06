@@ -309,41 +309,12 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
---- !u!1 &176984512 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 5732fcb5d4d3e5a4b90c60c30ccb930b,
-    type: 3}
-  m_PrefabInstance: {fileID: 1344396102}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &176984514 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 5732fcb5d4d3e5a4b90c60c30ccb930b,
     type: 3}
   m_PrefabInstance: {fileID: 1344396102}
   m_PrefabAsset: {fileID: 0}
---- !u!136 &176984515
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 176984512}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.0009
-  m_Height: 0.003
-  m_Direction: 2
-  m_Center: {x: 0.000040684823, y: 0.00000014746908, z: 0.0011000773}
 --- !u!65 &183051299
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3126,9 +3097,10 @@ GameObject:
   - component: {fileID: 883987799}
   - component: {fileID: 883987798}
   - component: {fileID: 883987797}
+  - component: {fileID: 883987801}
   m_Layer: 0
   m_Name: FinalSphere
-  m_TagString: Untagged
+  m_TagString: Prix
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3219,6 +3191,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &883987801
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 883987796}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97b741f2e4087884091606a1266f739a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  salleName: white
 --- !u!65 &884719549
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5156,11 +5141,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 5732fcb5d4d3e5a4b90c60c30ccb930b,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 176984515}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5732fcb5d4d3e5a4b90c60c30ccb930b, type: 3}
 --- !u!1 &1380649636
 GameObject:
