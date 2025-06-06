@@ -93,6 +93,8 @@ public class pinkroom_logic : MonoBehaviour
 
         if (Input.GetMouseButtonDown(0))
         {
+            if (chestOpened) return; 
+
             if (player == null)
             {
                 Debug.LogError("[Update] player est NULL !");
@@ -123,6 +125,7 @@ public class pinkroom_logic : MonoBehaviour
                 Debug.Log("[Update] Raycast n'a rien touché.");
             }
         }
+
     }
 
     private void OpenCodePanel()
