@@ -2060,7 +2060,7 @@ MonoBehaviour:
   interviewButton: {fileID: 896128324663055139}
   interviewCanvas: {fileID: 3900156458903481094}
   youtubeButton: {fileID: 8068722311474958968}
-  youtubeURL: https://github.com/dainay/test_museum
+  youtubeURL: https://youtu.be/qRCVqbjsvlw
 --- !u!1 &1570518681327829649
 GameObject:
   m_ObjectHideFlags: 0
