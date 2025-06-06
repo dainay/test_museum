@@ -1,0 +1,166 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &7702302260346283613
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1025645209643395728, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 76.22
+      objectReference: {fileID: 0}
+    - target: {fileID: 1025645209643395728, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 4.61
+      objectReference: {fileID: 0}
+    - target: {fileID: 1025645209643395728, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 124.63
+      objectReference: {fileID: 0}
+    - target: {fileID: 1025645209643395728, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1025645209643395728, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1025645209643395728, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1025645209643395728, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1025645209643395728, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1025645209643395728, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: 1025645209643395728, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1207691362492025031, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: staticPreviewImage
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 2387610332415337777, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_text
+      value: Yves BOURDON
+      objectReference: {fileID: 0}
+    - target: {fileID: 3103159524003484709, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -1246
+      objectReference: {fileID: 0}
+    - target: {fileID: 3103159524003484709, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -365
+      objectReference: {fileID: 0}
+    - target: {fileID: 3714451864634584619, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3714451864634584619, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 183
+      objectReference: {fileID: 0}
+    - target: {fileID: 3714451864634584619, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 402
+      objectReference: {fileID: 0}
+    - target: {fileID: 3738534800305366859, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.032
+      objectReference: {fileID: 0}
+    - target: {fileID: 3738534800305366859, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.158
+      objectReference: {fileID: 0}
+    - target: {fileID: 4562875193754806030, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 33a7d62e1b0c4420682a007db9d8dfe1, type: 2}
+    - target: {fileID: 4916180120825023323, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_margin.w
+      value: -125.282776
+      objectReference: {fileID: 0}
+    - target: {fileID: 5150336306682347031, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_Name
+      value: LAYOUTPRefab (2) Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 6007956954738302995, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_text
+      value: "Avec cette \u0153uvre lumineuse, Yves Bourdon nous invite \xE0 une
+        promenade sensorielle au c\u0153ur d\u2019un paysage imaginaire. Des arabesques
+        l\xE9g\xE8res, des touches \xE9clatantes de jaune, de bleu et d\u2019orang\xE9
+        se m\xEAlent pour \xE9voquer un jardin travers\xE9 par la lumi\xE8re, caress\xE9
+        par le vent.\r\n\nOn devine la silhouette d\u2019un pont, des arbres aux
+        feuillages dansants, et cette impression de transparence qui donne \xE0 la
+        sc\xE8ne un souffle presque musical. Le geste est fluide, le graphisme d\xE9licat,
+        comme une \xE9criture silencieuse de la nature en mouvement.\n\r\nChaque
+        couleur semble vibrer au rythme d\u2019un instant suspendu. Yves capte l\u2019\xE9ph\xE9m\xE8re,
+        la po\xE9sie de la lumi\xE8re filtrant entre les branches, le murmure de
+        l\u2019air sur l\u2019eau. C\u2019est une peinture qui respire, qui apaise,
+        et qui c\xE9l\xE8bre la beaut\xE9 discr\xE8te des choses simples.\r\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6007956954738302995, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_margin.w
+      value: -333.987
+      objectReference: {fileID: 0}
+    - target: {fileID: 6909928605911093964, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 8d3c7ec764e425e40b404a6c1b7e3185, type: 2}
+    - target: {fileID: 7203696373511224816, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: youtubeButton
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7203696373511224816, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: interviewButton
+      value: 
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects:
+    - {fileID: 3994342456107108423, guid: 518dafb9ccee39747a410d95cb36e6f5, type: 3}
+    - {fileID: 1878525996327428254, guid: 518dafb9ccee39747a410d95cb36e6f5, type: 3}
+    - {fileID: 6719254911275806299, guid: 518dafb9ccee39747a410d95cb36e6f5, type: 3}
+    - {fileID: 3390999751268242063, guid: 518dafb9ccee39747a410d95cb36e6f5, type: 3}
+    - {fileID: 432164420176546580, guid: 518dafb9ccee39747a410d95cb36e6f5, type: 3}
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 518dafb9ccee39747a410d95cb36e6f5, type: 3}
