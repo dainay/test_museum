@@ -1,0 +1,296 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &7521432529781145018
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3175924469967994053}
+  - component: {fileID: 7643457143934857939}
+  - component: {fileID: 2719459882703448508}
+  m_Layer: 0
+  m_Name: code
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &3175924469967994053
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7521432529781145018}
+  m_LocalRotation: {x: -0, y: 0.17303468, z: -0, w: 0.98491573}
+  m_LocalPosition: {x: 0, y: 0, z: -1087}
+  m_LocalScale: {x: 1.1292477, y: 1.0009482, z: 0.09675528}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1663657492721397332}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -41.7, y: 258.6}
+  m_SizeDelta: {x: 37.7, y: 52.4}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &7643457143934857939
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7521432529781145018}
+  m_CullTransparentMesh: 1
+--- !u!114 &2719459882703448508
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7521432529781145018}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: 0
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: b75111684e41db845ab8d6616ebc2457, type: 2}
+  m_sharedMaterial: {fileID: 6038102970468927338, guid: b75111684e41db845ab8d6616ebc2457,
+    type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4280638316
+  m_fontColor: {r: 0.421821, g: 0.35834852, b: 0.14613208, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 50.5
+  m_fontSizeBase: 50.5
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 1
+  m_VerticalAlignment: 256
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!1001 &1103100774460129439
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 345227992564074294, guid: 55096ea30b05d4c979a851fb93321320,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.5537716
+      objectReference: {fileID: 0}
+    - target: {fileID: 345227992564074294, guid: 55096ea30b05d4c979a851fb93321320,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.119
+      objectReference: {fileID: 0}
+    - target: {fileID: 1327261715543632672, guid: 55096ea30b05d4c979a851fb93321320,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -1200
+      objectReference: {fileID: 0}
+    - target: {fileID: 1327261715543632672, guid: 55096ea30b05d4c979a851fb93321320,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -499
+      objectReference: {fileID: 0}
+    - target: {fileID: 1754574145132490443, guid: 55096ea30b05d4c979a851fb93321320,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0.146
+      objectReference: {fileID: 0}
+    - target: {fileID: 1887186147799299058, guid: 55096ea30b05d4c979a851fb93321320,
+        type: 3}
+      propertyPath: m_margin.w
+      value: -39.20669
+      objectReference: {fileID: 0}
+    - target: {fileID: 2257119846061477080, guid: 55096ea30b05d4c979a851fb93321320,
+        type: 3}
+      propertyPath: m_text
+      value: "Cette toile, r\xE9alis\xE9e par Dominique LECAM au sein de la D\xE9l\xE9gation
+        de Carcassonne, \xE9voque un tourbillon d\u2019\xE9nergie et de lumi\xE8re.
+        Les couleurs vives et contrast\xE9es semblent s\u2019\xE9lancer dans un mouvement
+        c\xE9leste, comme une \xE9ruption de sensations et d\u2019\xE9motions. Le
+        regard est happ\xE9 par la force de cette composition presque cosmique.\n\nDominique,
+        accompagn\xE9\xB7e de son auxiliaire, a choisi la technique de la coul\xE9e
+        de peinture. Ce proc\xE9d\xE9 lui permet, malgr\xE9 les limitations li\xE9es
+        \xE0 son handicap, d\u2019exprimer pleinement sa cr\xE9ativit\xE9 : en s\xE9lectionnant
+        les teintes, en manipulant la toile, Dominique compose sans contrainte. Chaque
+        geste devient une extension de sa volont\xE9 artistique.\n0.\n\xC0 travers
+        cette \u0153uvre, c\u2019est un monde int\xE9rieur qui se r\xE9v\xE8le, vibrant
+        et libre. Une invitation \xE0 voir au-del\xE0 du visible, \xE0 ressentir
+        l\u2019\xE9lan vital que chacun de nous abrite. Cette peinture est une affirmation
+        puissante : la cr\xE9ation reste un territoire accessible \xE0 tou\xB7te\xB7s.\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 2732891405849375154, guid: 55096ea30b05d4c979a851fb93321320,
+        type: 3}
+      propertyPath: m_Name
+      value: LAYOUTPRefab (2) Variant Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 2767651293913628857, guid: 55096ea30b05d4c979a851fb93321320,
+        type: 3}
+      propertyPath: m_Intensity
+      value: 15.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2767651293913628857, guid: 55096ea30b05d4c979a851fb93321320,
+        type: 3}
+      propertyPath: m_SpotAngle
+      value: 67.351395
+      objectReference: {fileID: 0}
+    - target: {fileID: 2767651293913628857, guid: 55096ea30b05d4c979a851fb93321320,
+        type: 3}
+      propertyPath: m_InnerSpotAngle
+      value: 48.228096
+      objectReference: {fileID: 0}
+    - target: {fileID: 3995966116046878116, guid: 55096ea30b05d4c979a851fb93321320,
+        type: 3}
+      propertyPath: m_text
+      value: 'Dominique Lecam
+
+'
+      objectReference: {fileID: 0}
+    - target: {fileID: 6318924081274321439, guid: 55096ea30b05d4c979a851fb93321320,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -5.1496096
+      objectReference: {fileID: 0}
+    - target: {fileID: 6318924081274321439, guid: 55096ea30b05d4c979a851fb93321320,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.81
+      objectReference: {fileID: 0}
+    - target: {fileID: 6318924081274321439, guid: 55096ea30b05d4c979a851fb93321320,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -12.694513
+      objectReference: {fileID: 0}
+    - target: {fileID: 6318924081274321439, guid: 55096ea30b05d4c979a851fb93321320,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.5310593
+      objectReference: {fileID: 0}
+    - target: {fileID: 6318924081274321439, guid: 55096ea30b05d4c979a851fb93321320,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6318924081274321439, guid: 55096ea30b05d4c979a851fb93321320,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.8473346
+      objectReference: {fileID: 0}
+    - target: {fileID: 6318924081274321439, guid: 55096ea30b05d4c979a851fb93321320,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6318924081274321439, guid: 55096ea30b05d4c979a851fb93321320,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6318924081274321439, guid: 55096ea30b05d4c979a851fb93321320,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 115.846
+      objectReference: {fileID: 0}
+    - target: {fileID: 6318924081274321439, guid: 55096ea30b05d4c979a851fb93321320,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7019609314311174891, guid: 55096ea30b05d4c979a851fb93321320,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.17
+      objectReference: {fileID: 0}
+    - target: {fileID: 8090122530080029160, guid: 55096ea30b05d4c979a851fb93321320,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 1b64b860258cd4b4dbbc1b27c4fd06c6, type: 2}
+    m_RemovedComponents: []
+    m_RemovedGameObjects:
+    - {fileID: 8601941173932866180, guid: 55096ea30b05d4c979a851fb93321320, type: 3}
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 1754574145132490443, guid: 55096ea30b05d4c979a851fb93321320,
+        type: 3}
+      insertIndex: 1
+      addedObject: {fileID: 3175924469967994053}
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 55096ea30b05d4c979a851fb93321320, type: 3}
+--- !u!224 &1663657492721397332 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 1754574145132490443, guid: 55096ea30b05d4c979a851fb93321320,
+    type: 3}
+  m_PrefabInstance: {fileID: 1103100774460129439}
+  m_PrefabAsset: {fileID: 0}
