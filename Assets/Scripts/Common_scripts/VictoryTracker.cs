@@ -8,6 +8,12 @@ public class VictoryTracker : MonoBehaviour
     private Dictionary<string, bool> victories = new Dictionary<string, bool>();
 
     [SerializeField] private ScoreTracker scoreTracker;
+
+    [SerializeField] private List<string> allSalles;   
+
+    [SerializeField] public bool globalSecretUnlocked = false;
+
+
     void Awake()
     {
         if (Instance == null)
@@ -36,6 +42,8 @@ public class VictoryTracker : MonoBehaviour
         {
             scoreTracker.UpdateUI(salleName);
         }
+
+        CheckForAllVictories();
     }
 
     public bool HasWon(string salleName)
@@ -44,4 +52,20 @@ public class VictoryTracker : MonoBehaviour
         Debug.Log("🔍 Vérification pour " + salleName + " : " + won);
         return won;
     }
+
+    private void CheckForAllVictories()
+    {
+        foreach (string salle in allSalles)
+        {
+            if (!victories.ContainsKey(salle) || !victories[salle])
+            {
+                Debug.Log("⛔ Не все salles завершены. Секретная комната закрыта.");
+                return;
+            }
+        }
+
+        globalSecretUnlocked = true;
+        Debug.Log("🎉secret room is OPEN"); 
+    }
+
 }

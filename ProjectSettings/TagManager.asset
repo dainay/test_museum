@@ -23,6 +23,9 @@ TagManager:
   - Switch
   - Prix
   - Raycaster
+  - PickupYellow
+  - sign1
+  - VictoryTracker
   layers:
   - Default
   - TransparentFX

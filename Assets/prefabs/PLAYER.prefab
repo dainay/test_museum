@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 1119733251396355531}
   m_Layer: 0
   m_Name: VictoryTracker
-  m_TagString: Untagged
+  m_TagString: VictoryTracker
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -46,6 +46,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scoreTracker: {fileID: 9123951003812974663}
+  allSalles:
+  - black
+  - pink
+  - yellow
+  - white
+  - green
+  globalSecretUnlocked: 0
 --- !u!114 &1119733251396355531
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1526,7 +1533,7 @@ MonoBehaviour:
     m_Bits: 1
   m_VolumeTrigger: {fileID: 0}
   m_VolumeFrameworkUpdateModeOption: 2
-  m_RenderPostProcessing: 0
+  m_RenderPostProcessing: 1
   m_Antialiasing: 0
   m_AntialiasingQuality: 2
   m_StopNaN: 0
