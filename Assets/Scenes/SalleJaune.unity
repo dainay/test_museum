@@ -5645,6 +5645,11 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: b9c14d12c428a490dbf169eda00710a2, type: 2}
+    - target: {fileID: 4916180120825023323, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_text
+      value: "Paysages g\xE9ologiques, s\xE9dimentations po\xE9tiques.."
+      objectReference: {fileID: 0}
     - target: {fileID: 5150336306682347031, guid: 518dafb9ccee39747a410d95cb36e6f5,
         type: 3}
       propertyPath: m_Name
