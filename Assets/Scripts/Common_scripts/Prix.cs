@@ -1,9 +1,24 @@
-using UnityEngine;
+﻿using UnityEngine;
 
 public class Prix : MonoBehaviour
 {
-    [SerializeField] private BlackRaycasterManager raycasterManager;
+    private BlackRaycasterManager raycasterManager;
     [SerializeField] private string salleName = "black";
+
+
+    void Start()
+    {
+        GameObject raycasterObj = GameObject.FindWithTag("Raycaster");
+        if (raycasterObj != null)
+        {
+            raycasterManager = raycasterObj.GetComponent<BlackRaycasterManager>();
+        }
+
+        if (raycasterManager == null)
+        {
+            Debug.LogError("⚠️ RaycasterManager не найден на объекте с тегом 'Raycaster' !");
+        }
+    }
 
     void Update()
     {
