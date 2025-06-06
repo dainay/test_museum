@@ -3,7 +3,7 @@ using UnityEngine;
 public class PickupObjectYellow : MonoBehaviour
 {
     public float raycastRange = 10f;
-    public float holdDistance = 10f;
+    [SerializeField] public float holdDistance = 50f;
 
     public Transform sign1Transform;
     public Transform sign2Transform;
@@ -74,7 +74,8 @@ public class PickupObjectYellow : MonoBehaviour
 
     void KeepObjectCentered(Transform cam)
     {
-        Vector3 targetPosition = cam.position + cam.forward * holdDistance + cam.up * -0.5f;
+       Vector3 targetPosition = cam.position + cam.forward * holdDistance + cam.right * 1f + cam.up * -0.4f;         
+
         heldObject.transform.position = targetPosition;
 
         Quaternion lookRotation = Quaternion.LookRotation(cam.forward);
