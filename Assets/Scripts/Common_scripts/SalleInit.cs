@@ -4,6 +4,7 @@ using System.Collections;
 public class SalleInit : MonoBehaviour
 {
     [SerializeField] private string salleName;
+    [SerializeField] private GameObject prix;
 
 
     void Start()
@@ -28,5 +29,15 @@ public class SalleInit : MonoBehaviour
 
         PaintingInfoManager.Instance.SetAllActive(show);
 
+        prix.SetActive(!show);
+
+        if (prix != null)
+        {
+            prix.SetActive(!show); // если победа уже есть — скрываем сферу
+        }
+        else
+        {
+            Debug.LogWarning("⚠️ Сфера с prix не назначена!");
+        }
     }
 }

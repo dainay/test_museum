@@ -21,6 +21,7 @@ TagManager:
   - GreenPickup
   - Pickup
   - Switch
+  - Prix
   layers:
   - Default
   - TransparentFX

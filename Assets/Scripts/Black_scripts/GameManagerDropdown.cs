@@ -60,7 +60,7 @@ public class GameManagerDropdown : MonoBehaviour
         glassAnimator.SetTrigger("Drop");
 
         // ✅ Запоминаем победу
-        VictoryTracker.Instance.SetVictory(salleName);
+        //VictoryTracker.Instance.SetVictory(salleName);
 
         // ✅ Активируем все Canvas с описанием
         PaintingInfoManager.Instance.SetAllActive(true);
