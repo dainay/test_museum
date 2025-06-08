@@ -1612,6 +1612,117 @@ Transform:
   - {fileID: 1310686747}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
+--- !u!1001 &504412240
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 601333081273742394, guid: 3389f5cc635d30141a2ecc16c28b8793,
+        type: 3}
+      propertyPath: m_Name
+      value: LAYOUTPRefab (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3668064849468262736, guid: 3389f5cc635d30141a2ecc16c28b8793,
+        type: 3}
+      propertyPath: m_text
+      value: "Dans cette \u0153uvre, Brigitte Piquard poursuit son exploration du
+        visage humain, th\xE8me central de sa d\xE9marche artistique. Deux figures
+        se d\xE9tachent ici sur un fond vibrant de bleus, anim\xE9s par des textures
+        fluides et organiques. Leurs visages, stylis\xE9s et expressifs, sont compos\xE9s
+        de formes g\xE9om\xE9triques et de motifs minutieux en vert et violet, qui
+        semblent pulser au rythme d\u2019une \xE9nergie int\xE9rieure.\r\n\nCe qui
+        frappe d\u2019abord, c\u2019est la vivacit\xE9 des contrastes : entre le
+        fond et les figures, entre les aplats de couleur et les d\xE9tails cisel\xE9s.
+        Pourtant, le tout reste harmonieux. Les couleurs se r\xE9pondent plus qu\u2019elles
+        ne s\u2019opposent, cr\xE9ant un \xE9quilibre visuel riche et dense.\r\n\nPar
+        cette composition libre mais ma\xEEtris\xE9e, l\u2019artiste nous invite
+        \xE0 regarder autrement \u2014 \xE0 ressentir plut\xF4t qu\u2019\xE0 comprendre,
+        \xE0 s\u2019attarder sur les formes, \xE0 \xE9couter ce que les couleurs
+        et les textures ont \xE0 dire.\r\n\r\n- Inspir\xE9e par Van Gogh, Mme Piquard
+        aime confronter les couleurs.\r\n\r\n- Artiste active, Brigitte Piquard a
+        d\xE9j\xE0 peint plus d\u2019une centaine de peintures mais aussi de broderies
+        minutieuses et color\xE9es.\r\n\r\n- Pour elle, un artiste est un individu
+        qui cr\xE9e. Le terme peut donc, pour elle, s\u2019appliquer \xE0 une infinit\xE9
+        de disciplines.\r\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 3668064849468262736, guid: 3389f5cc635d30141a2ecc16c28b8793,
+        type: 3}
+      propertyPath: m_margin.w
+      value: -554.0198
+      objectReference: {fileID: 0}
+    - target: {fileID: 6365022097284298506, guid: 3389f5cc635d30141a2ecc16c28b8793,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 264e65e53a0dfa34d8d74844acd7af51,
+        type: 3}
+    - target: {fileID: 6769069199773957216, guid: 3389f5cc635d30141a2ecc16c28b8793,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 2c5e18aa2d779274d9ef8b03c675891d, type: 2}
+    - target: {fileID: 8792188623557099415, guid: 3389f5cc635d30141a2ecc16c28b8793,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 7.9496546
+      objectReference: {fileID: 0}
+    - target: {fileID: 8792188623557099415, guid: 3389f5cc635d30141a2ecc16c28b8793,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 3.36
+      objectReference: {fileID: 0}
+    - target: {fileID: 8792188623557099415, guid: 3389f5cc635d30141a2ecc16c28b8793,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -5.87
+      objectReference: {fileID: 0}
+    - target: {fileID: 8792188623557099415, guid: 3389f5cc635d30141a2ecc16c28b8793,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8792188623557099415, guid: 3389f5cc635d30141a2ecc16c28b8793,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8792188623557099415, guid: 3389f5cc635d30141a2ecc16c28b8793,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8792188623557099415, guid: 3389f5cc635d30141a2ecc16c28b8793,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8792188623557099415, guid: 3389f5cc635d30141a2ecc16c28b8793,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8792188623557099415, guid: 3389f5cc635d30141a2ecc16c28b8793,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: 8792188623557099415, guid: 3389f5cc635d30141a2ecc16c28b8793,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 601333081273742394, guid: 3389f5cc635d30141a2ecc16c28b8793,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1723066248}
+  m_SourcePrefab: {fileID: 100100000, guid: 3389f5cc635d30141a2ecc16c28b8793, type: 3}
 --- !u!1 &523020174
 GameObject:
   m_ObjectHideFlags: 0
@@ -4965,7 +5076,7 @@ GameObject:
   - component: {fileID: 1552103788}
   - component: {fileID: 1552103787}
   m_Layer: 5
-  m_Name: Canvas
+  m_Name: Game_infos
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5522,6 +5633,48 @@ Transform:
   - {fileID: 1302891929}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1723066243 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 601333081273742394, guid: 3389f5cc635d30141a2ecc16c28b8793,
+    type: 3}
+  m_PrefabInstance: {fileID: 504412240}
+  m_PrefabAsset: {fileID: 0}
+--- !u!328 &1723066248
+VideoPlayer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1723066243}
+  m_Enabled: 1
+  m_VideoClip: {fileID: 32900000, guid: 9285a4e13cfb80d4699b0387dda85cad, type: 3}
+  m_TargetCameraAlpha: 1
+  m_TargetCamera3DLayout: 0
+  m_TargetCamera: {fileID: 0}
+  m_TargetTexture: {fileID: 0}
+  m_TimeReference: 0
+  m_TargetMaterialRenderer: {fileID: 0}
+  m_TargetMaterialProperty: <noninit>
+  m_RenderMode: 2
+  m_AspectRatio: 2
+  m_DataSource: 0
+  m_TimeUpdateMode: 2
+  m_PlaybackSpeed: 1
+  m_AudioOutputMode: 2
+  m_TargetAudioSources:
+  - {fileID: 0}
+  m_DirectAudioVolumes:
+  - 1
+  m_Url: 
+  m_EnabledAudioTracks: 01
+  m_DirectAudioMutes: 00
+  m_ControlledAudioTrackCount: 1
+  m_PlayOnAwake: 1
+  m_SkipOnDrop: 1
+  m_Looping: 0
+  m_WaitForFirstFrame: 1
+  m_FrameReadyEventEnabled: 0
+  m_VideoShaders: []
 --- !u!1001 &1738364411
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6771,6 +6924,113 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   correctMaterial: {fileID: 2100000, guid: f79d8a51f3964444f81e4b1db6a61b07, type: 2}
   wrongMaterial: {fileID: 2100000, guid: aea01e8903b880a4b9fb830bac89a88b, type: 2}
+--- !u!1001 &1926695095
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1025645209643395728, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 7.755643
+      objectReference: {fileID: 0}
+    - target: {fileID: 1025645209643395728, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 4.39
+      objectReference: {fileID: 0}
+    - target: {fileID: 1025645209643395728, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 2.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1025645209643395728, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1025645209643395728, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1025645209643395728, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1025645209643395728, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1025645209643395728, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1025645209643395728, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: 1025645209643395728, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1547689882008621904, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_text
+      value: "Quel est votre artiste pr\xE9f\xE9r\xE9 ?"
+      objectReference: {fileID: 0}
+    - target: {fileID: 4562875193754806030, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e78c7c4e6c14a734eb3921ef13102a38, type: 2}
+    - target: {fileID: 5150336306682347031, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_Name
+      value: LAYOUTPRefab
+      objectReference: {fileID: 0}
+    - target: {fileID: 5724896692529921423, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_text
+      value: "J\u2019aime bien Van Gogh parce qu\u2019il y a des couleurs assez puissantes.
+        Je ne sais pas si vous avez remarqu\xE9, mais moi, j\u2019aime bien contrarier
+        les couleurs, c'est-\xE0-dire noir \xE0 c\xF4t\xE9 de blanc, ou de mettre
+        des couleurs une \xE0 c\xF4t\xE9 de l\u2019autre, sans qu'elles ne se heurtent.\r\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 5990020983876644279, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 4307d323e22d7814195a7489fc73508d,
+        type: 3}
+    - target: {fileID: 6007956954738302995, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_text
+      value: "Brigitte Piquard explore ici ce qu\u2019elle pr\xE9f\xE8re : le visage,
+        reflet de ses \xE9motions et de sa vision du monde.\r\n\r\nIci, le visage
+        bleu intense domine la composition, contrastant avec les touches d\u2019orange
+        qui viennent l\u2019entourer, l\u2019\xE9quilibrer, sans jamais l\u2019\xE9craser.
+        L\u2019artiste aime accorder les couleurs, les confronter m\xEAme, mais \u201Csans
+        qu\u2019elles ne se heurtent\u201D, comme elle le dit dans son interview.\r\n\r\nLa
+        chevelure, les yeux et la bouche sont remplis de nombreux d\xE9tails, chacun
+        avec sa propre texture et son propre rythme visuel qui attire le regard.
+        Chaque partie para\xEEt presque vivante, ind\xE9pendante, mais reste parfaitement
+        li\xE9e au reste du visage. Cette richesse montre \xE0 quel point l\u2019artiste
+        observe avec pr\xE9cision et passion, explorant sans cesse formes et \xE9motions.\r\n"
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 518dafb9ccee39747a410d95cb36e6f5, type: 3}
 --- !u!1 &1927432747
 GameObject:
   m_ObjectHideFlags: 0
@@ -6933,7 +7193,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb6e7c53c5100ac43a38bef8508c6a0f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerCamera: {fileID: 0}
+  playerCamera: {fileID: 1999162801}
   rayDistance: 100
 --- !u!20 &1999162801 stripped
 Camera:
@@ -7928,3 +8188,5 @@ SceneRoots:
   - {fileID: 1930832379}
   - {fileID: 623521617}
   - {fileID: 1185120664}
+  - {fileID: 504412240}
+  - {fileID: 1926695095}
