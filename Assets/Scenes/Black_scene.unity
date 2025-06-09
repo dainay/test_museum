@@ -196,7 +196,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: What is your favourite color?
+  m_text: "Quel r\xF4le a le vert dans la peinture d'Alexandra ?\r"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -369,7 +369,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: What is your favourite color?
+  m_text: "Avez-vous re\xE7u des retours du public ?\r"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -481,8 +481,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 1022.525, y: -94.81}
-  m_SizeDelta: {x: 2045.05, y: 76.18}
+  m_AnchoredPosition: {x: 1022.525, y: -172.08499}
+  m_SizeDelta: {x: 2045.05, y: 230.73}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &35018666
 MonoBehaviour:
@@ -518,10 +518,16 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "-Si quelqu'un aime une fleur qui n'existe qu'\xE0 un exemplaire dans les
-    millions et les millions d'\xE9toiles, \xE7a suffit pour qu'il soit heureux qu\n-Si
-    quelqu'un aime une fleur qui n'existe qu'\xE0 un exemplaire dans les millions
-    et les millions d'\xE9toiles, \xE7a suffit pour qu'il soit heureux qu"
+  m_text: "Avant l'accident, elle dessinait d\xE9j\xE0, mais au fusain. \xC0 l'\xE9poque,
+    c'\xE9taient les fusains. Et elle est arriv\xE9e ici. Il y avait donc Jo\xEBlle,
+    qui l'a initi\xE9e \xE0 la peinture comme \xE7a, etc. Et elle a commenc\xE9 par
+    faire des portraits. Donc, moi, chez moi, j'ai plein de tableaux, donc j'ai un
+    Charlot qui est magnifique. Vous avez l'impression de voir Charlot avec les yeux
+    qui tombent... enfin, c'est extraordinaire !\r\nElle a fait des clowns. Et puis
+    soudain, elle s'est mise \xE0 faire de l'abstrait, il y a quelques ann\xE9es.
+    Et donc, c'est cet assortiment de couleurs qu'elle fait tr\xE8s bien. Enfin bon,
+    moi, j'en ai des somptueux chez moi. Les plus beaux sont chez moi, chez sa s\u0153ur,
+    chez son demi-fr\xE8re."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
@@ -598,6 +604,156 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 35018664}
   m_CullTransparentMesh: 1
+--- !u!1 &38086079
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 38086080}
+  - component: {fileID: 38086083}
+  - component: {fileID: 38086082}
+  - component: {fileID: 38086081}
+  m_Layer: 0
+  m_Name: Text (TMP) (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &38086080
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 38086079}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1259178243}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 1022.525, y: -75.490005}
+  m_SizeDelta: {x: 2045.05, y: 37.54}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &38086081
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 38086079}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3245ec927659c4140ac4f8d17403cc18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_HorizontalFit: 0
+  m_VerticalFit: 2
+--- !u!114 &38086082
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 38086079}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: "Instinctive ? Oui. Oui, oui. Elle est tr\xE8s instinctive. T\u2019es d\u2019accord
+    ? Ouais.\r"
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 33.6
+  m_fontSizeBase: 33.6
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 1
+  m_VerticalAlignment: 256
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &38086083
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 38086079}
+  m_CullTransparentMesh: 1
 --- !u!1 &53486651
 GameObject:
   m_ObjectHideFlags: 0
@@ -670,7 +826,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: What is your favourite color?
+  m_text: "Quel r\xF4le a le noir dans la peinture d'Alexandra ?\r"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -746,6 +902,157 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 53486651}
+  m_CullTransparentMesh: 1
+--- !u!1 &60172794
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 60172795}
+  - component: {fileID: 60172798}
+  - component: {fileID: 60172797}
+  - component: {fileID: 60172796}
+  m_Layer: 0
+  m_Name: Text (TMP) (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &60172795
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 60172794}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1014599499}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 1022.525, y: -94.81}
+  m_SizeDelta: {x: 2045.05, y: 76.18}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &60172796
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 60172794}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3245ec927659c4140ac4f8d17403cc18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_HorizontalFit: 0
+  m_VerticalFit: 2
+--- !u!114 &60172797
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 60172794}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: "Parce que je suis fi\xE8re de ma fille, d\u2019abord. Enfin, toute la
+    famille. Et pour elle aussi quoi. Tout est pour ma fille dans ma vie aujourd'hui,
+    vous savez. Ma fille, sa s\u0153ur et ma petite-fille."
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 33.6
+  m_fontSizeBase: 33.6
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 1
+  m_VerticalAlignment: 256
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &60172798
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 60172794}
   m_CullTransparentMesh: 1
 --- !u!1 &69580615
 GameObject:
@@ -969,8 +1276,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 1172.525, y: -1446.3799}
-  m_SizeDelta: {x: 2145.05, y: 132.9}
+  m_AnchoredPosition: {x: 1172.525, y: -2257.7402}
+  m_SizeDelta: {x: 2145.05, y: 364.72}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &97122897
 MonoBehaviour:
@@ -2159,8 +2466,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1429087978}
   m_HandleRect: {fileID: 1429087977}
   m_Direction: 2
-  m_Value: 1
-  m_Size: 0.5391792
+  m_Value: 0.9999999
+  m_Size: 0.3450099
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -2937,7 +3244,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: What is your favourite color?
+  m_text: "Comment Alexandra a-t-elle d\xE9but\xE9 la peinture ?\r"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -3434,7 +3741,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 1172.525, y: -1826.3599}
+  m_AnchoredPosition: {x: 1172.525, y: -2792.2703}
   m_SizeDelta: {x: 2145.05, y: 132.9}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &384874787
@@ -4134,7 +4441,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: What is your favourite color?
+  m_text: "Quel est son processus cr\xE9atif ?\r"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -4247,8 +4554,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 1172.525, y: -2016.3499}
-  m_SizeDelta: {x: 2145.05, y: 132.9}
+  m_AnchoredPosition: {x: 1172.525, y: -2962.9402}
+  m_SizeDelta: {x: 2145.05, y: 94.26}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &539531017
 MonoBehaviour:
@@ -4568,10 +4875,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "-Si quelqu'un aime une fleur qui n'existe qu'\xE0 un exemplaire dans les
-    millions et les millions d'\xE9toiles, \xE7a suffit pour qu'il soit heureux qu\n-Si
-    quelqu'un aime une fleur qui n'existe qu'\xE0 un exemplaire dans les millions
-    et les millions d'\xE9toiles, \xE7a suffit pour qu'il soit heureux qu"
+  m_text: "Elle a fait pas mal d'expos dans le quartier. Et puis, j'ai jamais, jamais
+    voulu vendre ses tableaux. Elle avait fait une expo au Trocad\xE9ro. Elle a fait
+    deux fois au S\xE9nat, donc, avec Jo\xEBlle.\r"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
@@ -5070,8 +5376,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 1022.525, y: -94.81}
-  m_SizeDelta: {x: 2045.05, y: 76.18}
+  m_AnchoredPosition: {x: 1022.525, y: -114.130005}
+  m_SizeDelta: {x: 2045.05, y: 114.82}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &636956125
 MonoBehaviour:
@@ -5107,10 +5413,11 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "-Si quelqu'un aime une fleur qui n'existe qu'\xE0 un exemplaire dans les
-    millions et les millions d'\xE9toiles, \xE7a suffit pour qu'il soit heureux qu\n-Si
-    quelqu'un aime une fleur qui n'existe qu'\xE0 un exemplaire dans les millions
-    et les millions d'\xE9toiles, \xE7a suffit pour qu'il soit heureux qu"
+  m_text: "Non, des retours, non. Je vous le disais tout \xE0 l'heure, c'est qu\u2019au
+    cours de certaines expos, j'\xE9coutais les gens autour. Et \xE7a, j'ai trouv\xE9
+    \xE7a tr\xE8s touchant parce que les gens \xE9taient intrigu\xE9s. Ils passaient
+    pas comme \xE7a en disant : \u201CC'est quoi, c'est quoi ?\u201D Non.\r\n\xC7a
+    interpelle les gens ? Oui, \xE7a interpelle les gens."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
@@ -5989,8 +6296,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 1022.525, y: -94.81}
-  m_SizeDelta: {x: 2045.05, y: 76.18}
+  m_AnchoredPosition: {x: 1022.525, y: -133.445}
+  m_SizeDelta: {x: 2045.05, y: 153.45}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &702701065
 MonoBehaviour:
@@ -6026,10 +6333,13 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "-Si quelqu'un aime une fleur qui n'existe qu'\xE0 un exemplaire dans les
-    millions et les millions d'\xE9toiles, \xE7a suffit pour qu'il soit heureux qu\n-Si
-    quelqu'un aime une fleur qui n'existe qu'\xE0 un exemplaire dans les millions
-    et les millions d'\xE9toiles, \xE7a suffit pour qu'il soit heureux qu"
+  m_text: "Je pense que c'est des fonds. Souvent, c'est ce que Jo\xEBlle lui faisait
+    faire, je pense. Elle faisait un fond noir. Et apr\xE8s, elle dessine dessus.
+    Ou plus compliqu\xE9 ? \xC7a, je l\u2019ai vu faire. Elle fait les couleurs et
+    apr\xE8s tout ce qu'il reste, elle le fait en noir, donc c'est plus compliqu\xE9.
+    Mais elle y arrive, vous voyez ce que je veux dire. C'est plus un fond qu'une
+    signification tristounette ou je ne sais pas quoi. \xC7a n'a rien \xE0 voir,
+    parce qu'elle est tout sauf triste.\r"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
@@ -6374,8 +6684,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 1022.525, y: -94.81}
-  m_SizeDelta: {x: 2045.05, y: 76.18}
+  m_AnchoredPosition: {x: 1022.525, y: -114.130005}
+  m_SizeDelta: {x: 2045.05, y: 114.82}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &729825033
 MonoBehaviour:
@@ -6411,10 +6721,12 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "-Si quelqu'un aime une fleur qui n'existe qu'\xE0 un exemplaire dans les
-    millions et les millions d'\xE9toiles, \xE7a suffit pour qu'il soit heureux qu\n-Si
-    quelqu'un aime une fleur qui n'existe qu'\xE0 un exemplaire dans les millions
-    et les millions d'\xE9toiles, \xE7a suffit pour qu'il soit heureux qu"
+  m_text: "Elle adore le vert. Et puis l\xE0, je pense que c'est de la lumi\xE8re
+    un peu. Elle a fait foncer clair. Et moi, ce que j'aime beaucoup quand elle dessine,
+    c'est ces cheveux-l\xE0... c\u2019est... je ne sais pas comme on dit. Et le grand
+    tableau dont je vous parlais, il y a \xE7a aussi dedans, et \xE7a donne, je ne
+    sais pas, moi j'ai l'impression que c'est l\xE9ger, \xE7a vole, c'est tr\xE8s
+    joli, c'est fin."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
@@ -6679,8 +6991,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 1022.525, y: -94.81}
-  m_SizeDelta: {x: 2045.05, y: 76.18}
+  m_AnchoredPosition: {x: 1022.525, y: -133.445}
+  m_SizeDelta: {x: 2045.05, y: 153.45}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &765959364
 MonoBehaviour:
@@ -6716,10 +7028,14 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "-Si quelqu'un aime une fleur qui n'existe qu'\xE0 un exemplaire dans les
-    millions et les millions d'\xE9toiles, \xE7a suffit pour qu'il soit heureux qu\n-Si
-    quelqu'un aime une fleur qui n'existe qu'\xE0 un exemplaire dans les millions
-    et les millions d'\xE9toiles, \xE7a suffit pour qu'il soit heureux qu"
+  m_text: "Elle y va comme \xE7a. Vous la collez devant une toile. Et voil\xE0. Et
+    j'ai dans sa chambre un mot qui la d\xE9crit tr\xE8s bien. Une fois qu'elle est
+    dans la toile, elle r\xE9fl\xE9chit. Enfin, moi, je n\u2019y suis pas, je vous
+    r\xE9p\xE8te. Et apr\xE8s, elle y va. C'est de la cr\xE9ation pure, on va dire.
+    Parce qu'elle peint tr\xE8s vite, en plus. Vous voyez, quand elle commence un
+    tableau, il est fait en... combien ? Trois... trois coups, non ? Elle... elle...
+    \xE7a... (pff pff). \xC7a carbure tr\xE8s tr\xE8s vite. Elle reste pas plant\xE9e.
+    Elle r\xE9fl\xE9chit avant, puis apr\xE8s elle d\xE9marre."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
@@ -7177,6 +7493,156 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 804513016}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &816715252
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 816715253}
+  - component: {fileID: 816715256}
+  - component: {fileID: 816715255}
+  - component: {fileID: 816715254}
+  m_Layer: 0
+  m_Name: Text (TMP)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &816715253
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 816715252}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1259178243}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 1022.525, y: -20.11}
+  m_SizeDelta: {x: 2045.05, y: 40.22}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &816715254
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 816715252}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3245ec927659c4140ac4f8d17403cc18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_HorizontalFit: 0
+  m_VerticalFit: 2
+--- !u!114 &816715255
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 816715252}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: "L'art d'Alexandra peut-il \xEAtre d\xE9crit comme de l'art instinctif
+    ?\r"
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 36
+  m_fontSizeBase: 36
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 1
+  m_HorizontalAlignment: 1
+  m_VerticalAlignment: 256
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &816715256
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 816715252}
+  m_CullTransparentMesh: 1
 --- !u!1 &820558176
 GameObject:
   m_ObjectHideFlags: 0
@@ -7384,6 +7850,155 @@ Transform:
   - {fileID: 1368747994}
   m_Father: {fileID: 1273369622}
   m_LocalEulerAnglesHint: {x: -90, y: 180, z: 0}
+--- !u!1 &831085105
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 831085106}
+  - component: {fileID: 831085109}
+  - component: {fileID: 831085108}
+  - component: {fileID: 831085107}
+  m_Layer: 0
+  m_Name: Text (TMP)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &831085106
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 831085105}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1014599499}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 1022.525, y: -20.11}
+  m_SizeDelta: {x: 2045.05, y: 40.22}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &831085107
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 831085105}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3245ec927659c4140ac4f8d17403cc18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_HorizontalFit: 0
+  m_VerticalFit: 2
+--- !u!114 &831085108
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 831085105}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: "Pourquoi avoir accept\xE9 une interview aujourd'hui ?\r"
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 36
+  m_fontSizeBase: 36
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 1
+  m_HorizontalAlignment: 1
+  m_VerticalAlignment: 256
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &831085109
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 831085105}
+  m_CullTransparentMesh: 1
 --- !u!1 &853017251
 GameObject:
   m_ObjectHideFlags: 0
@@ -7490,7 +8105,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: What is your favourite color?
+  m_text: "Quel message Alexandra veut-elle faire passer dans ses peintures ?\r"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -7603,8 +8218,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 1172.525, y: -306.44}
-  m_SizeDelta: {x: 2145.05, y: 132.9}
+  m_AnchoredPosition: {x: 1172.525, y: -692.80505}
+  m_SizeDelta: {x: 2145.05, y: 287.45}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &866448080
 MonoBehaviour:
@@ -7681,8 +8296,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 1022.525, y: -94.81}
-  m_SizeDelta: {x: 2045.05, y: 76.18}
+  m_AnchoredPosition: {x: 1022.525, y: -75.490005}
+  m_SizeDelta: {x: 2045.05, y: 37.54}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &868424251
 MonoBehaviour:
@@ -7718,10 +8333,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "-Si quelqu'un aime une fleur qui n'existe qu'\xE0 un exemplaire dans les
-    millions et les millions d'\xE9toiles, \xE7a suffit pour qu'il soit heureux qu\n-Si
-    quelqu'un aime une fleur qui n'existe qu'\xE0 un exemplaire dans les millions
-    et les millions d'\xE9toiles, \xE7a suffit pour qu'il soit heureux qu"
+  m_text: "Il y a \xC9tienne Daho, c\u2019est \xE9vident. Haa... Grand Corps Malade,
+    qu'elle a vu aussi. Tu l'avais rencontr\xE9 en plus, non ? Oui.\r"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
@@ -8063,7 +8676,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: What is your favourite color?
+  m_text: "D\xE9crivez l'art d'Alexandra en 3 mots.\r"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -9084,6 +9697,85 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1011796931}
   m_CullTransparentMesh: 1
+--- !u!1 &1014599498
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1014599499}
+  - component: {fileID: 1014599501}
+  - component: {fileID: 1014599500}
+  m_Layer: 0
+  m_Name: OneQuestion (16)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1014599499
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1014599498}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 831085106}
+  - {fileID: 60172795}
+  m_Father: {fileID: 1449171825}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 1172.525, y: -3513.5906}
+  m_SizeDelta: {x: 2145.05, y: 132.9}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1014599500
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1014599498}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3245ec927659c4140ac4f8d17403cc18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_HorizontalFit: 0
+  m_VerticalFit: 2
+--- !u!114 &1014599501
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1014599498}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59f8146938fff824cb5fd77236b75775, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Padding:
+    m_Left: 0
+    m_Right: 100
+    m_Top: 0
+    m_Bottom: 0
+  m_ChildAlignment: 0
+  m_Spacing: 16.5
+  m_ChildForceExpandWidth: 1
+  m_ChildForceExpandHeight: 0
+  m_ChildControlWidth: 1
+  m_ChildControlHeight: 0
+  m_ChildScaleWidth: 0
+  m_ChildScaleHeight: 0
+  m_ReverseArrangement: 0
 --- !u!4 &1020309039 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7043118170917029900, guid: fd7793ee95cc1d94ba7fb152e1447933,
@@ -9542,8 +10234,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 1172.525, y: -116.45}
-  m_SizeDelta: {x: 2145.05, y: 132.9}
+  m_AnchoredPosition: {x: 1172.525, y: -270.995}
+  m_SizeDelta: {x: 2145.05, y: 441.99}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1111892854
 MonoBehaviour:
@@ -9657,7 +10349,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: What is your favourite color?
+  m_text: "Quel.le.s artistes l'inspire ?\r"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -10124,8 +10816,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 1172.525, y: -1066.3999}
-  m_SizeDelta: {x: 2145.05, y: 132.9}
+  m_AnchoredPosition: {x: 1172.525, y: -1781.17}
+  m_SizeDelta: {x: 2145.05, y: 171.54001}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1166568062
 MonoBehaviour:
@@ -10635,8 +11327,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 1022.525, y: -94.81}
-  m_SizeDelta: {x: 2045.05, y: 76.18}
+  m_AnchoredPosition: {x: 1022.525, y: -133.445}
+  m_SizeDelta: {x: 2045.05, y: 153.45}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1246694321
 MonoBehaviour:
@@ -10672,10 +11364,14 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "-Si quelqu'un aime une fleur qui n'existe qu'\xE0 un exemplaire dans les
-    millions et les millions d'\xE9toiles, \xE7a suffit pour qu'il soit heureux qu\n-Si
-    quelqu'un aime une fleur qui n'existe qu'\xE0 un exemplaire dans les millions
-    et les millions d'\xE9toiles, \xE7a suffit pour qu'il soit heureux qu"
+  m_text: "Vous savez, c'est compliqu\xE9. D\xE9j\xE0, tout ce qu'elle fait l\xE0
+    depuis 30 ans, c'est de la main gauche parce qu'elle \xE9tait droiti\xE8re quand
+    m\xEAme. Donc, l'APF a fait faire l'ann\xE9e derni\xE8re, elle a fait un tableau
+    immense. Somptueux. Et le si\xE8ge a fait les cartes de v\u0153ux avec son tableau
+    pour envoyer \xE0 toute la France. Moi, j'ai des exemplaires chez moi, c'est
+    somptueux. Et donc, je pense \xE0 \xE7a parce qu'en bas, il est expliqu\xE9 que
+    tout \xE7a, elle le fait de la main gauche alors qu'elle n'\xE9tait pas gauch\xE8re,
+    \xE9videmment."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
@@ -11000,6 +11696,85 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 445a820630c419443aa575feedf5a23d, type: 3}
+--- !u!1 &1259178242
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1259178243}
+  - component: {fileID: 1259178245}
+  - component: {fileID: 1259178244}
+  m_Layer: 0
+  m_Name: OneQuestion (15)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1259178243
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1259178242}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 816715253}
+  - {fileID: 38086080}
+  m_Father: {fileID: 1449171825}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 1172.525, y: -3342.9204}
+  m_SizeDelta: {x: 2145.05, y: 94.26}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1259178244
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1259178242}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3245ec927659c4140ac4f8d17403cc18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_HorizontalFit: 0
+  m_VerticalFit: 2
+--- !u!114 &1259178245
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1259178242}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59f8146938fff824cb5fd77236b75775, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Padding:
+    m_Left: 0
+    m_Right: 100
+    m_Top: 0
+    m_Bottom: 0
+  m_ChildAlignment: 0
+  m_Spacing: 16.5
+  m_ChildForceExpandWidth: 1
+  m_ChildForceExpandHeight: 0
+  m_ChildControlWidth: 1
+  m_ChildControlHeight: 0
+  m_ChildScaleWidth: 0
+  m_ChildScaleHeight: 0
+  m_ReverseArrangement: 0
 --- !u!1 &1273369621
 GameObject:
   m_ObjectHideFlags: 0
@@ -11158,8 +11933,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 1172.525, y: -876.41}
-  m_SizeDelta: {x: 2145.05, y: 132.9}
+  m_AnchoredPosition: {x: 1172.525, y: -1533.225}
+  m_SizeDelta: {x: 2145.05, y: 210.17}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1284658125
 MonoBehaviour:
@@ -11517,6 +12292,158 @@ RectTransform:
   m_AnchoredPosition: {x: 353, y: 336}
   m_SizeDelta: {x: 247.8, y: 444.75}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &1322800213
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1322800214}
+  - component: {fileID: 1322800217}
+  - component: {fileID: 1322800216}
+  - component: {fileID: 1322800215}
+  m_Layer: 0
+  m_Name: Text (TMP) (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1322800214
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1322800213}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1790173797}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 1022.525, y: -94.81}
+  m_SizeDelta: {x: 2045.05, y: 76.18}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1322800215
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1322800213}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3245ec927659c4140ac4f8d17403cc18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_HorizontalFit: 0
+  m_VerticalFit: 2
+--- !u!114 &1322800216
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1322800213}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: "Artiste, c\u2019est une personne qui fait quelque chose de ses mains.
+    Aussi bien artiste peintre, auteur, compositeur. C\u2019est vaste, artiste. \u201CArtiste\u201D,
+    c\u2019est quelqu\u2019un qui essaie de faire son maximum pour \xEAtre expos\xE9.
+    Et qu'il y ait des retours positifs au lieu de n\xE9gatifs.\r"
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 33.6
+  m_fontSizeBase: 33.6
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 1
+  m_VerticalAlignment: 256
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &1322800217
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1322800213}
+  m_CullTransparentMesh: 1
 --- !u!1 &1323396415
 GameObject:
   m_ObjectHideFlags: 0
@@ -12223,7 +13150,7 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 639337107}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.4608208}
+  m_AnchorMin: {x: 0, y: 0.65499}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 20}
@@ -12313,8 +13240,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 1022.525, y: -94.81}
-  m_SizeDelta: {x: 2045.05, y: 76.18}
+  m_AnchoredPosition: {x: 1022.525, y: -249.355}
+  m_SizeDelta: {x: 2045.05, y: 385.27}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1441341656
 MonoBehaviour:
@@ -12350,10 +13277,21 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "-Si quelqu'un aime une fleur qui n'existe qu'\xE0 un exemplaire dans les
-    millions et les millions d'\xE9toiles, \xE7a suffit pour qu'il soit heureux qu\n-Si
-    quelqu'un aime une fleur qui n'existe qu'\xE0 un exemplaire dans les millions
-    et les millions d'\xE9toiles, \xE7a suffit pour qu'il soit heureux qu"
+  m_text: "Alexandra a 53 ans. Elle a eu un accident de voiture \xE0 l'\xE2ge de
+    16 ans. Et aujourd'hui, \xE0 force de se battre, elle est tr\xE8s forte de caract\xE8re.\r\nElle
+    est l\xE0. Et son corps est touch\xE9, surtout \xE0 droite. Et le miracle, m\xEAme
+    pour les m\xE9decins, c'est qu'elle a gard\xE9 toute son intelligence, sa m\xE9moire,
+    parce qu'elle \xE9tait tr\xE8s brillante \xE0 l'\xE9cole.\r\nAlors, c'est vrai
+    qu'elle \xE9tait jeune, donc son cerveau a eu des l\xE9sions, mais des l\xE9sions
+    m\xE9caniques, on va dire, mais pas intellectuelles. Donc \xE7a, pour nous, c'est
+    formidable parce qu'elle est au courant de tout, elle a une m\xE9moire d'\xE9l\xE9phant.
+    Moi, elle me rappelle des trucs d'il y a 20 ans, 25 ans que j'ai compl\xE8tement
+    oubli\xE9s.\r\nEt voil\xE0, donc elle est ici depuis une trentaine d'ann\xE9es.
+    Moi, je viens trois fois par semaine la voir. Sa s\u0153ur, elle vient parce
+    qu'elle a une entreprise, donc elle vient quand elle a le temps, d\xE9jeuner
+    avec nous le dimanche. Enfin, on fait tout pour qu'elle soit heureuse. Je crois
+    qu'elle l'est, qu\u2019elle est \xE9panouie, on va dire. Voil\xE0, \xE7a, \xE7a
+    veut dire super."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
@@ -12472,12 +13410,14 @@ RectTransform:
   - {fileID: 384874786}
   - {fileID: 539531016}
   - {fileID: 2067749699}
+  - {fileID: 1259178243}
+  - {fileID: 1014599499}
   m_Father: {fileID: 1251208955}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: -0.000067922076}
-  m_SizeDelta: {x: 0, y: 2322.7898}
+  m_SizeDelta: {x: 0, y: 3630.0405}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1449171826
 MonoBehaviour:
@@ -12597,7 +13537,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: What is your favourite color?
+  m_text: "Les oeuvres d'Alexandra ont-elles d\xE9j\xE0 \xE9t\xE9 expos\xE9es ?\r"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -13377,8 +14317,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 1172.525, y: -496.43}
-  m_SizeDelta: {x: 2145.05, y: 132.9}
+  m_AnchoredPosition: {x: 1172.525, y: -998.7051}
+  m_SizeDelta: {x: 2145.05, y: 210.17}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1561814933
 MonoBehaviour:
@@ -13893,8 +14833,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 1172.525, y: -1256.3899}
-  m_SizeDelta: {x: 2145.05, y: 132.9}
+  m_AnchoredPosition: {x: 1172.525, y: -1971.16}
+  m_SizeDelta: {x: 2145.05, y: 94.26}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1641134834
 MonoBehaviour:
@@ -14217,8 +15157,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 1022.525, y: -94.81}
-  m_SizeDelta: {x: 2045.05, y: 76.18}
+  m_AnchoredPosition: {x: 1022.525, y: -210.72}
+  m_SizeDelta: {x: 2045.05, y: 308}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1664238098
 MonoBehaviour:
@@ -14254,10 +15194,18 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "-Si quelqu'un aime une fleur qui n'existe qu'\xE0 un exemplaire dans les
-    millions et les millions d'\xE9toiles, \xE7a suffit pour qu'il soit heureux qu\n-Si
-    quelqu'un aime une fleur qui n'existe qu'\xE0 un exemplaire dans les millions
-    et les millions d'\xE9toiles, \xE7a suffit pour qu'il soit heureux qu"
+  m_text: "Color\xE9. \xC9nigmatique. Je pense \xE0 \xE7a parce que je suis all\xE9e
+    avec elle \xE0 des expositions, et j'entendais les gens parler autour de moi.
+    Je ne disais rien, personne ne savait que j'\xE9tais sa maman. Et j'entendais
+    souvent les gens dire : \u201CMais tu as vu l\xE0, on dirait... bla bla bla bla.\u201D
+    selon le tableau. Les gens, avec ses tableaux, voient des choses. \xC0 chaque
+    fois, \xE7a me stup\xE9fie. Je me disais, comment ils font pour voir \xE7a ?
+    Moi, je vois \xE7a au niveau esth\xE9tique, si vous voulez simplement. Mais,
+    \xE7a faisait travailler l'imagination des gens et \xE7a, je l\u2019ai remarqu\xE9
+    plein de fois dans les expos.\r\nEt l\u2019\xE9norme chose qu'elle avait faite
+    il y a deux ans. Si vous voulez, c'est atmosph\xE9rique. On a l'impression qu'on
+    est dans le ciel. Et puis il y a des rayons rouges comme \xE7a. C'est somptueux
+    quoi. \r\nAlors \xE7a fait plus de trois mots, je suis d'accord."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
@@ -14444,7 +15392,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: What is your favourite color?
+  m_text: "Pr\xE9sentez votre fille Alexandra.\r\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -14985,6 +15933,85 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1785781234}
   m_CullTransparentMesh: 1
+--- !u!1 &1790173796
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1790173797}
+  - component: {fileID: 1790173799}
+  - component: {fileID: 1790173798}
+  m_Layer: 0
+  m_Name: OneQuestion (15)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1790173797
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1790173796}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1915558465}
+  - {fileID: 1322800214}
+  m_Father: {fileID: 7270906968044320476}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 1172.525, y: -2434.97}
+  m_SizeDelta: {x: 2145.05, y: 132.9}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1790173798
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1790173796}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3245ec927659c4140ac4f8d17403cc18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_HorizontalFit: 0
+  m_VerticalFit: 2
+--- !u!114 &1790173799
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1790173796}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59f8146938fff824cb5fd77236b75775, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Padding:
+    m_Left: 0
+    m_Right: 100
+    m_Top: 0
+    m_Bottom: 0
+  m_ChildAlignment: 0
+  m_Spacing: 16.5
+  m_ChildForceExpandWidth: 1
+  m_ChildForceExpandHeight: 0
+  m_ChildControlWidth: 1
+  m_ChildControlHeight: 0
+  m_ChildScaleWidth: 0
+  m_ChildScaleHeight: 0
+  m_ReverseArrangement: 0
 --- !u!4 &1797598254 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 905909550662184457, guid: 445a820630c419443aa575feedf5a23d,
@@ -15197,8 +16224,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 1022.525, y: -94.81}
-  m_SizeDelta: {x: 2045.05, y: 76.18}
+  m_AnchoredPosition: {x: 1022.525, y: -75.490005}
+  m_SizeDelta: {x: 2045.05, y: 37.54}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1862474574
 MonoBehaviour:
@@ -15234,10 +16261,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "-Si quelqu'un aime une fleur qui n'existe qu'\xE0 un exemplaire dans les
-    millions et les millions d'\xE9toiles, \xE7a suffit pour qu'il soit heureux qu\n-Si
-    quelqu'un aime une fleur qui n'existe qu'\xE0 un exemplaire dans les millions
-    et les millions d'\xE9toiles, \xE7a suffit pour qu'il soit heureux qu"
+  m_text: "Ben oui. Oui. Beaucoup.\r"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
@@ -15382,8 +16406,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 1172.525, y: -1636.3699}
-  m_SizeDelta: {x: 2145.05, y: 132.9}
+  m_AnchoredPosition: {x: 1172.525, y: -2582.9602}
+  m_SizeDelta: {x: 2145.05, y: 171.54001}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1889059989
 MonoBehaviour:
@@ -15497,7 +16521,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: What is your favourite color?
+  m_text: "D\xE9crivez nous sa technique de peinture.\r"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -15663,6 +16687,155 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1095831297}
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
+--- !u!1 &1915558464
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1915558465}
+  - component: {fileID: 1915558468}
+  - component: {fileID: 1915558467}
+  - component: {fileID: 1915558466}
+  m_Layer: 0
+  m_Name: Text (TMP)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1915558465
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1915558464}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1790173797}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 1022.525, y: -20.11}
+  m_SizeDelta: {x: 2045.05, y: 40.22}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1915558466
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1915558464}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3245ec927659c4140ac4f8d17403cc18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_HorizontalFit: 0
+  m_VerticalFit: 2
+--- !u!114 &1915558467
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1915558464}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: "Qu'est ce qu'un artiste ?\r"
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 36
+  m_fontSizeBase: 36
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 1
+  m_HorizontalAlignment: 1
+  m_VerticalAlignment: 256
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &1915558468
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1915558464}
+  m_CullTransparentMesh: 1
 --- !u!4 &1919581148 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 251894859104084303, guid: ba3a503f210457d43bde8c343112f8e8,
@@ -15704,8 +16877,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 1022.525, y: -94.81}
-  m_SizeDelta: {x: 2045.05, y: 76.18}
+  m_AnchoredPosition: {x: 1022.525, y: -114.130005}
+  m_SizeDelta: {x: 2045.05, y: 114.82}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1921287257
 MonoBehaviour:
@@ -15741,10 +16914,11 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "-Si quelqu'un aime une fleur qui n'existe qu'\xE0 un exemplaire dans les
-    millions et les millions d'\xE9toiles, \xE7a suffit pour qu'il soit heureux qu\n-Si
-    quelqu'un aime une fleur qui n'existe qu'\xE0 un exemplaire dans les millions
-    et les millions d'\xE9toiles, \xE7a suffit pour qu'il soit heureux qu"
+  m_text: "Tu es un peu... herm\xE9tique. Je suis herm\xE9tique. Oui, si vous voulez.
+    Je ne vois pas l'art comme elle. Vous voyez ce que je veux dire. Donc, moi, je
+    suis heureuse de voir ce qu'elle fait. Elle, dans sa t\xEAte, \xE7a a s\xFBrement
+    beaucoup plus de signification que pour moi. Vous voyez ? C'est son domaine quoi.
+    Voil\xE0. Elle s'exprime. C'est comme \xE7a qu'elle s'exprime en fait."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
@@ -16109,7 +17283,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: What is your favourite color?
+  m_text: "Est-ce important d'\xEAtre expos\xE9e ?\r"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -16228,8 +17402,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 1172.525, y: -686.42}
-  m_SizeDelta: {x: 2145.05, y: 132.9}
+  m_AnchoredPosition: {x: 1172.525, y: -1265.965}
+  m_SizeDelta: {x: 2145.05, y: 210.17}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1937085806
 MonoBehaviour:
@@ -16993,8 +18167,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 1172.525, y: -2206.3398}
-  m_SizeDelta: {x: 2145.05, y: 132.9}
+  m_AnchoredPosition: {x: 1172.525, y: -3152.9304}
+  m_SizeDelta: {x: 2145.05, y: 171.54001}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2067749700
 MonoBehaviour:
@@ -19228,6 +20402,198 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 14173141449614378, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 14173141449614378, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 14173141449614378, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 94.26
+      objectReference: {fileID: 0}
+    - target: {fileID: 14173141449614378, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 1172.525
+      objectReference: {fileID: 0}
+    - target: {fileID: 14173141449614378, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -1465.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 311252455611691393, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 311252455611691393, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 311252455611691393, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 2045.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 311252455611691393, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 311252455611691393, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 1022.525
+      objectReference: {fileID: 0}
+    - target: {fileID: 311252455611691393, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -20.11
+      objectReference: {fileID: 0}
+    - target: {fileID: 577660920631613493, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 577660920631613493, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 577660920631613493, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 2045.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 577660920631613493, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 577660920631613493, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 1022.525
+      objectReference: {fileID: 0}
+    - target: {fileID: 577660920631613493, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -94.81
+      objectReference: {fileID: 0}
+    - target: {fileID: 742708853022800102, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 742708853022800102, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 742708853022800102, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 773504493076104627, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 773504493076104627, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 773504493076104627, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 2045.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 773504493076104627, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 773504493076104627, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 1022.525
+      objectReference: {fileID: 0}
+    - target: {fileID: 773504493076104627, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -20.11
+      objectReference: {fileID: 0}
+    - target: {fileID: 810185659685174809, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 810185659685174809, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 810185659685174809, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 2045.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 810185659685174809, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 810185659685174809, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 1022.525
+      objectReference: {fileID: 0}
+    - target: {fileID: 810185659685174809, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -20.11
+      objectReference: {fileID: 0}
+    - target: {fileID: 822658543169537128, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_text
+      value: "Tout, tout m'int\xE9resse. Rien que la toile, m\xEAme nue, m'int\xE9resse.
+        Tous les travaux manuels m'int\xE9ressent. Je fais du dessin, je fais du
+        tricot, de la broderie. C\u2019est tout, je crois.\r"
+      objectReference: {fileID: 0}
+    - target: {fileID: 892672098565157912, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 892672098565157912, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 892672098565157912, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 171.54001
+      objectReference: {fileID: 0}
+    - target: {fileID: 892672098565157912, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 1172.525
+      objectReference: {fileID: 0}
+    - target: {fileID: 892672098565157912, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -1845.6799
+      objectReference: {fileID: 0}
     - target: {fileID: 1025645209643395728, guid: 518dafb9ccee39747a410d95cb36e6f5,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -19278,17 +20644,1050 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1419779215318748191, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_text
+      value: "J\u2019aime bien Van Gogh parce qu\u2019il y a des couleurs assez puissantes.
+        Je ne sais pas si vous avez remarqu\xE9, mais moi, j\u2019aime bien contrarier
+        les couleurs, c'est-\xE0-dire noir \xE0 c\xF4t\xE9 de blanc, ou de mettre
+        des couleurs une \xE0 c\xF4t\xE9 de l\u2019autre, sans qu'elles ne se heurtent.\r"
+      objectReference: {fileID: 0}
+    - target: {fileID: 1602843300670815582, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1602843300670815582, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1602843300670815582, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 2045.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 1602843300670815582, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1602843300670815582, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 1022.525
+      objectReference: {fileID: 0}
+    - target: {fileID: 1602843300670815582, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -94.81
+      objectReference: {fileID: 0}
+    - target: {fileID: 1848775356753441450, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1848775356753441450, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1848775356753441450, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 2045.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 1848775356753441450, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1848775356753441450, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 1022.525
+      objectReference: {fileID: 0}
+    - target: {fileID: 1848775356753441450, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -94.81
+      objectReference: {fileID: 0}
+    - target: {fileID: 1854530405853092059, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_text
+      value: "Aimez-vous recevoir l'avis du public ?\r"
+      objectReference: {fileID: 0}
+    - target: {fileID: 1993532639999463557, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_text
+      value: "Quel est votre artiste pr\xE9f\xE9r\xE9 ?\r"
+      objectReference: {fileID: 0}
+    - target: {fileID: 2177593185769959870, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_text
+      value: "Instinctif, pas trop non. Parce que, quand m\xEAme, il faut savoir
+        o\xF9 on met les couleurs. Sinon, on peut barbouiller du bleu sur un bout
+        de papier, et c'est tout, quoi.\r"
+      objectReference: {fileID: 0}
+    - target: {fileID: 2260937539689540916, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_text
+      value: "Pourquoi peignez-vous des portraits ?\r"
+      objectReference: {fileID: 0}
+    - target: {fileID: 2469768901716836995, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2469768901716836995, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2469768901716836995, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 2045.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 2469768901716836995, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2469768901716836995, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 1022.525
+      objectReference: {fileID: 0}
+    - target: {fileID: 2469768901716836995, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -94.81
+      objectReference: {fileID: 0}
+    - target: {fileID: 2581175174780620058, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2581175174780620058, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2581175174780620058, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2581175174780620058, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 1172.525
+      objectReference: {fileID: 0}
+    - target: {fileID: 2581175174780620058, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -1295.0299
+      objectReference: {fileID: 0}
+    - target: {fileID: 2623371077028053246, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2623371077028053246, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2623371077028053246, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 2045.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 2623371077028053246, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2623371077028053246, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 1022.525
+      objectReference: {fileID: 0}
+    - target: {fileID: 2623371077028053246, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -20.11
+      objectReference: {fileID: 0}
+    - target: {fileID: 2695036668657245633, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_text
+      value: "Est-ce que gagner en visibilit\xE9 est important ?\r"
+      objectReference: {fileID: 0}
+    - target: {fileID: 2720481362461696920, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_text
+      value: "Passion, plaisir et innovation. \r"
+      objectReference: {fileID: 0}
+    - target: {fileID: 2803842975821069091, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2803842975821069091, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2803842975821069091, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 2045.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 2803842975821069091, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 114.82
+      objectReference: {fileID: 0}
+    - target: {fileID: 2803842975821069091, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 1022.525
+      objectReference: {fileID: 0}
+    - target: {fileID: 2803842975821069091, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -114.130005
+      objectReference: {fileID: 0}
+    - target: {fileID: 2924477085394041953, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_text
+      value: "Je n'ai pas de date butoir pour faire un tableau. Il sera fini quand
+        il sera fini. Parce que c\u2019est exactement comme la couture. Si vous regardez,
+        vous vous dites : \u201CAh, \xE7a, il manque...\u201D Un tableau n'est jamais
+        v\xE9ritablement fini.\r"
+      objectReference: {fileID: 0}
+    - target: {fileID: 3087550307152647090, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3087550307152647090, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3087550307152647090, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 2045.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 3087550307152647090, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3087550307152647090, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 1022.525
+      objectReference: {fileID: 0}
+    - target: {fileID: 3087550307152647090, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -20.11
+      objectReference: {fileID: 0}
+    - target: {fileID: 3133474571143512534, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3133474571143512534, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3133474571143512534, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 2045.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 3133474571143512534, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3133474571143512534, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 1022.525
+      objectReference: {fileID: 0}
+    - target: {fileID: 3133474571143512534, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -94.81
+      objectReference: {fileID: 0}
+    - target: {fileID: 3317735108078817463, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_text
+      value: "Auriez-vous un conseil pour les nouveaux artistes ?\r"
+      objectReference: {fileID: 0}
+    - target: {fileID: 3490427766635179881, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3490427766635179881, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3490427766635179881, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 2045.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 3490427766635179881, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3490427766635179881, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 1022.525
+      objectReference: {fileID: 0}
+    - target: {fileID: 3490427766635179881, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -94.81
+      objectReference: {fileID: 0}
+    - target: {fileID: 3558640682319163711, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3558640682319163711, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3558640682319163711, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 2045.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 3558640682319163711, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3558640682319163711, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 1022.525
+      objectReference: {fileID: 0}
+    - target: {fileID: 3558640682319163711, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -20.11
+      objectReference: {fileID: 0}
+    - target: {fileID: 3704395867256695240, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3752746440917020684, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3752746440917020684, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3752746440917020684, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 2045.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 3752746440917020684, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3752746440917020684, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 1022.525
+      objectReference: {fileID: 0}
+    - target: {fileID: 3752746440917020684, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -20.11
+      objectReference: {fileID: 0}
+    - target: {fileID: 3981195391002201199, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3981195391002201199, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3981195391002201199, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0.509136
+      objectReference: {fileID: 0}
+    - target: {fileID: 4052466807415116894, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_text
+      value: "Quels outils utilisez-vous ?\r"
+      objectReference: {fileID: 0}
+    - target: {fileID: 4103991818432497167, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 2551.42
+      objectReference: {fileID: 0}
+    - target: {fileID: 4344062260927376231, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4344062260927376231, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4344062260927376231, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 2045.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 4344062260927376231, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 37.54
+      objectReference: {fileID: 0}
+    - target: {fileID: 4344062260927376231, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 1022.525
+      objectReference: {fileID: 0}
+    - target: {fileID: 4344062260927376231, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -75.490005
+      objectReference: {fileID: 0}
+    - target: {fileID: 4672115546700809992, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4672115546700809992, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4672115546700809992, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 2045.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 4672115546700809992, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4672115546700809992, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 1022.525
+      objectReference: {fileID: 0}
+    - target: {fileID: 4672115546700809992, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -20.11
+      objectReference: {fileID: 0}
+    - target: {fileID: 4697585370342010171, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4697585370342010171, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4697585370342010171, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 2045.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 4697585370342010171, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4697585370342010171, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 1022.525
+      objectReference: {fileID: 0}
+    - target: {fileID: 4697585370342010171, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -20.11
+      objectReference: {fileID: 0}
+    - target: {fileID: 5124612253722695334, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_text
+      value: "Je peins avec un pinceau ou une brosse, qui est une vari\xE9t\xE9 de
+        pinceau. \xC0 poils durs, \xE0 poils souples. Mais c\u2019est tout.\r"
+      objectReference: {fileID: 0}
     - target: {fileID: 5150336306682347031, guid: 518dafb9ccee39747a410d95cb36e6f5,
         type: 3}
       propertyPath: m_Name
       value: Brigitte Piquard
       objectReference: {fileID: 0}
+    - target: {fileID: 5203153897928095688, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5203153897928095688, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5203153897928095688, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 2045.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 5203153897928095688, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5203153897928095688, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 1022.525
+      objectReference: {fileID: 0}
+    - target: {fileID: 5203153897928095688, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -20.11
+      objectReference: {fileID: 0}
+    - target: {fileID: 5246797017776471824, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_text
+      value: "Nommez-vous vos oeuvres ?\r"
+      objectReference: {fileID: 0}
+    - target: {fileID: 5263410218715497215, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5263410218715497215, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5263410218715497215, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 2045.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 5263410218715497215, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5263410218715497215, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 1022.525
+      objectReference: {fileID: 0}
+    - target: {fileID: 5263410218715497215, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -94.81
+      objectReference: {fileID: 0}
+    - target: {fileID: 5599151781272548294, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5599151781272548294, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5599151781272548294, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 171.54001
+      objectReference: {fileID: 0}
+    - target: {fileID: 5599151781272548294, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 1172.525
+      objectReference: {fileID: 0}
+    - target: {fileID: 5599151781272548294, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -135.77
+      objectReference: {fileID: 0}
+    - target: {fileID: 6042445953678398484, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6042445953678398484, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6042445953678398484, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 2045.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 6042445953678398484, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6042445953678398484, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 1022.525
+      objectReference: {fileID: 0}
+    - target: {fileID: 6042445953678398484, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -20.11
+      objectReference: {fileID: 0}
+    - target: {fileID: 6483633485765887524, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6483633485765887524, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6483633485765887524, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 2045.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 6483633485765887524, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 37.54
+      objectReference: {fileID: 0}
+    - target: {fileID: 6483633485765887524, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 1022.525
+      objectReference: {fileID: 0}
+    - target: {fileID: 6483633485765887524, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -75.490005
+      objectReference: {fileID: 0}
+    - target: {fileID: 6609021861803582674, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6609021861803582674, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6609021861803582674, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6609021861803582674, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 1172.525
+      objectReference: {fileID: 0}
+    - target: {fileID: 6609021861803582674, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -573.71
+      objectReference: {fileID: 0}
+    - target: {fileID: 6635846788177180014, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6635846788177180014, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6635846788177180014, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 2045.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 6635846788177180014, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 114.82
+      objectReference: {fileID: 0}
+    - target: {fileID: 6635846788177180014, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 1022.525
+      objectReference: {fileID: 0}
+    - target: {fileID: 6635846788177180014, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -114.130005
+      objectReference: {fileID: 0}
+    - target: {fileID: 6745661203219062636, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_text
+      value: "C\u2019est ce que j\u2019arrive de mieux \xE0 r\xE9aliser en peinture.\r\n\xC9tant
+        donn\xE9 que Jo\xEBlle pr\xE9f\xE8re un tableau rat\xE9 par moi personnellement
+        qu\u2019un tableau trop retouch\xE9, c'est pour \xE7a que la majorit\xE9
+        de mes tableaux sont plut\xF4t s\xE9lectionn\xE9s dans l'art brut. "
+      objectReference: {fileID: 0}
+    - target: {fileID: 6803221100814340227, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_text
+      value: "\xC7a fait tout le temps plaisir, des compliments. On n\u2019est jamais
+        contre. Et si ce n\u2019est pas bon, j\u2019essaie de m'am\xE9liorer. J'\xE9vite
+        de refaire la m\xEAme faute. On apprend en faisant.\r"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6825469390922629128, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_text
+      value: "Comment avez-vous commenc\xE9 la peinture ?\r"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6897068466438866179, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_text
+      value: "Que pr\xE9f\xE9rez-vous dans la peinture ?\r"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6927749950042392124, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_text
+      value: "Je me laisse aller directement, \xE0 l\u2019instinct. Mais de toute
+        fa\xE7on, d\xE8s le d\xE9part, je sais que c'est un visage. Apr\xE8s, qu'il
+        soit droit ou un peu d\xE9form\xE9, c\u2019est selon comme je peux dessiner.\r"
+      objectReference: {fileID: 0}
+    - target: {fileID: 7203696373511224816, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: youtubeURL
+      value: https://youtu.be/Q9Zmm108X8I
+      objectReference: {fileID: 0}
+    - target: {fileID: 7327671553965053427, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7327671553965053427, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7327671553965053427, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7327671553965053427, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 1172.525
+      objectReference: {fileID: 0}
+    - target: {fileID: 7327671553965053427, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -2054.99
+      objectReference: {fileID: 0}
+    - target: {fileID: 8135019395422015076, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_text
+      value: "D\xE9finissez votre art en 3 mots.\r"
+      objectReference: {fileID: 0}
+    - target: {fileID: 8283876646048440358, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_text
+      value: "Votre art est-il instinctif ?\r"
+      objectReference: {fileID: 0}
+    - target: {fileID: 8406059711226971643, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_text
+      value: "On doit essayer de nous faire conna\xEEtre dans le monde entier, le
+        plus possible ! On n'est pas l\xE0, \xE0 ne pouvoir rien faire. C'est pour
+        montrer que m\xEAme si on est immobilis\xE9s, on a tout notre cerveau et
+        la possibilit\xE9 gestuelle de pouvoir faire \xE7a. Parce que malheureusement,
+        beaucoup de personnes croient que parce qu\u2019on est handicap\xE9, on n\u2019est
+        bon \xE0 rien.\r"
+      objectReference: {fileID: 0}
+    - target: {fileID: 8532434164032367046, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8532434164032367046, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8532434164032367046, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8532434164032367046, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 1172.525
+      objectReference: {fileID: 0}
+    - target: {fileID: 8532434164032367046, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -1105.0399
+      objectReference: {fileID: 0}
+    - target: {fileID: 8576080418424224182, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8576080418424224182, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8576080418424224182, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8576080418424224182, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 1172.525
+      objectReference: {fileID: 0}
+    - target: {fileID: 8576080418424224182, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -2244.98
+      objectReference: {fileID: 0}
+    - target: {fileID: 8633618923285260120, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_text
+      value: "On a fait pendant des ann\xE9es des tableaux sans donner de titre.
+        Et maintenant, on donne un titre. Mais c'est fort difficile de donner un
+        titre. Parce que moi, je vais trouver un titre, vous, vous pourriez en trouver
+        un autre.\r"
+      objectReference: {fileID: 0}
+    - target: {fileID: 8635853546772337790, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_text
+      value: "Quel est votre processus cr\xE9atif ?\r"
+      objectReference: {fileID: 0}
+    - target: {fileID: 8667614559084647818, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8667614559084647818, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8667614559084647818, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8667614559084647818, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 1172.525
+      objectReference: {fileID: 0}
+    - target: {fileID: 8667614559084647818, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -1636.3699
+      objectReference: {fileID: 0}
+    - target: {fileID: 8692303271352304027, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8692303271352304027, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8692303271352304027, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 94.26
+      objectReference: {fileID: 0}
+    - target: {fileID: 8692303271352304027, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 1172.525
+      objectReference: {fileID: 0}
+    - target: {fileID: 8692303271352304027, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -744.38
+      objectReference: {fileID: 0}
+    - target: {fileID: 8716951433191912105, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8716951433191912105, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8716951433191912105, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 2045.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 8716951433191912105, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8716951433191912105, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 1022.525
+      objectReference: {fileID: 0}
+    - target: {fileID: 8716951433191912105, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -20.11
+      objectReference: {fileID: 0}
+    - target: {fileID: 8789655887483243845, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_text
+      value: "J\u2019ai toujours aim\xE9 l\u2019art. Je peignais avec mon p\xE8re.
+        Mais \xE0 l'\xE9poque, je faisais de la copie. Et depuis que je suis avec
+        Mme B\xE9card, que vous devez conna\xEEtre\u2026 Elle d\xE9teste la copie.
+        Alors, comme je suis pleine d'imagination, vous n'avez qu'\xE0 voir : tous
+        mes tableaux sont diff\xE9rents. \r"
+      objectReference: {fileID: 0}
+    - target: {fileID: 9021265681800663330, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9021265681800663330, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9021265681800663330, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9021265681800663330, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 1172.525
+      objectReference: {fileID: 0}
+    - target: {fileID: 9021265681800663330, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -915.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 9029245145685987893, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9029245145685987893, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9029245145685987893, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 2045.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 9029245145685987893, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 114.82
+      objectReference: {fileID: 0}
+    - target: {fileID: 9029245145685987893, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 1022.525
+      objectReference: {fileID: 0}
+    - target: {fileID: 9029245145685987893, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -114.130005
+      objectReference: {fileID: 0}
+    - target: {fileID: 9170604041459117989, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9170604041459117989, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9170604041459117989, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 171.54001
+      objectReference: {fileID: 0}
+    - target: {fileID: 9170604041459117989, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 1172.525
+      objectReference: {fileID: 0}
+    - target: {fileID: 9170604041459117989, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -364.40002
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 3048396564258492500, guid: 518dafb9ccee39747a410d95cb36e6f5, type: 3}
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 4103991818432497167, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1790173797}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 518dafb9ccee39747a410d95cb36e6f5, type: 3}
+--- !u!224 &7270906968044320476 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 4103991818432497167, guid: 518dafb9ccee39747a410d95cb36e6f5,
+    type: 3}
+  m_PrefabInstance: {fileID: 7270906968044320475}
+  m_PrefabAsset: {fileID: 0}
 --- !u!222 &7272803941895716419
 CanvasRenderer:
   m_ObjectHideFlags: 0
