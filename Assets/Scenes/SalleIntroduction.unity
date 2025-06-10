@@ -5261,7 +5261,7 @@ PrefabInstance:
     - target: {fileID: 3146569634938404765, guid: c776617802a403941b77a1bcde3b0d07,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 10.35
+      value: 8.08
       objectReference: {fileID: 0}
     - target: {fileID: 3146569634938404765, guid: c776617802a403941b77a1bcde3b0d07,
         type: 3}
@@ -5297,6 +5297,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6343303703450941983, guid: c776617802a403941b77a1bcde3b0d07,
+        type: 3}
+      propertyPath: nextSceneName
+      value: SalleClassique
       objectReference: {fileID: 0}
     - target: {fileID: 6540290819101051003, guid: c776617802a403941b77a1bcde3b0d07,
         type: 3}
