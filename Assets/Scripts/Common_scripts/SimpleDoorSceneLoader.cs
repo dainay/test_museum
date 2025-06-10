@@ -7,14 +7,23 @@ public class SimpleDoorSceneLoader : MonoBehaviour
 {
     [SerializeField] private string nextSceneName;
     [SerializeField] private string spawnPointName = "SpawnPoint";
-    [SerializeField] private TextMeshProUGUI promptText;
-    [SerializeField] private CanvasGroup fadeGroup;
     [SerializeField] private float fadeDuration = 1f;
 
+    private TextMeshProUGUI promptText;
+    private CanvasGroup fadeGroup;
     private bool playerInTrigger = false;
 
     void Start()
     {
+        GameObject hintObj = GameObject.FindGameObjectWithTag("Hint");
+        GameObject fadeObj = GameObject.FindGameObjectWithTag("Fade");
+
+        if (hintObj != null)
+            promptText = hintObj.GetComponent<TextMeshProUGUI>();
+
+        if (fadeObj != null)
+            fadeGroup = fadeObj.GetComponent<CanvasGroup>();
+
         if (promptText != null)
             promptText.gameObject.SetActive(false);
 
@@ -61,29 +70,17 @@ public class SimpleDoorSceneLoader : MonoBehaviour
 
     private IEnumerator FadeAndLoadScene()
     {
+        // передаём имя точки игроку
+        GameObject player = GameObject.FindGameObjectWithTag("Player");
+        var spawnHandler = player?.GetComponent<PlayerSpawnHandler>();
+        if (spawnHandler != null)
+        {
+            spawnHandler.SetSpawnPointName(spawnPointName);
+        }
+
         yield return StartCoroutine(FadeToBlack());
 
-        SceneManager.sceneLoaded += OnSceneLoaded;
         SceneManager.LoadScene(nextSceneName);
-    }
-
-    private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
-    {
-        SceneManager.sceneLoaded -= OnSceneLoaded;
-
-        GameObject player = GameObject.FindGameObjectWithTag("Player");
-        GameObject spawn = GameObject.Find(spawnPointName);
-
-        if (player != null && spawn != null)
-        {
-            player.transform.position = spawn.transform.position;
-            player.transform.rotation = spawn.transform.rotation;
-            Debug.Log($"🧭 Перемещён в: {spawnPointName}");
-        }
-        else
-        {
-            Debug.LogWarning("⚠️ Не найден игрок или SpawnPoint после загрузки сцены");
-        }
     }
 
     private IEnumerator FadeToBlack()
