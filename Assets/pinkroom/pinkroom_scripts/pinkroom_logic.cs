@@ -28,6 +28,9 @@ public class pinkroom_logic : MonoBehaviour
     [SerializeField] private Vector3 rotationOffset = new Vector3(0f, 90f, 0f);
     [SerializeField] private float openDuration = 1f;
 
+    [Header("Cameras")]
+    [SerializeField] private Camera secondaryCamera;
+
     private Camera mainCamera;
     private bool panelOpened = false;
     private bool chestOpened = false;
@@ -43,11 +46,13 @@ public class pinkroom_logic : MonoBehaviour
         else
             Debug.LogError("[Start] Aucun objet avec le tag 'Player' trouvé !");
 
-
         if (codeCanvas != null)
             codeCanvas.enabled = false;
         else
             Debug.LogWarning("[Start] codeCanvas est NULL !");
+
+        if (secondaryCamera != null)
+            secondaryCamera.enabled = false;
 
         for (int i = 0; i < 4; i++)
         {
@@ -93,7 +98,7 @@ public class pinkroom_logic : MonoBehaviour
 
         if (Input.GetMouseButtonDown(0))
         {
-            if (chestOpened) return; 
+            if (chestOpened) return;
 
             if (player == null)
             {
@@ -125,12 +130,19 @@ public class pinkroom_logic : MonoBehaviour
                 Debug.Log("[Update] Raycast n'a rien touché.");
             }
         }
-
     }
 
     private void OpenCodePanel()
     {
         panelOpened = true;
+
+        if (secondaryCamera != null && mainCamera != null)
+        {
+            mainCamera.enabled = false;
+            secondaryCamera.enabled = true;
+            Debug.Log("[OpenCodePanel] Caméra secondaire activée");
+        }
+
         if (codeCanvas != null)
         {
             codeCanvas.enabled = true;
@@ -140,9 +152,18 @@ public class pinkroom_logic : MonoBehaviour
         }
     }
 
+
     public void CloseCodePanel()
     {
         panelOpened = false;
+
+        if (secondaryCamera != null && mainCamera != null)
+        {
+            secondaryCamera.enabled = false;
+            mainCamera.enabled = true;
+            Debug.Log("[CloseCodePanel] Caméra principale réactivée");
+        }
+
         if (codeCanvas != null)
         {
             codeCanvas.enabled = false;
@@ -151,6 +172,7 @@ public class pinkroom_logic : MonoBehaviour
             Debug.Log("[CloseCodePanel] Canvas fermé");
         }
     }
+
 
     public void IncrementDigit(int index)
     {
@@ -219,6 +241,13 @@ public class pinkroom_logic : MonoBehaviour
         }
 
         chestOpened = true;
+
+        if (secondaryCamera != null)
+        {
+            if (mainCamera != null) mainCamera.enabled = true;
+            secondaryCamera.enabled = false;
+            Debug.Log("[OpenChest] Caméra secondaire activée");
+        }
 
         Vector3 startPos = chestToOpen.position;
         Vector3 endPos = startPos + positionOffset;
