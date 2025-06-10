@@ -654,6 +654,7 @@ MonoBehaviour:
   positionOffset: {x: 0.5, y: 1, z: -0.1}
   rotationOffset: {x: 0, y: 0, z: -41}
   openDuration: 1
+  secondaryCamera: {fileID: 1310667350}
 --- !u!1 &90424969
 GameObject:
   m_ObjectHideFlags: 0
@@ -14591,7 +14592,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1310667348
 MonoBehaviour:
   m_ObjectHideFlags: 0
