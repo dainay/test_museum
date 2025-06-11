@@ -1,281 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &2196913730968010032
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 3555026822483539387}
-  - component: {fileID: 4584026495660326449}
-  - component: {fileID: 2050490097591272441}
-  m_Layer: 0
-  m_Name: FastQ (1)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
-  m_IsActive: 1
---- !u!224 &3555026822483539387
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2196913730968010032}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.7699999, y: 0.9700001, z: 0.9700001}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 3956224605343470542}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 1}
-  m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: -668}
-  m_SizeDelta: {x: 417.14, y: 80.5}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!222 &4584026495660326449
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2196913730968010032}
-  m_CullTransparentMesh: 1
---- !u!114 &2050490097591272441
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2196913730968010032}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_text: La Renaissance
-  m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: a8d695c35f9f1e34a91cfdda27d9ea6b, type: 2}
-  m_sharedMaterial: {fileID: -3360184566523924744, guid: a8d695c35f9f1e34a91cfdda27d9ea6b,
-    type: 2}
-  m_fontSharedMaterials: []
-  m_fontMaterial: {fileID: 0}
-  m_fontMaterials: []
-  m_fontColor32:
-    serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
-  m_enableVertexGradient: 0
-  m_colorMode: 3
-  m_fontColorGradient:
-    topLeft: {r: 1, g: 1, b: 1, a: 1}
-    topRight: {r: 1, g: 1, b: 1, a: 1}
-    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
-    bottomRight: {r: 1, g: 1, b: 1, a: 1}
-  m_fontColorGradientPreset: {fileID: 0}
-  m_spriteAsset: {fileID: 0}
-  m_tintAllSprites: 0
-  m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: -1183493901
-  m_overrideHtmlColors: 0
-  m_faceColor:
-    serializedVersion: 2
-    rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
-  m_fontWeight: 400
-  m_enableAutoSizing: 0
-  m_fontSizeMin: 18
-  m_fontSizeMax: 72
-  m_fontStyle: 1
-  m_HorizontalAlignment: 1
-  m_VerticalAlignment: 256
-  m_textAlignment: 65535
-  m_characterSpacing: 0
-  m_wordSpacing: 0
-  m_lineSpacing: -46.48
-  m_lineSpacingMax: 0
-  m_paragraphSpacing: 0
-  m_charWidthMaxAdj: 0
-  m_enableWordWrapping: 1
-  m_wordWrappingRatios: 0.4
-  m_overflowMode: 0
-  m_linkedTextComponent: {fileID: 0}
-  parentLinkedComponent: {fileID: 0}
-  m_enableKerning: 1
-  m_enableExtraPadding: 0
-  checkPaddingRequired: 0
-  m_isRichText: 1
-  m_parseCtrlCharacters: 1
-  m_isOrthographic: 1
-  m_isCullingEnabled: 0
-  m_horizontalMapping: 0
-  m_verticalMapping: 0
-  m_uvLineOffset: 0
-  m_geometrySortingOrder: 0
-  m_IsTextObjectScaleStatic: 0
-  m_VertexBufferAutoSizeReduction: 0
-  m_useMaxVisibleDescender: 1
-  m_pageToDisplay: 1
-  m_margin: {x: -39.125534, y: 0, z: -41.10161, w: 0}
-  m_isUsingLegacyAnimationComponent: 0
-  m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
-  m_baseMaterial: {fileID: 0}
-  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!1 &3536235525495619821
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 7587756748582966950}
-  - component: {fileID: 125106862297501493}
-  - component: {fileID: 5079451405083693355}
-  m_Layer: 0
-  m_Name: FastAns (1)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
-  m_IsActive: 1
---- !u!224 &7587756748582966950
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3536235525495619821}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1.3, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 3956224605343470542}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 1}
-  m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: -942}
-  m_SizeDelta: {x: 327.67, y: 384.3}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!222 &125106862297501493
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3536235525495619821}
-  m_CullTransparentMesh: 1
---- !u!114 &5079451405083693355
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3536235525495619821}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_text: "Mme Semon voue une grande admiration aux artistes de la Renaissance tels
-    que Michel-Ange, Sandro Botticelli, Fra Angelico ou encore Frans Hals.\n\n\xC0
-    la Renaissance, le vert \xE9tait une couleur ambivalente : symbole de nature
-    et de fertilit\xE9, mais aussi parfois per\xE7ue comme maudite et toxique en
-    raison des pigments utilis\xE9s \xE0 sa conception. Catherine Semon se r\xE9approprie
-    aujourd\u2019hui cette teinte pour en faire un embl\xE8me d\u2019espoir.\n"
-  m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 603f9c33538968642a3abb523b88a91b, type: 2}
-  m_sharedMaterial: {fileID: -2012617884002664389, guid: 603f9c33538968642a3abb523b88a91b,
-    type: 2}
-  m_fontSharedMaterials: []
-  m_fontMaterial: {fileID: 0}
-  m_fontMaterials: []
-  m_fontColor32:
-    serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
-  m_enableVertexGradient: 0
-  m_colorMode: 3
-  m_fontColorGradient:
-    topLeft: {r: 1, g: 1, b: 1, a: 1}
-    topRight: {r: 1, g: 1, b: 1, a: 1}
-    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
-    bottomRight: {r: 1, g: 1, b: 1, a: 1}
-  m_fontColorGradientPreset: {fileID: 0}
-  m_spriteAsset: {fileID: 0}
-  m_tintAllSprites: 0
-  m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: -1183493901
-  m_overrideHtmlColors: 0
-  m_faceColor:
-    serializedVersion: 2
-    rgba: 4294967295
-  m_fontSize: 13
-  m_fontSizeBase: 13
-  m_fontWeight: 400
-  m_enableAutoSizing: 0
-  m_fontSizeMin: 18
-  m_fontSizeMax: 72
-  m_fontStyle: 0
-  m_HorizontalAlignment: 1
-  m_VerticalAlignment: 256
-  m_textAlignment: 65535
-  m_characterSpacing: 0
-  m_wordSpacing: 0
-  m_lineSpacing: 0
-  m_lineSpacingMax: 0
-  m_paragraphSpacing: 0
-  m_charWidthMaxAdj: 0
-  m_enableWordWrapping: 1
-  m_wordWrappingRatios: 0.4
-  m_overflowMode: 0
-  m_linkedTextComponent: {fileID: 0}
-  parentLinkedComponent: {fileID: 0}
-  m_enableKerning: 1
-  m_enableExtraPadding: 0
-  checkPaddingRequired: 0
-  m_isRichText: 1
-  m_parseCtrlCharacters: 1
-  m_isOrthographic: 1
-  m_isCullingEnabled: 0
-  m_horizontalMapping: 0
-  m_verticalMapping: 0
-  m_uvLineOffset: 0
-  m_geometrySortingOrder: 0
-  m_IsTextObjectScaleStatic: 0
-  m_VertexBufferAutoSizeReduction: 0
-  m_useMaxVisibleDescender: 1
-  m_pageToDisplay: 1
-  m_margin: {x: -27.970001, y: 0, z: -27.642944, w: 0}
-  m_isUsingLegacyAnimationComponent: 0
-  m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
-  m_baseMaterial: {fileID: 0}
-  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!1001 &1292151412967812369
+--- !u!1001 &34881518638307114
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -302,6 +27,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 518478861908061885, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 364.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 518478861908061885, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 518478861908061885, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 114
       objectReference: {fileID: 0}
     - target: {fileID: 819290286638569238, guid: 518dafb9ccee39747a410d95cb36e6f5,
         type: 3}
@@ -378,6 +118,11 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
+    - target: {fileID: 1207691362492025031, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: staticPreviewImage
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 1230008461868036743, guid: 518dafb9ccee39747a410d95cb36e6f5,
         type: 3}
       propertyPath: m_StaticEditorFlags
@@ -443,6 +188,16 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
+    - target: {fileID: 3103159524003484709, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -1286
+      objectReference: {fileID: 0}
+    - target: {fileID: 3103159524003484709, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -387
+      objectReference: {fileID: 0}
     - target: {fileID: 3327467621044916525, guid: 518dafb9ccee39747a410d95cb36e6f5,
         type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -460,8 +215,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3714451864634584619, guid: 518dafb9ccee39747a410d95cb36e6f5,
         type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 154
+      objectReference: {fileID: 0}
+    - target: {fileID: 3714451864634584619, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 201
+      value: 281
+      objectReference: {fileID: 0}
+    - target: {fileID: 3738534800305366859, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.022
+      objectReference: {fileID: 0}
+    - target: {fileID: 3738534800305366859, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.194
       objectReference: {fileID: 0}
     - target: {fileID: 3994342456107108423, guid: 518dafb9ccee39747a410d95cb36e6f5,
         type: 3}
@@ -567,7 +337,21 @@ PrefabInstance:
         : l\u2019espoir, la vie, la renaissance.\nCes arbres sont bien plus que des
         v\xE9g\xE9taux stylis\xE9s : ce sont des \xEAtres vivants, \xE0 la fois enracin\xE9s
         et ouverts, solides et mouvants. Ils nous parlent de transformation, de continuit\xE9,
-        de ce lien myst\xE9rieux entre ce que nous voyons et ce que nous ressentons.\n"
+        de ce lien myst\xE9rieux entre ce que nous voyons et ce que nous ressentons.\n\nLa
+        th\xE9ologie occupe une place centrale dans la vie de Catherine Semon. C\u2019est
+        donc naturellement qu\u2019elle appara\xEEt dans son art, le prolongement
+        d'elle-m\xEAme.\n\nMme Semon voue une grande admiration aux artistes de la
+        Renaissance tels que Michel-Ange, Sandro Botticelli, Fra Angelico ou encore
+        Frans Hals.\n\n\xC0 la Renaissance, le vert \xE9tait une couleur ambivalente
+        : symbole de nature et de fertilit\xE9, mais aussi parfois per\xE7ue comme
+        maudite et toxique en raison des pigments utilis\xE9s \xE0 sa conception.
+        Catherine Semon se r\xE9approprie aujourd\u2019hui cette teinte pour en faire
+        un embl\xE8me d\u2019espoir.\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6007956954738302995, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_margin.w
+      value: -526.6426
       objectReference: {fileID: 0}
     - target: {fileID: 6141390798222792521, guid: 518dafb9ccee39747a410d95cb36e6f5,
         type: 3}
@@ -669,6 +453,16 @@ PrefabInstance:
       propertyPath: youtubeURL
       value: https://youtu.be/1-_iUgAfnT0
       objectReference: {fileID: 0}
+    - target: {fileID: 7203696373511224816, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: youtubeButton
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7203696373511224816, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: interviewButton
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 7211158676367483908, guid: 518dafb9ccee39747a410d95cb36e6f5,
         type: 3}
       propertyPath: m_StaticEditorFlags
@@ -749,27 +543,23 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
+    - target: {fileID: 9182503363713966568, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_VideoClip
+      value: 
+      objectReference: {fileID: 32900000, guid: c3ee965589640ca43ab667a05edca78d,
+        type: 3}
     - target: {fileID: 9196624616897323704, guid: 518dafb9ccee39747a410d95cb36e6f5,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects:
-    - targetCorrespondingSourceObject: {fileID: 2813045027492560607, guid: 518dafb9ccee39747a410d95cb36e6f5,
-        type: 3}
-      insertIndex: 1
-      addedObject: {fileID: 3555026822483539387}
-    - targetCorrespondingSourceObject: {fileID: 2813045027492560607, guid: 518dafb9ccee39747a410d95cb36e6f5,
-        type: 3}
-      insertIndex: 3
-      addedObject: {fileID: 7587756748582966950}
+    m_RemovedGameObjects:
+    - {fileID: 3390999751268242063, guid: 518dafb9ccee39747a410d95cb36e6f5, type: 3}
+    - {fileID: 6955492310402875502, guid: 518dafb9ccee39747a410d95cb36e6f5, type: 3}
+    - {fileID: 3994342456107108423, guid: 518dafb9ccee39747a410d95cb36e6f5, type: 3}
+    - {fileID: 6719254911275806299, guid: 518dafb9ccee39747a410d95cb36e6f5, type: 3}
+    m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 518dafb9ccee39747a410d95cb36e6f5, type: 3}
---- !u!224 &3956224605343470542 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 2813045027492560607, guid: 518dafb9ccee39747a410d95cb36e6f5,
-    type: 3}
-  m_PrefabInstance: {fileID: 1292151412967812369}
-  m_PrefabAsset: {fileID: 0}
