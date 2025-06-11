@@ -7,6 +7,8 @@ public class PauseMenu : MonoBehaviour
 {
     [SerializeField] private GameObject pauseMenuUI;
     [SerializeField] private GameObject modeModalUI;
+    [SerializeField] private GameObject modePanel;
+    [SerializeField] private GameObject volumePanel;
     [SerializeField] private GameObject volumeToggleUI;
     [SerializeField] private Sprite volumeOnSprite;
     [SerializeField] private Sprite volumeOffSprite;
@@ -20,6 +22,7 @@ public class PauseMenu : MonoBehaviour
     void Start()
     {
         pauseMenuUI.SetActive(false);
+        modeModalUI.SetActive(false);
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
         UpdateVolumeToggleImage();
@@ -44,19 +47,24 @@ public class PauseMenu : MonoBehaviour
     {
         bool isPaused = pauseMenuUI.activeSelf;
         pauseMenuUI.SetActive(!isPaused);
-        modeModalUI.SetActive(false);
 
-        if (pauseMenuUI.activeSelf)
+        if (!pauseMenuUI.activeSelf)
+        {
+            // Reset the mode modal and ensure panels are active
+            modeModalUI.SetActive(false);
+            volumeToggleUI.SetActive(true);
+            modePanel.SetActive(true);
+            volumePanel.SetActive(true);
+
+            Time.timeScale = 1f;
+            Cursor.visible = false;
+            Cursor.lockState = CursorLockMode.Locked;
+        }
+        else
         {
             Time.timeScale = 0f;
             Cursor.visible = true;
             Cursor.lockState = CursorLockMode.None;
-        }
-        else
-        {
-            Time.timeScale = 1f;
-            Cursor.visible = false;
-            Cursor.lockState = CursorLockMode.Locked;
         }
     }
 
@@ -64,20 +72,29 @@ public class PauseMenu : MonoBehaviour
     {
         Time.timeScale = 1f;
         pauseMenuUI.SetActive(false);
+        modeModalUI.SetActive(false);
+        modePanel.SetActive(true);
+        volumePanel.SetActive(true);
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
     }
 
     public void ToggleModeModal()
     {
-        Debug.Log("ToggleModeModal called"); // Log de débogage
+        Debug.Log("ToggleModeModal called");
         modeToSwitch = ModeManager.Instance.CurrentMode == ModeManager.MuseumMode.Classic ? ModeManager.MuseumMode.Interactive : ModeManager.MuseumMode.Classic;
+        volumeToggleUI.SetActive(false);
+        modePanel.SetActive(false);
+        volumePanel.SetActive(false);
         modeModalUI.SetActive(true);
     }
 
     public void CloseModeModal()
     {
         modeModalUI.SetActive(false);
+        volumeToggleUI.SetActive(true);
+        modePanel.SetActive(true);
+        volumePanel.SetActive(true);
     }
 
     public void ConfirmModeSwitch()
@@ -92,13 +109,13 @@ public class PauseMenu : MonoBehaviour
             ModeManager.Instance.SetMode(ModeManager.MuseumMode.Interactive);
             SceneManager.LoadSceneAsync("Main_scene");
         }
-        modeModalUI.SetActive(false);
+        CloseModeModal();
         UpdateModeText();
     }
 
     public void CancelModeSwitch()
     {
-        modeModalUI.SetActive(false);
+        CloseModeModal();
     }
 
     public void QuitGame()
