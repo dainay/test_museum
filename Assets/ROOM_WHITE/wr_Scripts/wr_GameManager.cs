@@ -56,7 +56,7 @@ public class wr_GameManager : MonoBehaviour
 
     private IEnumerator VictorySequence()
     {
-        yield return new WaitForSecondsRealtime(1.5f);
+        yield return new WaitForSecondsRealtime(2f);
 
         // Passe à la caméra de victoire
         if (victoryCamera != null)
