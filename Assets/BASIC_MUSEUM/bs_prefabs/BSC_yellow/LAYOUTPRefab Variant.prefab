@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1001 &153690599172391210
+--- !u!1001 &2434794485784843818
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -113,6 +113,11 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: b9c14d12c428a490dbf169eda00710a2, type: 2}
+    - target: {fileID: 4916180120825023323, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_text
+      value: "Paysages g\xE9ologiques, s\xE9dimentations po\xE9tiques.."
+      objectReference: {fileID: 0}
     - target: {fileID: 5150336306682347031, guid: 518dafb9ccee39747a410d95cb36e6f5,
         type: 3}
       propertyPath: m_Name
@@ -159,6 +164,7 @@ PrefabInstance:
     - {fileID: 3994342456107108423, guid: 518dafb9ccee39747a410d95cb36e6f5, type: 3}
     - {fileID: 3390999751268242063, guid: 518dafb9ccee39747a410d95cb36e6f5, type: 3}
     - {fileID: 432164420176546580, guid: 518dafb9ccee39747a410d95cb36e6f5, type: 3}
+    - {fileID: 6719254911275806299, guid: 518dafb9ccee39747a410d95cb36e6f5, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 518dafb9ccee39747a410d95cb36e6f5, type: 3}
