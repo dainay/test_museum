@@ -1,0 +1,224 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &1457787423041886189
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 239184337295881730, guid: 3389f5cc635d30141a2ecc16c28b8793,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: cd052e89a694e184c9b4a3cedc95fa52, type: 2}
+    - target: {fileID: 601333081273742394, guid: 3389f5cc635d30141a2ecc16c28b8793,
+        type: 3}
+      propertyPath: m_Name
+      value: LAYOUTPRefab (3) Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 601333081273742394, guid: 3389f5cc635d30141a2ecc16c28b8793,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1928091510925242412, guid: 3389f5cc635d30141a2ecc16c28b8793,
+        type: 3}
+      propertyPath: m_text
+      value: Julie Capdevielle
+      objectReference: {fileID: 0}
+    - target: {fileID: 1928091510925242412, guid: 3389f5cc635d30141a2ecc16c28b8793,
+        type: 3}
+      propertyPath: m_fontColor.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1928091510925242412, guid: 3389f5cc635d30141a2ecc16c28b8793,
+        type: 3}
+      propertyPath: m_fontColor.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1928091510925242412, guid: 3389f5cc635d30141a2ecc16c28b8793,
+        type: 3}
+      propertyPath: m_fontColor.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1928091510925242412, guid: 3389f5cc635d30141a2ecc16c28b8793,
+        type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4278190080
+      objectReference: {fileID: 0}
+    - target: {fileID: 2143954131473784169, guid: 3389f5cc635d30141a2ecc16c28b8793,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3668064849468262736, guid: 3389f5cc635d30141a2ecc16c28b8793,
+        type: 3}
+      propertyPath: m_text
+      value: "Peinture acrylique sur toile\r\n\r\nDans cette \u0153uvre pleine de
+        fantaisie, Julie Capdevielle revisite Snoopy, personnage iconique de la pop
+        culture, avec une libert\xE9 de ton et une joie communicative. D\xE9tourn\xE9,
+        stylis\xE9, presque transform\xE9 en chef d\u2019orchestre, le c\xE9l\xE8bre
+        chien devient ici le h\xE9ros d\u2019une sc\xE8ne \xE9tonnante, entour\xE9
+        de cr\xE9atures imaginaires aux allures joyeusement absurdes.\r\n\r\nL\u2019univers
+        de Julie est \xE0 la fois dr\xF4le et d\xE9cal\xE9, nourri de r\xE9f\xE9rences
+        contemporaines et d\u2019un regard curieux sur le monde. Les textures, les
+        couleurs et les formes semblent se r\xE9pondre dans une composition vivante,
+        spontan\xE9e, presque enfantine, mais jamais na\xEFve.\r\n\r\nDerri\xE8re
+        cette l\xE9g\xE8ret\xE9 apparente se cache une vraie modernit\xE9 : celle
+        d\u2019un regard qui c\xE9l\xE8bre la culture populaire avec tendresse et
+        inventivit\xE9.\r"
+      objectReference: {fileID: 0}
+    - target: {fileID: 3668064849468262736, guid: 3389f5cc635d30141a2ecc16c28b8793,
+        type: 3}
+      propertyPath: m_fontStyle
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3668064849468262736, guid: 3389f5cc635d30141a2ecc16c28b8793,
+        type: 3}
+      propertyPath: m_fontColor.b
+      value: 0.004429817
+      objectReference: {fileID: 0}
+    - target: {fileID: 3668064849468262736, guid: 3389f5cc635d30141a2ecc16c28b8793,
+        type: 3}
+      propertyPath: m_fontColor.g
+      value: 0.004429817
+      objectReference: {fileID: 0}
+    - target: {fileID: 3668064849468262736, guid: 3389f5cc635d30141a2ecc16c28b8793,
+        type: 3}
+      propertyPath: m_fontColor.r
+      value: 0.004429817
+      objectReference: {fileID: 0}
+    - target: {fileID: 3668064849468262736, guid: 3389f5cc635d30141a2ecc16c28b8793,
+        type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4278255873
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000835618388113018, guid: 3389f5cc635d30141a2ecc16c28b8793,
+        type: 3}
+      propertyPath: m_text
+      value: Snoopy
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000835618388113018, guid: 3389f5cc635d30141a2ecc16c28b8793,
+        type: 3}
+      propertyPath: m_fontColor.b
+      value: 0.003921569
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000835618388113018, guid: 3389f5cc635d30141a2ecc16c28b8793,
+        type: 3}
+      propertyPath: m_fontColor.g
+      value: 0.003921569
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000835618388113018, guid: 3389f5cc635d30141a2ecc16c28b8793,
+        type: 3}
+      propertyPath: m_fontColor.r
+      value: 0.003921569
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000835618388113018, guid: 3389f5cc635d30141a2ecc16c28b8793,
+        type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4278255873
+      objectReference: {fileID: 0}
+    - target: {fileID: 4135432282411549127, guid: 3389f5cc635d30141a2ecc16c28b8793,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 6365022097284298506, guid: 3389f5cc635d30141a2ecc16c28b8793,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: b7bacf6116657ab4a8a94944132e1cb5,
+        type: 3}
+    - target: {fileID: 6769069199773957216, guid: 3389f5cc635d30141a2ecc16c28b8793,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 9b5c4605a868cbc44ab42d7759dff8f6, type: 2}
+    - target: {fileID: 8248636877916560208, guid: 3389f5cc635d30141a2ecc16c28b8793,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.78
+      objectReference: {fileID: 0}
+    - target: {fileID: 8248636877916560208, guid: 3389f5cc635d30141a2ecc16c28b8793,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8248636877916560208, guid: 3389f5cc635d30141a2ecc16c28b8793,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.175
+      objectReference: {fileID: 0}
+    - target: {fileID: 8792188623557099415, guid: 3389f5cc635d30141a2ecc16c28b8793,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.113285504
+      objectReference: {fileID: 0}
+    - target: {fileID: 8792188623557099415, guid: 3389f5cc635d30141a2ecc16c28b8793,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 5.5958724
+      objectReference: {fileID: 0}
+    - target: {fileID: 8792188623557099415, guid: 3389f5cc635d30141a2ecc16c28b8793,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 9.161217
+      objectReference: {fileID: 0}
+    - target: {fileID: 8792188623557099415, guid: 3389f5cc635d30141a2ecc16c28b8793,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -164.72
+      objectReference: {fileID: 0}
+    - target: {fileID: 8792188623557099415, guid: 3389f5cc635d30141a2ecc16c28b8793,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 3.66
+      objectReference: {fileID: 0}
+    - target: {fileID: 8792188623557099415, guid: 3389f5cc635d30141a2ecc16c28b8793,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -19.89
+      objectReference: {fileID: 0}
+    - target: {fileID: 8792188623557099415, guid: 3389f5cc635d30141a2ecc16c28b8793,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 8792188623557099415, guid: 3389f5cc635d30141a2ecc16c28b8793,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8792188623557099415, guid: 3389f5cc635d30141a2ecc16c28b8793,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 8792188623557099415, guid: 3389f5cc635d30141a2ecc16c28b8793,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8792188623557099415, guid: 3389f5cc635d30141a2ecc16c28b8793,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8792188623557099415, guid: 3389f5cc635d30141a2ecc16c28b8793,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 8792188623557099415, guid: 3389f5cc635d30141a2ecc16c28b8793,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects:
+    - {fileID: 4148557315535710920, guid: 3389f5cc635d30141a2ecc16c28b8793, type: 3}
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 3389f5cc635d30141a2ecc16c28b8793, type: 3}
