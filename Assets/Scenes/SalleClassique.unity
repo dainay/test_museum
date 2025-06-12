@@ -6118,8 +6118,8 @@ Light:
   m_Type: 0
   m_Shape: 0
   m_Color: {r: 1, g: 0.941219, b: 0.6924528, a: 1}
-  m_Intensity: 20
-  m_Range: 7
+  m_Intensity: 100
+  m_Range: 20
   m_SpotAngle: 145
   m_InnerSpotAngle: 0
   m_CookieSize: 10
@@ -12649,6 +12649,11 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8059785991444364660, guid: 1003fdcaa4091c949864374bcce0d4ae,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 02955a3b2218c7a488b08053fa24eb71, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -17560,6 +17565,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 746860714171875913, guid: 465a44af00c4d7e42939e006b5b8c28f,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 02955a3b2218c7a488b08053fa24eb71, type: 2}
     - target: {fileID: 4036833850679567556, guid: 465a44af00c4d7e42939e006b5b8c28f,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -17856,7 +17866,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 4fdeb92f38b9b474a9848e4b22207063, type: 2}
+      objectReference: {fileID: 2100000, guid: d2c6fda51d95f544e92dac042fa1d709, type: 2}
     - target: {fileID: -5477749408508380018, guid: 535ac2764477b7a45be6e1ef2fa27748,
         type: 3}
       propertyPath: m_LocalRotation.w
@@ -24746,6 +24756,11 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7188239219784413664, guid: aaf84e84e3ae42e4385a35b938abcecd,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 02955a3b2218c7a488b08053fa24eb71, type: 2}
     - target: {fileID: 7550386888916300760, guid: aaf84e84e3ae42e4385a35b938abcecd,
         type: 3}
       propertyPath: m_Name
@@ -24893,6 +24908,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: LAYOUTPRefab Yves Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 4060879160006322085, guid: 74b278c05f218f842b1ac8fb8d43b8b9,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 02955a3b2218c7a488b08053fa24eb71, type: 2}
     - target: {fileID: 4687899834918956592, guid: 74b278c05f218f842b1ac8fb8d43b8b9,
         type: 3}
       propertyPath: m_LocalScale.x
