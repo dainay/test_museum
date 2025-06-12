@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class VictoryDetector : MonoBehaviour
 {
-    public int totalCorrectAnswers = 5;
+    public int totalCorrectAnswers = 4;
     private int currentCorrectCount = 0;
 
     public GameObject victoryBall;

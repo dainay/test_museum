@@ -4,7 +4,7 @@ using UnityEngine;
 using TMPro; // Si tu utilises TextMeshPro pour afficher le score
 public class GameManager : MonoBehaviour
 {
-    public string[] correctAnswers = { "Pomme", "Chat", "Soualhi", "Doudou", "Chaussette" };
+    public string[] correctAnswers = { "Souffle", "Visage", "Géométrie", "Pomme" };
 
     private int foundCount = 0;
     private int errorCount = 0;   // <-- compteur erreurs
