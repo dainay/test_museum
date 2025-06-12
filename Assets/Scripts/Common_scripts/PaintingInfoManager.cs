@@ -7,6 +7,8 @@ public class PaintingInfoManager : MonoBehaviour
 
     private List<GameObject> infoCanvases = new List<GameObject>();
 
+ 
+
     void Awake()
     {
         if (Instance == null)
@@ -29,7 +31,6 @@ public class PaintingInfoManager : MonoBehaviour
     {
         return infoCanvases;
     }
-
 
     public void SetAllActive(bool state)
     {

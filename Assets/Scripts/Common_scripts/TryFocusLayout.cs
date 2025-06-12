@@ -80,11 +80,44 @@ public class TryFocusLayout : MonoBehaviour
         if (staticPreviewImage != null) staticPreviewImage.enabled = false;
         if (videoDisplayImage != null) videoDisplayImage.enabled = true;
 
-        if (videoPlayerObject != null)
+
+        // 🎯 Проверка только для "SalleBlack"
+        if (UnityEngine.SceneManagement.SceneManager.GetActiveScene().name == "Black_scene")
         {
-            videoPlayerObject.SetActive(true);
-            videoPlayer?.Play();
+            if (VictoryTracker.Instance != null && VictoryTracker.Instance.HasWon("black"))
+            {
+                Debug.Log("✅ SalleBlack победена, активируем видео.");
+                if (videoPlayerObject != null)
+                {
+                    videoPlayerObject.SetActive(true);
+                    videoPlayer?.Play();
+                }
+
+                if (videoDisplayImage != null)
+                    videoDisplayImage.enabled = true;
+            }
+            else
+            {
+                Debug.Log("🔒 SalleBlack НЕ завершена — видео недоступно.");
+                if (videoDisplayImage != null)
+                    videoDisplayImage.enabled = false;
+                if (videoPlayerObject != null)
+                    videoPlayerObject.SetActive(false);
+            }
         }
+        else
+        {
+            // Во всех остальных сценах видео работает всегда
+            if (videoPlayerObject != null)
+            {
+                videoPlayerObject.SetActive(true);
+                videoPlayer?.Play();
+            }
+
+            if (videoDisplayImage != null)
+                videoDisplayImage.enabled = true;
+        }
+
 
         Cursor.visible = true;
         Cursor.lockState = CursorLockMode.None;
