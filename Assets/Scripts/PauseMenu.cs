@@ -134,7 +134,7 @@ public class PauseMenu : MonoBehaviour
     {
         if (volumeToggleImage != null)
         {
-            volumeToggleImage.sprite = isMuted ? volumeOffSprite : volumeOnSprite;
+            volumeToggleImage.sprite = AudioListener.volume == 0f ? volumeOffSprite : volumeOnSprite;
         }
     }
 
@@ -148,11 +148,15 @@ public class PauseMenu : MonoBehaviour
 
     public void SetVolume(float volume)
     {
-        if (isMuted)
+        AudioListener.volume = volume;
+        UpdateVolumeToggleImage(); // Update the toggle image whenever the volume changes
+        if (volume == 0f)
+        {
+            isMuted = true;
+        }
+        else
         {
             isMuted = false;
-            UpdateVolumeToggleImage();
         }
-        AudioListener.volume = volume;
     }
 }
