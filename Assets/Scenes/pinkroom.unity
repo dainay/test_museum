@@ -6982,6 +6982,11 @@ PrefabInstance:
         de l\u2019instant. Olivier Kammerer y affirme son go\xFBt pour la cr\xE9ation
         libre, l\u2019amour des couleurs et la po\xE9sie du geste.\n"
       objectReference: {fileID: 0}
+    - target: {fileID: 4061857274219703516, guid: c1e76a28bc3f64e688d85df3fd69e118,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 91b215a490e1945829b45e4fcde86af8, type: 2}
     - target: {fileID: 4300130197226654590, guid: c1e76a28bc3f64e688d85df3fd69e118,
         type: 3}
       propertyPath: m_AnchorMax.y
@@ -13560,6 +13565,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6513143431706276513, guid: 55096ea30b05d4c979a851fb93321320,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 91b215a490e1945829b45e4fcde86af8, type: 2}
     - target: {fileID: 7019609314311174891, guid: 55096ea30b05d4c979a851fb93321320,
         type: 3}
       propertyPath: m_LocalPosition.z
@@ -19349,6 +19359,11 @@ PrefabInstance:
         toiles repr\xE9sentent toutes les couleurs qui existent dans le monde, pour
         mettre en lumi\xE8re la beaut\xE9 du monde dans lequel nous vivons.\n"
       objectReference: {fileID: 0}
+    - target: {fileID: 4061857274219703516, guid: c1e76a28bc3f64e688d85df3fd69e118,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 91b215a490e1945829b45e4fcde86af8, type: 2}
     - target: {fileID: 4108007305107832344, guid: c1e76a28bc3f64e688d85df3fd69e118,
         type: 3}
       propertyPath: m_text
@@ -21851,6 +21866,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6513143431706276513, guid: 55096ea30b05d4c979a851fb93321320,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 91b215a490e1945829b45e4fcde86af8, type: 2}
     - target: {fileID: 7019609314311174891, guid: 55096ea30b05d4c979a851fb93321320,
         type: 3}
       propertyPath: m_LocalPosition.x
