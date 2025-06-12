@@ -1756,8 +1756,13 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3146569634938404765, guid: c776617802a403941b77a1bcde3b0d07,
         type: 3}
+      propertyPath: m_LocalScale.x
+      value: 5.31
+      objectReference: {fileID: 0}
+    - target: {fileID: 3146569634938404765, guid: c776617802a403941b77a1bcde3b0d07,
+        type: 3}
       propertyPath: m_LocalPosition.x
-      value: -22.04
+      value: -23.5
       objectReference: {fileID: 0}
     - target: {fileID: 3146569634938404765, guid: c776617802a403941b77a1bcde3b0d07,
         type: 3}
@@ -1767,7 +1772,7 @@ PrefabInstance:
     - target: {fileID: 3146569634938404765, guid: c776617802a403941b77a1bcde3b0d07,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 27.22
+      value: 27.76
       objectReference: {fileID: 0}
     - target: {fileID: 3146569634938404765, guid: c776617802a403941b77a1bcde3b0d07,
         type: 3}
@@ -1837,10 +1842,38 @@ PrefabInstance:
     m_RemovedComponents:
     - {fileID: 7309507733045557738, guid: c776617802a403941b77a1bcde3b0d07, type: 3}
     - {fileID: 6540290819101051003, guid: c776617802a403941b77a1bcde3b0d07, type: 3}
+    - {fileID: 6343303703450941983, guid: c776617802a403941b77a1bcde3b0d07, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 299271910926879019, guid: c776617802a403941b77a1bcde3b0d07,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 745670844}
   m_SourcePrefab: {fileID: 100100000, guid: c776617802a403941b77a1bcde3b0d07, type: 3}
+--- !u!1 &745670843 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 299271910926879019, guid: c776617802a403941b77a1bcde3b0d07,
+    type: 3}
+  m_PrefabInstance: {fileID: 745670842}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &745670844
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 745670843}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3dd113b677965f47b1cd8808ee99efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneName: Main_scene
+  spawnPointName: SpawnStart
+  fadeTag: Fade
+  hintTextTag: Hint
+  fadeDuration: 1
 --- !u!1 &798906332
 GameObject:
   m_ObjectHideFlags: 0
@@ -5341,8 +5374,13 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3146569634938404765, guid: c776617802a403941b77a1bcde3b0d07,
         type: 3}
+      propertyPath: m_LocalScale.x
+      value: 5.95
+      objectReference: {fileID: 0}
+    - target: {fileID: 3146569634938404765, guid: c776617802a403941b77a1bcde3b0d07,
+        type: 3}
       propertyPath: m_LocalPosition.x
-      value: -22.93
+      value: -23.35
       objectReference: {fileID: 0}
     - target: {fileID: 3146569634938404765, guid: c776617802a403941b77a1bcde3b0d07,
         type: 3}
@@ -5352,7 +5390,7 @@ PrefabInstance:
     - target: {fileID: 3146569634938404765, guid: c776617802a403941b77a1bcde3b0d07,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 8.08
+      value: 7.86
       objectReference: {fileID: 0}
     - target: {fileID: 3146569634938404765, guid: c776617802a403941b77a1bcde3b0d07,
         type: 3}
@@ -5417,10 +5455,38 @@ PrefabInstance:
     m_RemovedComponents:
     - {fileID: 7309507733045557738, guid: c776617802a403941b77a1bcde3b0d07, type: 3}
     - {fileID: 6540290819101051003, guid: c776617802a403941b77a1bcde3b0d07, type: 3}
+    - {fileID: 6343303703450941983, guid: c776617802a403941b77a1bcde3b0d07, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 299271910926879019, guid: c776617802a403941b77a1bcde3b0d07,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7799147039331860619}
   m_SourcePrefab: {fileID: 100100000, guid: c776617802a403941b77a1bcde3b0d07, type: 3}
+--- !u!1 &7799147039331860618 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 299271910926879019, guid: c776617802a403941b77a1bcde3b0d07,
+    type: 3}
+  m_PrefabInstance: {fileID: 7799147039331860617}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &7799147039331860619
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7799147039331860618}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3dd113b677965f47b1cd8808ee99efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneName: SalleClassique
+  spawnPointName: SpawnPoint
+  fadeTag: Fade
+  hintTextTag: Hint
+  fadeDuration: 1
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
