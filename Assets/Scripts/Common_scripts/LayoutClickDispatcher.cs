@@ -1,4 +1,4 @@
-using UnityEngine;
+﻿using UnityEngine;
 
 public class LayoutClickDispatcher : MonoBehaviour
 {
@@ -11,11 +11,16 @@ public class LayoutClickDispatcher : MonoBehaviour
             GameObject hit = raycasterManager.GetRaycastHit();
             if (hit != null && hit.CompareTag("Layout"))
             {
+                Debug.Log("Layout clicked: " + hit);
+
                 TryFocusLayout layout = hit.GetComponent<TryFocusLayout>();
-                if (layout != null)
+
+                if (layout != null && layout.gameObject.activeInHierarchy)
                 {
+                    Debug.Log("we are inside the boucle and ineter into enter layout mode");
                     layout.EnterLayoutMode();
                 }
+
             }
         }
     }
