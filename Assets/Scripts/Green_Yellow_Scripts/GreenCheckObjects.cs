@@ -3,7 +3,6 @@ using System.Collections.Generic;
 
 public class GreenCheckObjects : MonoBehaviour
 {
-    private Light spotLight;
     private bool isObjectPlaced = false;
 
     public Material defaultMaterial;
@@ -54,29 +53,18 @@ public class GreenCheckObjects : MonoBehaviour
     if (mainCamera == null || victoryCamera == null)
         Debug.LogError("Les caméras ne sont pas correctement assignées !");
 
-    spotLight = transform.Find("SpotLight")?.GetComponent<Light>();
-    if (spotLight == null)
-    {
-        Debug.LogError("Aucune lumière trouvée sur la Spotlight");
-    }
-    else
-    {
-        Debug.Log("SpotLight trouvé et assigné.");
-        spotLight.intensity = 0;
-    }
 }
 
 
     void OnTriggerStay(Collider other)
     {
-        if (spotLight == null || other.gameObject.CompareTag("Player")) return;
+    
 
         string objName = other.gameObject.name;
 
         if (requiredObjects.Contains(objName) && !placedObjects.Contains(objName))
         {
-            spotLight.intensity = 50;
-            spotLight.color = Color.green;
+        
             placedObjects.Add(objName);
             raycastClickHandler?.TurnOffLightsForObject(objName); 
 
@@ -90,14 +78,13 @@ public class GreenCheckObjects : MonoBehaviour
         {
             SetTargetObjectMaterial(objName, false);
             // canvasController?.ShowCanvas("Ce n'est pas un objet attendu !");
-            spotLight.intensity = 50;
-            spotLight.color = Color.red;
+          
         }
     }
 
     void OnTriggerExit(Collider other)
     {
-        if (spotLight == null) return;
+      
 
         string objName = other.gameObject.name;
 
@@ -106,8 +93,6 @@ public class GreenCheckObjects : MonoBehaviour
             ApplyMaterialToTarget(targetName, defaultMaterial);
         }
 
-        spotLight.intensity = 0;
-        spotLight.color = Color.white;
 
         if (requiredObjects.Contains(objName) && placedObjects.Contains(objName))
         {

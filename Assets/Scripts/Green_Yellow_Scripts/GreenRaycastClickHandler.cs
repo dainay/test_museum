@@ -3,7 +3,6 @@ using System.Collections;
 
 public class GreenRaycastClickHandler : MonoBehaviour
 {
-    public CanvasLightController canvasController;
 
     public Camera mainCamera;
     public Camera managerCamera;
@@ -29,7 +28,7 @@ public class GreenRaycastClickHandler : MonoBehaviour
 
     void Start()
     {
-        canvasController = FindObjectOfType<CanvasLightController>();
+       
         GameObject lightObject = GameObject.Find("lightscene");
         if (lightObject != null)
         {
@@ -190,9 +189,7 @@ void ToggleGroup(ref bool groupState, Light[] objectLights, ref Coroutine blinkC
         SetLightsIntensity(objectLights, 0);
     }
 
-    string message = groupState ? "Repère les objets lumineux !" : "Les objets ne brillent plus";
-    canvasController?.ShowCanvas(message);
-    Debug.Log(message);
+ 
     
 }
 
