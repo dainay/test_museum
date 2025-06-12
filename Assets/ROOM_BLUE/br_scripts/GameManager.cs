@@ -62,7 +62,7 @@ public class GameManager : MonoBehaviour
 
     void Victory()
     {
-        Debug.Log("Félicitations ! Tu as trouvé tous les objets !");
+        Debug.Log("Félicitations ! Tu as trouvé tous les mots-clés !");
         // Actions de victoire ici...
     }
 
