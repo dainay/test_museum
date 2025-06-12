@@ -2148,6 +2148,9 @@ MonoBehaviour:
   volumeToggleImage: {fileID: 7511438674563642233}
   modeText: {fileID: 5617136128883014701}
   volumeSlider: {fileID: 7332611048156437886}
+  sceneTeleporter: {fileID: 0}
+  spawnPointClassique: SpawnPoint
+  spawnPointImmersive: SpawnStart
 --- !u!1 &5083844974306746243
 GameObject:
   m_ObjectHideFlags: 0

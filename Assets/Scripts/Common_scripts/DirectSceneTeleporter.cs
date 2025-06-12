@@ -18,24 +18,40 @@ public class DirectSceneTeleporter : MonoBehaviour
     private TextMeshProUGUI hintText;
 
     private bool playerInTrigger = false;
-    private GameObject playerRef;
+    public GameObject playerRef;
 
     private void Start()
     {
+        Debug.Log("DirectSceneTeleporter Start method called.");
+
         GameObject fadeObj = GameObject.FindWithTag(fadeTag);
-        if (fadeObj != null) fadeCanvasGroup = fadeObj.GetComponent<CanvasGroup>();
+        if (fadeObj != null)
+        {
+            fadeCanvasGroup = fadeObj.GetComponent<CanvasGroup>();
+            Debug.Log("Fade object found and CanvasGroup assigned.");
+        }
+        else
+        {
+            Debug.LogWarning("Fade object not found.");
+        }
 
         GameObject player = GameObject.FindGameObjectWithTag("Player");
         if (player != null)
         {
+            Debug.Log("Player found.");
             foreach (var text in player.GetComponentsInChildren<TextMeshProUGUI>(true))
             {
                 if (text.CompareTag("Hint"))
                 {
                     hintText = text;
+                    Debug.Log("Hint text component found.");
                     break;
                 }
             }
+        }
+        else
+        {
+            Debug.LogWarning("Player not found.");
         }
 
         if (hintText != null) hintText.text = "";
@@ -46,11 +62,11 @@ public class DirectSceneTeleporter : MonoBehaviour
     {
         if (playerInTrigger && (Input.GetKeyDown(KeyCode.E) || Input.GetMouseButtonDown(0)))
         {
+            Debug.Log("Trigger activated, starting FadeAndTeleport coroutine.");
             if (hintText != null) hintText.text = "";
             StartCoroutine(FadeAndTeleport());
         }
     }
-
 
     private void OnTriggerEnter(Collider other)
     {
@@ -58,9 +74,13 @@ public class DirectSceneTeleporter : MonoBehaviour
         {
             playerInTrigger = true;
             playerRef = other.gameObject;
+            Debug.Log("Player entered the trigger zone.");
 
             if (hintText != null)
+            {
                 hintText.text = hintMessage;
+                Debug.Log("Hint message displayed.");
+            }
         }
     }
 
@@ -70,23 +90,35 @@ public class DirectSceneTeleporter : MonoBehaviour
         {
             playerInTrigger = false;
             playerRef = null;
-            if (hintText != null) hintText.text = "";
+            Debug.Log("Player exited the trigger zone.");
+
+            if (hintText != null)
+            {
+                hintText.text = "";
+                Debug.Log("Hint message cleared.");
+            }
         }
     }
 
-    private IEnumerator FadeAndTeleport()
+    public IEnumerator FadeAndTeleport()
     {
+        Debug.Log("Starting FadeAndTeleport coroutine.");
         yield return StartCoroutine(FadeToBlack());
         yield return StartCoroutine(LoadAndTeleport());
+        Debug.Log("FadeAndTeleport coroutine completed.");
     }
 
     private IEnumerator LoadAndTeleport()
     {
+        Debug.Log($"Loading scene: {sceneName}");
         yield return SceneManager.LoadSceneAsync(sceneName, LoadSceneMode.Additive);
 
         Scene newScene = SceneManager.GetSceneByName(sceneName);
         while (!newScene.isLoaded)
+        {
             yield return null;
+        }
+        Debug.Log($"Scene {sceneName} loaded.");
 
         GameObject spawn = null;
         foreach (GameObject obj in newScene.GetRootGameObjects())
@@ -94,8 +126,19 @@ public class DirectSceneTeleporter : MonoBehaviour
             if (obj.name == spawnPointName)
             {
                 spawn = obj;
+                Debug.Log($"Found spawn point: {obj.name}");
                 break;
             }
+        }
+
+        if (spawn == null)
+        {
+            Debug.LogError($"Spawn point {spawnPointName} not found in scene {sceneName}.");
+        }
+
+        if (playerRef == null)
+        {
+            Debug.LogError("Player reference is null during teleportation.");
         }
 
         if (spawn != null && playerRef != null)
@@ -103,6 +146,7 @@ public class DirectSceneTeleporter : MonoBehaviour
             CharacterController controller = playerRef.GetComponent<CharacterController>();
             if (controller != null) controller.enabled = false;
 
+            Debug.Log($"Teleporting player to {spawn.transform.position}");
             playerRef.transform.position = spawn.transform.position;
             playerRef.transform.rotation = spawn.transform.rotation;
 
@@ -112,11 +156,17 @@ public class DirectSceneTeleporter : MonoBehaviour
         Scene currentScene = SceneManager.GetActiveScene();
         yield return SceneManager.UnloadSceneAsync(currentScene);
         SceneManager.SetActiveScene(newScene);
+        Debug.Log($"Scene {currentScene.name} unloaded and new scene {newScene.name} activated.");
     }
 
     private IEnumerator FadeToBlack()
     {
-        if (fadeCanvasGroup == null) yield break;
+        Debug.Log("Starting fade to black.");
+        if (fadeCanvasGroup == null)
+        {
+            Debug.LogWarning("FadeCanvasGroup is null, skipping fade effect.");
+            yield break;
+        }
 
         float time = 0f;
         while (time < fadeDuration)
@@ -126,5 +176,6 @@ public class DirectSceneTeleporter : MonoBehaviour
             yield return null;
         }
         fadeCanvasGroup.alpha = 1f;
+        Debug.Log("Fade to black completed.");
     }
 }
