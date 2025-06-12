@@ -22,6 +22,8 @@ public class TryFocusLayout : MonoBehaviour
     private GameObject[] allLayouts;
     private List<GameObject> previouslyDisabledLayouts = new List<GameObject>();
 
+    [SerializeField] private string salleName = "s";
+
     void Awake()
     {
         allLayouts = GameObject.FindGameObjectsWithTag("Layout");
@@ -81,11 +83,19 @@ public class TryFocusLayout : MonoBehaviour
         if (videoDisplayImage != null) videoDisplayImage.enabled = true;
 
 
+        Debug.Log("AAAAAAAAAAA: " + UnityEngine.SceneManagement.SceneManager.GetActiveScene().name);
+
         // 🎯 Проверка только для "SalleBlack"
         if (UnityEngine.SceneManagement.SceneManager.GetActiveScene().name == "Black_scene")
         {
-            if (VictoryTracker.Instance != null && VictoryTracker.Instance.HasWon("black"))
+
+            Debug.Log("Yes its Black_scene " + VictoryTracker.Instance.blackRoomShow);
+
+            if (VictoryTracker.Instance.blackRoomShow)
             {
+
+                Debug.Log("Yes win black");
+
                 Debug.Log("✅ SalleBlack победена, активируем видео.");
                 if (videoPlayerObject != null)
                 {
@@ -98,6 +108,7 @@ public class TryFocusLayout : MonoBehaviour
             }
             else
             {
+                Debug.Log("no no black win");
                 Debug.Log("🔒 SalleBlack НЕ завершена — видео недоступно.");
                 if (videoDisplayImage != null)
                     videoDisplayImage.enabled = false;

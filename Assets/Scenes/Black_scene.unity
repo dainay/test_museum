@@ -3736,6 +3736,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   staticPreviewImage: {fileID: 0}
   interviewCanvas: {fileID: 0}
+  salleName: s
 --- !u!65 &362211892
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4036,6 +4037,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   staticPreviewImage: {fileID: 0}
   interviewCanvas: {fileID: 0}
+  salleName: s
 --- !u!65 &419950392
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11266,6 +11268,7 @@ MonoBehaviour:
   glassAnimator: {fileID: 619211257}
   winCamera: {fileID: 1926400036}
   salleName: black
+  blackRoomVictory: 0
 --- !u!4 &1140919365
 Transform:
   m_ObjectHideFlags: 0
@@ -15604,6 +15607,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   staticPreviewImage: {fileID: 969573653}
   interviewCanvas: {fileID: 1296547879}
+  salleName: s
 --- !u!65 &1649657935
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -19811,6 +19815,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   staticPreviewImage: {fileID: 0}
   interviewCanvas: {fileID: 0}
+  salleName: s
 --- !u!114 &1343658166034339315
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21045,7 +21050,7 @@ PrefabInstance:
     - target: {fileID: 1283399765720878160, guid: 5c1c92b450a47384693224bf8fa20432,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.42
+      value: -0.51
       objectReference: {fileID: 0}
     - target: {fileID: 1283399765720878160, guid: 5c1c92b450a47384693224bf8fa20432,
         type: 3}
