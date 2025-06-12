@@ -151,6 +151,7 @@ void ToggleGroup(ref bool groupState, Light[] objectLights, ref Coroutine blinkC
     string message = groupState ? "Repère les objets lumineux !" : "Les objets ne brillent plus";
     canvasController?.ShowCanvas(message);
     Debug.Log(message);
+    
 }
 
     IEnumerator BlinkLights(Light[] lights)
@@ -172,18 +173,26 @@ void ToggleGroup(ref bool groupState, Light[] objectLights, ref Coroutine blinkC
                 float intensity = Mathf.Lerp(maxIntensity, minIntensity, t / duration);
                 SetLightsIntensity(lights, intensity);
                 yield return null;
+                
             }
         }
+       
     }
 
-    void SetLightsIntensity(Light[] lights, float intensity)
+  void SetLightsIntensity(Light[] lights, float intensity)
+{
+    foreach (Light l in lights)
     {
-        foreach (Light l in lights)
+        if (l != null)
         {
-            if (l != null)
-                l.intensity = intensity;
+            l.intensity = intensity;
+            if (!l.enabled) l.enabled = true;
+            Debug.Log($"[Light Check] {l.name} - Intensity: {l.intensity}, Enabled: {l.enabled}");
         }
     }
+}
+
+
 
     public void ActivateGroupByObject(string objectName)
     {
