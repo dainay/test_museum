@@ -1,0 +1,149 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &6958063208638466018
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 601333081273742394, guid: 3389f5cc635d30141a2ecc16c28b8793,
+        type: 3}
+      propertyPath: m_Name
+      value: LAYOUTPRefab Brigitte2 Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 1174088851659602526, guid: 3389f5cc635d30141a2ecc16c28b8793,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1174088851659602526, guid: 3389f5cc635d30141a2ecc16c28b8793,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 136
+      objectReference: {fileID: 0}
+    - target: {fileID: 1174088851659602526, guid: 3389f5cc635d30141a2ecc16c28b8793,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 248
+      objectReference: {fileID: 0}
+    - target: {fileID: 2990121901349667518, guid: 3389f5cc635d30141a2ecc16c28b8793,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.35
+      objectReference: {fileID: 0}
+    - target: {fileID: 2990121901349667518, guid: 3389f5cc635d30141a2ecc16c28b8793,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.066
+      objectReference: {fileID: 0}
+    - target: {fileID: 2990121901349667518, guid: 3389f5cc635d30141a2ecc16c28b8793,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.224
+      objectReference: {fileID: 0}
+    - target: {fileID: 3668064849468262736, guid: 3389f5cc635d30141a2ecc16c28b8793,
+        type: 3}
+      propertyPath: m_text
+      value: "Dans cette \u0153uvre, Brigitte Piquard poursuit son exploration du
+        visage humain, th\xE8me central de sa d\xE9marche artistique. Deux figures
+        se d\xE9tachent ici sur un fond vibrant de bleus, anim\xE9s par des textures
+        fluides et organiques. Leurs visages, stylis\xE9s et expressifs, sont compos\xE9s
+        de formes g\xE9om\xE9triques et de motifs minutieux en vert et violet, qui
+        semblent pulser au rythme d\u2019une \xE9nergie int\xE9rieure.\r\n\nCe qui
+        frappe d\u2019abord, c\u2019est la vivacit\xE9 des contrastes : entre le
+        fond et les figures, entre les aplats de couleur et les d\xE9tails cisel\xE9s.
+        Pourtant, le tout reste harmonieux. Les couleurs se r\xE9pondent plus qu\u2019elles
+        ne s\u2019opposent, cr\xE9ant un \xE9quilibre visuel riche et dense.\r\n\nPar
+        cette composition libre mais ma\xEEtris\xE9e, l\u2019artiste nous invite
+        \xE0 regarder autrement \u2014 \xE0 ressentir plut\xF4t qu\u2019\xE0 comprendre,
+        \xE0 s\u2019attarder sur les formes, \xE0 \xE9couter ce que les couleurs
+        et les textures ont \xE0 dire.\r\n\n- Inspir\xE9e par Van Gogh, Mme Piquard
+        aime confronter les couleurs.\r\n\r\n- Artiste active, Brigitte Piquard a
+        d\xE9j\xE0 peint plus d\u2019une centaine de peintures mais aussi de broderies
+        minutieuses et color\xE9es.\r\n\r\n- Pour elle, un artiste est un individu
+        qui cr\xE9e. Le terme peut donc, pour elle, s\u2019appliquer \xE0 une infinit\xE9
+        de disciplines.\r\n\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 3668064849468262736, guid: 3389f5cc635d30141a2ecc16c28b8793,
+        type: 3}
+      propertyPath: m_margin.z
+      value: -243.22205
+      objectReference: {fileID: 0}
+    - target: {fileID: 4602136205162294952, guid: 3389f5cc635d30141a2ecc16c28b8793,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -1334
+      objectReference: {fileID: 0}
+    - target: {fileID: 4602136205162294952, guid: 3389f5cc635d30141a2ecc16c28b8793,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -316
+      objectReference: {fileID: 0}
+    - target: {fileID: 6365022097284298506, guid: 3389f5cc635d30141a2ecc16c28b8793,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 264e65e53a0dfa34d8d74844acd7af51,
+        type: 3}
+    - target: {fileID: 6769069199773957216, guid: 3389f5cc635d30141a2ecc16c28b8793,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 2c5e18aa2d779274d9ef8b03c675891d, type: 2}
+    - target: {fileID: 8792188623557099415, guid: 3389f5cc635d30141a2ecc16c28b8793,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -16.68
+      objectReference: {fileID: 0}
+    - target: {fileID: 8792188623557099415, guid: 3389f5cc635d30141a2ecc16c28b8793,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 6.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 8792188623557099415, guid: 3389f5cc635d30141a2ecc16c28b8793,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 9.31
+      objectReference: {fileID: 0}
+    - target: {fileID: 8792188623557099415, guid: 3389f5cc635d30141a2ecc16c28b8793,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8792188623557099415, guid: 3389f5cc635d30141a2ecc16c28b8793,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8792188623557099415, guid: 3389f5cc635d30141a2ecc16c28b8793,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8792188623557099415, guid: 3389f5cc635d30141a2ecc16c28b8793,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8792188623557099415, guid: 3389f5cc635d30141a2ecc16c28b8793,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8792188623557099415, guid: 3389f5cc635d30141a2ecc16c28b8793,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: 8792188623557099415, guid: 3389f5cc635d30141a2ecc16c28b8793,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 3389f5cc635d30141a2ecc16c28b8793, type: 3}

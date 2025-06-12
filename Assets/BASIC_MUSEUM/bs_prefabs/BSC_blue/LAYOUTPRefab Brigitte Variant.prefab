@@ -1,0 +1,355 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &3908671604827557460
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 822658543169537128, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_text
+      value: "Tout, tout m'int\xE9resse. Rien que la toile, m\xEAme nue, m'int\xE9resse.
+        Tous les travaux manuels m'int\xE9ressent. Je fais du dessin, je fais du
+        tricot, de la broderie. C\u2019est tout, je crois."
+      objectReference: {fileID: 0}
+    - target: {fileID: 942365216512111790, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_Texture
+      value: 
+      objectReference: {fileID: 2800000, guid: 6a69e7f5cad779d438cdfd1fdc428d7f, type: 3}
+    - target: {fileID: 1025645209643395728, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -16.39
+      objectReference: {fileID: 0}
+    - target: {fileID: 1025645209643395728, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 5.94
+      objectReference: {fileID: 0}
+    - target: {fileID: 1025645209643395728, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -9.41
+      objectReference: {fileID: 0}
+    - target: {fileID: 1025645209643395728, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1025645209643395728, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1025645209643395728, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1025645209643395728, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1025645209643395728, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1025645209643395728, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: 1025645209643395728, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1419779215318748191, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_text
+      value: Passion, plaisir et innovation.
+      objectReference: {fileID: 0}
+    - target: {fileID: 1547689882008621904, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_text
+      value: "Quel est votre artiste pr\xE9f\xE9r\xE9 ?"
+      objectReference: {fileID: 0}
+    - target: {fileID: 1854530405853092059, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_text
+      value: Auriez-vous un conseil pour les nouveaux artistes ?
+      objectReference: {fileID: 0}
+    - target: {fileID: 1993532639999463557, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_text
+      value: "D\xE9finissez votre art en 3 mots."
+      objectReference: {fileID: 0}
+    - target: {fileID: 2177593185769959870, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_text
+      value: "On doit essayer de nous faire conna\xEEtre dans le monde entier, le
+        plus possible ! On n'est pas l\xE0, \xE0 ne pouvoir rien faire. C'est pour
+        montrer que m\xEAme si on est immobilis\xE9s, on a tout notre cerveau et
+        la possibilit\xE9 gestuelle de pouvoir faire \xE7a. Parce que malheureusement,
+        beaucoup de personnes croient que parce qu\u2019on est handicap\xE9, on n\u2019est
+        bon \xE0 rien."
+      objectReference: {fileID: 0}
+    - target: {fileID: 2260937539689540916, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_text
+      value: Pourquoi peignez-vous des portraits ?
+      objectReference: {fileID: 0}
+    - target: {fileID: 2695036668657245633, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_text
+      value: Aimez-vous recevoir l'avis du public ?
+      objectReference: {fileID: 0}
+    - target: {fileID: 2720481362461696920, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_text
+      value: "Instinctif, pas trop non. Parce que, quand m\xEAme, il faut savoir
+        o\xF9 on met les couleurs. Sinon, on peut barbouiller du bleu sur un bout
+        de papier, et c'est tout, quoi."
+      objectReference: {fileID: 0}
+    - target: {fileID: 2813045027492560607, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2813045027492560607, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -442
+      objectReference: {fileID: 0}
+    - target: {fileID: 2813045027492560607, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -131
+      objectReference: {fileID: 0}
+    - target: {fileID: 2924477085394041953, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_text
+      value: "Artiste, c\u2019est une personne qui fait quelque chose de ses mains.
+        Aussi bien artiste peintre, auteur, compositeur. C\u2019est vaste, artiste.
+        \u201CArtiste\u201D, c\u2019est quelqu\u2019un qui essaie de faire son maximum
+        pour \xEAtre expos\xE9. Et qu'il y ait des retours positifs au lieu de n\xE9gatifs."
+      objectReference: {fileID: 0}
+    - target: {fileID: 3103159524003484709, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -1057
+      objectReference: {fileID: 0}
+    - target: {fileID: 3103159524003484709, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -421
+      objectReference: {fileID: 0}
+    - target: {fileID: 3317735108078817463, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_text
+      value: Qu'est ce qu'un artiste ?
+      objectReference: {fileID: 0}
+    - target: {fileID: 3714451864634584619, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3714451864634584619, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 346
+      objectReference: {fileID: 0}
+    - target: {fileID: 3714451864634584619, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 219
+      objectReference: {fileID: 0}
+    - target: {fileID: 3738534800305366859, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.018
+      objectReference: {fileID: 0}
+    - target: {fileID: 3738534800305366859, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.003
+      objectReference: {fileID: 0}
+    - target: {fileID: 4052466807415116894, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_text
+      value: Quels outils utilisez-vous ?
+      objectReference: {fileID: 0}
+    - target: {fileID: 4415194889633676988, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4415194889633676988, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 514
+      objectReference: {fileID: 0}
+    - target: {fileID: 4415194889633676988, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -333
+      objectReference: {fileID: 0}
+    - target: {fileID: 4562875193754806030, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e78c7c4e6c14a734eb3921ef13102a38, type: 2}
+    - target: {fileID: 5124612253722695334, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_text
+      value: "Je peins avec un pinceau ou une brosse, qui est une vari\xE9t\xE9 de
+        pinceau. \xC0 poils durs, \xE0 poils souples. Mais c\u2019est tout."
+      objectReference: {fileID: 0}
+    - target: {fileID: 5150336306682347031, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_Name
+      value: LAYOUTPRefab Brigitte Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 5246797017776471824, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_text
+      value: Nommez-vous vos oeuvres ?
+      objectReference: {fileID: 0}
+    - target: {fileID: 5724896692529921423, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_text
+      value: "J\u2019aime bien Van Gogh parce qu\u2019il y a des couleurs assez puissantes.
+        Je ne sais pas si vous avez remarqu\xE9, mais moi, j\u2019aime bien contrarier
+        les couleurs, c'est-\xE0-dire noir \xE0 c\xF4t\xE9 de blanc, ou de mettre
+        des couleurs une \xE0 c\xF4t\xE9 de l\u2019autre, sans qu'elles ne se heurtent.\r\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 5990020983876644279, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 4307d323e22d7814195a7489fc73508d,
+        type: 3}
+    - target: {fileID: 6007956954738302995, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_text
+      value: "Brigitte Piquard explore ici ce qu\u2019elle pr\xE9f\xE8re : le visage,
+        reflet de ses \xE9motions et de sa vision du monde.\r\n\r\nIci, le visage
+        bleu intense domine la composition, contrastant avec les touches d\u2019orange
+        qui viennent l\u2019entourer, l\u2019\xE9quilibrer, sans jamais l\u2019\xE9craser.
+        L\u2019artiste aime accorder les couleurs, les confronter m\xEAme, mais \u201Csans
+        qu\u2019elles ne se heurtent\u201D, comme elle le dit dans son interview.\r\n\r\nLa
+        chevelure, les yeux et la bouche sont remplis de nombreux d\xE9tails, chacun
+        avec sa propre texture et son propre rythme visuel qui attire le regard.
+        Chaque partie para\xEEt presque vivante, ind\xE9pendante, mais reste parfaitement
+        li\xE9e au reste du visage. Cette richesse montre \xE0 quel point l\u2019artiste
+        observe avec pr\xE9cision et passion, explorant sans cesse formes et \xE9motions.\r\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6338035721315370780, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -199
+      objectReference: {fileID: 0}
+    - target: {fileID: 6745661203219062636, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_text
+      value: "C\u2019est ce que j\u2019arrive de mieux \xE0 r\xE9aliser en peinture.\r\n\xC9tant
+        donn\xE9 que Jo\xEBlle pr\xE9f\xE8re un tableau rat\xE9 par moi personnellement
+        qu\u2019un tableau trop retouch\xE9, c'est pour \xE7a que la majorit\xE9
+        de mes tableaux sont plut\xF4t s\xE9lectionn\xE9s dans l'art brut."
+      objectReference: {fileID: 0}
+    - target: {fileID: 6803221100814340227, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_text
+      value: "Je n'ai pas de date butoir pour faire un tableau. Il sera fini quand
+        il sera fini. Parce que c\u2019est exactement comme la couture. Si vous regardez,
+        vous vous dites : \u201CAh, \xE7a, il manque...\u201D Un tableau n'est jamais
+        v\xE9ritablement fini."
+      objectReference: {fileID: 0}
+    - target: {fileID: 6825469390922629128, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_text
+      value: "Comment avez-vous commenc\xE9 la peinture ?"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6897068466438866179, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_text
+      value: "Que pr\xE9f\xE9rez-vous dans la peinture ?"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6927749950042392124, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_text
+      value: "Je me laisse aller directement, \xE0 l\u2019instinct. Mais de toute
+        fa\xE7on, d\xE8s le d\xE9part, je sais que c'est un visage. Apr\xE8s, qu'il
+        soit droit ou un peu d\xE9form\xE9, c\u2019est selon comme je peux dessiner."
+      objectReference: {fileID: 0}
+    - target: {fileID: 7203696373511224816, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: youtubeURL
+      value: https://youtu.be/Q9Zmm108X8I?si=5gMze3uANSbREt9-
+      objectReference: {fileID: 0}
+    - target: {fileID: 8135019395422015076, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_text
+      value: Votre art est-il instinctif ?
+      objectReference: {fileID: 0}
+    - target: {fileID: 8283876646048440358, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_text
+      value: "Est-ce que gagner en visibilit\xE9 est important ?"
+      objectReference: {fileID: 0}
+    - target: {fileID: 8406059711226971643, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_text
+      value: "\xC7a fait tout le temps plaisir, des compliments. On n\u2019est jamais
+        contre. Et si ce n\u2019est pas bon, j\u2019essaie de m'am\xE9liorer. J'\xE9vite
+        de refaire la m\xEAme faute. On apprend en faisant."
+      objectReference: {fileID: 0}
+    - target: {fileID: 8633618923285260120, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_text
+      value: "On a fait pendant des ann\xE9es des tableaux sans donner de titre.
+        Et maintenant, on donne un titre. Mais c'est fort difficile de donner un
+        titre. Parce que moi, je vais trouver un titre, vous, vous pourriez en trouver
+        un autre."
+      objectReference: {fileID: 0}
+    - target: {fileID: 8635853546772337790, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_text
+      value: "Quel est votre processus cr\xE9atif ?"
+      objectReference: {fileID: 0}
+    - target: {fileID: 8758926419066954019, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.094
+      objectReference: {fileID: 0}
+    - target: {fileID: 8758926419066954019, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.006
+      objectReference: {fileID: 0}
+    - target: {fileID: 8789655887483243845, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_text
+      value: "J\u2019ai toujours aim\xE9 l\u2019art. Je peignais avec mon p\xE8re.
+        Mais \xE0 l'\xE9poque, je faisais de la copie. Et depuis que je suis avec
+        Mme B\xE9card, que vous devez conna\xEEtre\u2026 Elle d\xE9teste la copie.
+        Alors, comme je suis pleine d'imagination, vous n'avez qu'\xE0 voir : tous
+        mes tableaux sont diff\xE9rents."
+      objectReference: {fileID: 0}
+    - target: {fileID: 9182503363713966568, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_VideoClip
+      value: 
+      objectReference: {fileID: 32900000, guid: 9285a4e13cfb80d4699b0387dda85cad,
+        type: 3}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 518dafb9ccee39747a410d95cb36e6f5, type: 3}
