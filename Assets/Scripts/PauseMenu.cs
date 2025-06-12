@@ -2,6 +2,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using TMPro;
+using System.Collections;
 
 public class PauseMenu : MonoBehaviour
 {
@@ -15,9 +16,14 @@ public class PauseMenu : MonoBehaviour
     [SerializeField] private Image volumeToggleImage;
     [SerializeField] private TextMeshProUGUI modeText;
     [SerializeField] private Slider volumeSlider;
+    [SerializeField] private DirectSceneTeleporter sceneTeleporter;
+
+    public string spawnPointClassique = "SpawnPointClassique";
+    public string spawnPointImmersive = "SpawnPointImmersive";
 
     private bool isMuted = false;
     private ModeManager.MuseumMode modeToSwitch;
+    private Coroutine currentSceneChangeCoroutine = null;
 
     void Start()
     {
@@ -50,7 +56,6 @@ public class PauseMenu : MonoBehaviour
 
         if (!pauseMenuUI.activeSelf)
         {
-            // Reset the mode modal and ensure panels are active
             modeModalUI.SetActive(false);
             volumeToggleUI.SetActive(true);
             modePanel.SetActive(true);
@@ -99,18 +104,54 @@ public class PauseMenu : MonoBehaviour
 
     public void ConfirmModeSwitch()
     {
+        if (sceneTeleporter == null)
+        {
+            Debug.LogError("DirectSceneTeleporter is not assigned!");
+            return;
+        }
+
+        GameObject player = GameObject.FindGameObjectWithTag("Player");
+        if (player != null)
+        {
+            sceneTeleporter.playerRef = player;
+            Debug.Log("Player reference set.");
+        }
+        else
+        {
+            Debug.LogError("Player not found!");
+        }
+
+        if (currentSceneChangeCoroutine != null)
+        {
+            StopCoroutine(currentSceneChangeCoroutine);
+            Debug.Log("Previous scene change coroutine stopped.");
+        }
+
         if (modeToSwitch == ModeManager.MuseumMode.Classic)
         {
-            ModeManager.Instance.SetMode(ModeManager.MuseumMode.Classic);
-            SceneManager.LoadSceneAsync("SalleClassique");
+            Debug.Log("Switching to Classic mode.");
+            ModeManager.Instance.SetMode(ModeManager.MuseumMode.Interactive);
+            sceneTeleporter.sceneName = "SalleClassique";
+            sceneTeleporter.spawnPointName = spawnPointClassique;
         }
         else if (modeToSwitch == ModeManager.MuseumMode.Interactive)
         {
-            ModeManager.Instance.SetMode(ModeManager.MuseumMode.Interactive);
-            SceneManager.LoadSceneAsync("Main_scene");
+            Debug.Log("Switching to Immersive mode.");
+            ModeManager.Instance.SetMode(ModeManager.MuseumMode.Classic);
+            sceneTeleporter.sceneName = "Main_scene";
+            sceneTeleporter.spawnPointName = spawnPointImmersive;
         }
-        CloseModeModal();
-        UpdateModeText();
+
+        Debug.Log($"Loading scene: {sceneTeleporter.sceneName} with spawn point: {sceneTeleporter.spawnPointName}");
+        currentSceneChangeCoroutine = StartCoroutine(HandleSceneChange(sceneTeleporter.FadeAndTeleport()));
+
+        ResumeGame();
+    }
+
+    private IEnumerator HandleSceneChange(IEnumerator fadeAndTeleportCoroutine)
+    {
+        yield return StartCoroutine(fadeAndTeleportCoroutine);
+        currentSceneChangeCoroutine = null;
     }
 
     public void CancelModeSwitch()
@@ -142,21 +183,14 @@ public class PauseMenu : MonoBehaviour
     {
         if (modeText != null)
         {
-            modeText.text = ModeManager.Instance.CurrentMode == ModeManager.MuseumMode.Classic ? "Immersif" : "Classique";
+            modeText.text = ModeManager.Instance.CurrentMode == ModeManager.MuseumMode.Interactive ? "Classique" : "Immersif";
         }
     }
 
     public void SetVolume(float volume)
     {
         AudioListener.volume = volume;
-        UpdateVolumeToggleImage(); // Update the toggle image whenever the volume changes
-        if (volume == 0f)
-        {
-            isMuted = true;
-        }
-        else
-        {
-            isMuted = false;
-        }
+        UpdateVolumeToggleImage();
+        isMuted = volume == 0f;
     }
 }
