@@ -1,6 +1,5 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using UnityEngine.UI;
 using TMPro;
 using System.Collections;
 
@@ -10,9 +9,9 @@ public class DirectSceneTeleporter : MonoBehaviour
     public string sceneName;
     public string spawnPointName = "SpawnPoint";
 
-    [Header("Fade & Hint (by Tag)")]
+    [Header("Fade & Hint")]
     [SerializeField] private string fadeTag = "Fade";
-    [SerializeField] private string hintTextTag = "Hint";
+    [SerializeField] private string hintMessage = "Appuyez sur E ou cliquez pour entrer";
     [SerializeField] private float fadeDuration = 1f;
 
     private CanvasGroup fadeCanvasGroup;
@@ -26,8 +25,18 @@ public class DirectSceneTeleporter : MonoBehaviour
         GameObject fadeObj = GameObject.FindWithTag(fadeTag);
         if (fadeObj != null) fadeCanvasGroup = fadeObj.GetComponent<CanvasGroup>();
 
-        GameObject hintObj = GameObject.FindWithTag(hintTextTag);
-        if (hintObj != null) hintText = hintObj.GetComponent<TextMeshProUGUI>();
+        GameObject player = GameObject.FindGameObjectWithTag("Player");
+        if (player != null)
+        {
+            foreach (var text in player.GetComponentsInChildren<TextMeshProUGUI>(true))
+            {
+                if (text.CompareTag("Hint"))
+                {
+                    hintText = text;
+                    break;
+                }
+            }
+        }
 
         if (hintText != null) hintText.text = "";
         if (fadeCanvasGroup != null) fadeCanvasGroup.alpha = 0f;
@@ -35,12 +44,13 @@ public class DirectSceneTeleporter : MonoBehaviour
 
     private void Update()
     {
-        if (playerInTrigger && Input.GetKeyDown(KeyCode.E))
+        if (playerInTrigger && (Input.GetKeyDown(KeyCode.E) || Input.GetMouseButtonDown(0)))
         {
             if (hintText != null) hintText.text = "";
             StartCoroutine(FadeAndTeleport());
         }
     }
+
 
     private void OnTriggerEnter(Collider other)
     {
@@ -50,7 +60,7 @@ public class DirectSceneTeleporter : MonoBehaviour
             playerRef = other.gameObject;
 
             if (hintText != null)
-                hintText.text = "Appuyez sur E pour entrer";
+                hintText.text = hintMessage;
         }
     }
 
