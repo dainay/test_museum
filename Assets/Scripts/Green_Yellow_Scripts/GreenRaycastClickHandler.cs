@@ -3,7 +3,6 @@ using System.Collections;
 
 public class GreenRaycastClickHandler : MonoBehaviour
 {
-    public CanvasLightController canvasController;
 
     public Camera mainCamera;
     public Camera managerCamera;
@@ -29,7 +28,7 @@ public class GreenRaycastClickHandler : MonoBehaviour
 
     void Start()
     {
-        canvasController = FindObjectOfType<CanvasLightController>();
+       
         GameObject lightObject = GameObject.Find("lightscene");
         if (lightObject != null)
         {
@@ -50,36 +49,78 @@ public class GreenRaycastClickHandler : MonoBehaviour
         objectLights1 = InitializeLights(objectNames1, new Color(0.9f, 0.4f, 0.1f));
         objectLights2 = InitializeLights(objectNames2, new Color(0f, 1f, 1f));
         objectLights3 = InitializeLights(objectNames3, Color.magenta);
+
+          Debug.Log($"[Start] objectLights1 count: {objectLights1.Length}");
+    Debug.Log($"[Start] objectLights2 count: {objectLights2.Length}");
+    Debug.Log($"[Start] objectLights3 count: {objectLights3.Length}");
+
+    foreach (Light l in objectLights1)
+    {
+        if (l == null)
+            Debug.LogWarning("[Start] Lumière manquante dans objectLights1 !");
+    }
+    foreach (Light l in objectLights2)
+    {
+        if (l == null)
+            Debug.LogWarning("[Start] Lumière manquante dans objectLights2 !");
+    }
+    foreach (Light l in objectLights3)
+    {
+        if (l == null)
+            Debug.LogWarning("[Start] Lumière manquante dans objectLights3 !");
+    }
     }
 
     Light[] InitializeLights(string[] objectNames, Color color)
-    {
-        Light[] lights = new Light[objectNames.Length];
+{
+    Light[] lights = new Light[objectNames.Length];
 
-        for (int i = 0; i < objectNames.Length; i++)
+    for (int i = 0; i < objectNames.Length; i++)
+    {
+        GameObject obj = GameObject.Find(objectNames[i]);
+        if (obj != null)
         {
-            GameObject obj = GameObject.Find(objectNames[i]);
-            if (obj != null)
+            Debug.Log($"[Init] Objet '{objectNames[i]}' trouvé.");
+
+            Light objLight = obj.GetComponentInChildren<Light>();
+            if (objLight != null)
             {
-                Light objLight = obj.GetComponentInChildren<Light>();
-                if (objLight != null)
-                {
-                    lights[i] = objLight;
-                    objLight.intensity = 0;
-                    objLight.color = color;
-                }
-                else
-                {
-                    Debug.LogWarning($"Aucune lumière trouvée dans '{objectNames[i]}' !");
-                }
+                lights[i] = objLight;
+                objLight.intensity = 0;
+                objLight.color = color;
+
+                Debug.Log($"[Init] Lumière trouvée sur '{objectNames[i]}'. Couleur définie: {color}");
             }
             else
             {
-                Debug.LogWarning($"Aucun objet nommé '{objectNames[i]}' trouvé !");
+                Debug.LogWarning($"[Init WARNING] Aucune lumière trouvée dans l'objet '{objectNames[i]}' !");
             }
         }
-        return lights;
+        else
+        {
+            Debug.LogWarning($"[Init WARNING] Objet '{objectNames[i]}' introuvable !");
+        }
     }
+    return lights;
+}
+
+void SetLightsIntensity(Light[] lights, float intensity)
+{
+    foreach (Light l in lights)
+    {
+        if (l != null)
+        {
+            l.intensity = intensity;
+            if (!l.enabled) l.enabled = true;
+            Debug.Log($"[Light Check] {l.name} - Intensity: {l.intensity}, Enabled: {l.enabled}, Position: {l.transform.position}");
+        }
+        else
+        {
+            Debug.LogWarning("[Light Check WARNING] Lumière null dans le tableau !");
+        }
+    }
+}
+
 
    public void SetObjectColor(string objectName, bool isCorrect)
 {
@@ -148,9 +189,8 @@ void ToggleGroup(ref bool groupState, Light[] objectLights, ref Coroutine blinkC
         SetLightsIntensity(objectLights, 0);
     }
 
-    string message = groupState ? "Repère les objets lumineux !" : "Les objets ne brillent plus";
-    canvasController?.ShowCanvas(message);
-    Debug.Log(message);
+ 
+    
 }
 
     IEnumerator BlinkLights(Light[] lights)
@@ -172,18 +212,14 @@ void ToggleGroup(ref bool groupState, Light[] objectLights, ref Coroutine blinkC
                 float intensity = Mathf.Lerp(maxIntensity, minIntensity, t / duration);
                 SetLightsIntensity(lights, intensity);
                 yield return null;
+                
             }
         }
+       
     }
 
-    void SetLightsIntensity(Light[] lights, float intensity)
-    {
-        foreach (Light l in lights)
-        {
-            if (l != null)
-                l.intensity = intensity;
-        }
-    }
+
+
 
     public void ActivateGroupByObject(string objectName)
     {
