@@ -26,6 +26,7 @@ TagManager:
   - PickupYellow
   - sign1
   - VictoryTracker
+  - BluePickup
   layers:
   - Default
   - TransparentFX
