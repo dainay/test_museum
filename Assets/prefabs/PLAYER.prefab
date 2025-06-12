@@ -2710,6 +2710,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a1f0e2306d90e304f9d392564e55dd8c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerCamera: {fileID: 8728702555015501220}
   maxDistance: 5
 --- !u!114 &4650703581525349316
 MonoBehaviour:
