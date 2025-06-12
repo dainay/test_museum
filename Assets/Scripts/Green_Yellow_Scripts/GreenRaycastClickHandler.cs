@@ -148,7 +148,7 @@ void ToggleGroup(ref bool groupState, Light[] objectLights, ref Coroutine blinkC
         SetLightsIntensity(objectLights, 0);
     }
 
-    string message = groupState ? "Trouvé les objets !" : "Les objets ne s'illuminent plus";
+    string message = groupState ? "Repère les objets lumineux !" : "Les objets ne brillent plus";
     canvasController?.ShowCanvas(message);
     Debug.Log(message);
 }

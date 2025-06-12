@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Video;
+using System.Collections.Generic;
 
 public class TryFocusLayout : MonoBehaviour
 {
@@ -17,140 +18,154 @@ public class TryFocusLayout : MonoBehaviour
 
     [SerializeField] private GameObject interviewCanvas;
 
-    public GameObject[] allLayouts;
     private GameObject playerCanvas;
-
-
+    private GameObject[] allLayouts;
+    private List<GameObject> previouslyDisabledLayouts = new List<GameObject>();
 
     void Awake()
     {
         allLayouts = GameObject.FindGameObjectsWithTag("Layout");
-        playerCanvas = GameObject.FindWithTag("PlayerCanvas");
 
-
-        // Найдём камеру layout внутри себя
         layoutCamera = GetComponentInChildren<Camera>(includeInactive: true);
 
-        // Главную камеру ищем по тегу
         GameObject mainCamObj = GameObject.FindGameObjectWithTag("MainCamera");
         if (mainCamObj != null)
             mainCamera = mainCamObj.GetComponent<Camera>();
 
-        // Найдём VideoPlayer, если он есть
         videoPlayerObject = GetComponentInChildren<VideoPlayer>()?.gameObject;
         videoPlayer = videoPlayerObject?.GetComponent<VideoPlayer>();
 
-
-        // Начальное состояние
         if (videoPlayerObject != null) videoPlayerObject.SetActive(false);
         if (staticPreviewImage != null) staticPreviewImage.enabled = true;
         if (videoDisplayImage != null) videoDisplayImage.enabled = false;
         if (layoutCamera != null) layoutCamera.gameObject.SetActive(false);
+    }
 
-         
+    void Start()
+    {
+        if (playerCanvas == null)
+        {
+            playerCanvas = GameObject.FindWithTag("PlayerCanvas");
+            if (playerCanvas == null)
+                Debug.LogWarning("❗ PlayerCanvas не найден!");
+            else
+                Debug.Log("🎯 Найден PlayerCanvas: " + playerCanvas.name);
+        }
     }
 
     public void EnterLayoutMode()
     {
-        // Деактивировать все layout-объекты кроме текущего
-        
+        previouslyDisabledLayouts.Clear();
+
         foreach (GameObject layout in allLayouts)
         {
-            if (layout != this.gameObject)
+            if (layout != null && layout != this.gameObject && layout.activeSelf)
             {
-                layout.SetActive(false); // 💥 отключаем
+                previouslyDisabledLayouts.Add(layout);
+                layout.SetActive(false);
+                Debug.Log("🚫 Отключён layout: " + layout.name);
             }
         }
 
-        // 💥 Отключаем Canvas игрока
         if (playerCanvas != null)
         {
             playerCanvas.SetActive(false);
-            Debug.Log("🛑 PlayerCanvas deactivated");
+            Debug.Log("🛑 PlayerCanvas отключён");
         }
 
-        // Переход в layout
         isInLayoutMode = true;
 
-        if (mainCamera != null)
-            mainCamera.gameObject.SetActive(false);
+        if (mainCamera != null) mainCamera.gameObject.SetActive(false);
+        if (layoutCamera != null) layoutCamera.gameObject.SetActive(true);
+        if (staticPreviewImage != null) staticPreviewImage.enabled = false;
+        if (videoDisplayImage != null) videoDisplayImage.enabled = true;
 
-        if (layoutCamera != null)
-            layoutCamera.gameObject.SetActive(true);
 
-        if (staticPreviewImage != null)
-            staticPreviewImage.enabled = false;
-
-        if (videoDisplayImage != null)
-            videoDisplayImage.enabled = true;
-
-        if (videoPlayerObject != null)
+        // 🎯 Проверка только для "SalleBlack"
+        if (UnityEngine.SceneManagement.SceneManager.GetActiveScene().name == "Black_scene")
         {
-            videoPlayerObject.SetActive(true);
-            videoPlayer?.Play();
+            if (VictoryTracker.Instance != null && VictoryTracker.Instance.HasWon("black"))
+            {
+                Debug.Log("✅ SalleBlack победена, активируем видео.");
+                if (videoPlayerObject != null)
+                {
+                    videoPlayerObject.SetActive(true);
+                    videoPlayer?.Play();
+                }
+
+                if (videoDisplayImage != null)
+                    videoDisplayImage.enabled = true;
+            }
+            else
+            {
+                Debug.Log("🔒 SalleBlack НЕ завершена — видео недоступно.");
+                if (videoDisplayImage != null)
+                    videoDisplayImage.enabled = false;
+                if (videoPlayerObject != null)
+                    videoPlayerObject.SetActive(false);
+            }
         }
+        else
+        {
+            // Во всех остальных сценах видео работает всегда
+            if (videoPlayerObject != null)
+            {
+                videoPlayerObject.SetActive(true);
+                videoPlayer?.Play();
+            }
+
+            if (videoDisplayImage != null)
+                videoDisplayImage.enabled = true;
+        }
+
 
         Cursor.visible = true;
         Cursor.lockState = CursorLockMode.None;
 
-        Debug.Log("📌 Layout activated: " + gameObject.name);
+        Debug.Log("📌 Layout активирован: " + gameObject.name);
     }
 
-        public void ExitLayoutMode()
+    public void ExitLayoutMode()
     {
         isInLayoutMode = false;
 
-        if (layoutCamera != null)
-            layoutCamera.gameObject.SetActive(false);
-
-        if (mainCamera != null)
-            mainCamera.gameObject.SetActive(true);
-
-        if (videoPlayer != null)
-            videoPlayer.Stop();
-
-        if (videoPlayerObject != null)
-            videoPlayerObject.SetActive(false);
-
-        if (videoDisplayImage != null)
-            videoDisplayImage.enabled = false;
-
-        if (staticPreviewImage != null)
-            staticPreviewImage.enabled = true;
+        if (layoutCamera != null) layoutCamera.gameObject.SetActive(false);
+        if (mainCamera != null) mainCamera.gameObject.SetActive(true);
+        if (videoPlayer != null) videoPlayer.Stop();
+        if (videoPlayerObject != null) videoPlayerObject.SetActive(false);
+        if (videoDisplayImage != null) videoDisplayImage.enabled = false;
+        if (staticPreviewImage != null) staticPreviewImage.enabled = true;
 
         if (interviewCanvas != null && interviewCanvas.activeSelf)
         {
             interviewCanvas.SetActive(false);
-            Debug.Log("❌ Interview canvas deactivated");
+            Debug.Log("❌ InterviewCanvas отключён");
         }
-
 
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
 
-        // ✅ Возвращаем Canvas игрока
         if (playerCanvas != null)
         {
             playerCanvas.SetActive(true);
-            Debug.Log("✅ PlayerCanvas reactivated");
+            Debug.Log("✅ PlayerCanvas возвращён");
         }
 
-        // Вернём остальные layout обратно
-       
-        foreach (GameObject layout in allLayouts)
+        foreach (GameObject layout in previouslyDisabledLayouts)
         {
-            if (layout != this.gameObject)
+            if (layout != null)
             {
                 layout.SetActive(true);
+                Debug.Log("✅ Возвращён layout: " + layout.name);
             }
         }
 
-        Debug.Log("🎮 Back to main view");
+        previouslyDisabledLayouts.Clear();
+
+        Debug.Log("🎮 Возврат к обычному виду");
     }
 
-
-
-void Update()
+    void Update()
     {
         if (isInLayoutMode && (Input.GetKeyDown(KeyCode.X) || Input.GetKeyDown(KeyCode.Escape)))
         {
