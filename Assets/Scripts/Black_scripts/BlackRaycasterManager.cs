@@ -2,14 +2,14 @@
 
 public class BlackRaycasterManager : MonoBehaviour
 {
-    private Camera playerCamera; // Assign Main Camera in Inspector
+    [SerializeField] public Camera playerCamera; // Assign Main Camera in Inspector
     [SerializeField] private float maxDistance = 3.0f; // Raycast range
 
     void Start()
     {
        
         
-            playerCamera = Camera.main;
+            //playerCamera = Camera.main;
 
             if (playerCamera != null)
             {

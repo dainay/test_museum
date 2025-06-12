@@ -84,7 +84,7 @@ public class pinkroom_logic : MonoBehaviour
     {
         if (panelOpened)
         {
-            if (Input.GetKeyDown(KeyCode.Escape))
+            if (Input.GetKeyDown(KeyCode.X))
                 CloseCodePanel();
 
             if (Input.GetMouseButtonDown(0))
