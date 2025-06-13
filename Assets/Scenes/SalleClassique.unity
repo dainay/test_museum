@@ -274,7 +274,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &9411851
 Transform:
   m_ObjectHideFlags: 0
@@ -6454,12 +6454,12 @@ Light:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 410087039}
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 10
   m_Type: 1
   m_Shape: 0
   m_Color: {r: 0.5773585, g: 0.5773585, b: 0.5773585, a: 1}
-  m_Intensity: 10
+  m_Intensity: 5
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -13542,9 +13542,10 @@ MonoBehaviour:
       m_Calls: []
   m_text: "Explorez les diff\xE9rentes salles, chacune inspir\xE9e par une couleur
     dominante,\net d\xE9couvrez les peintures r\xE9alis\xE9es par des artistes en
-    situation de handicap.\nDans chaque espace, un mini-jeu vous attend.\nEn le r\xE9ussissant,
-    vous collecterez une sph\xE8re de couleur, symbole de votre progression.\n\nCollectez
-    toutes les sph\xE8res pour d\xE9bloquer une surprise finale.\n"
+    situation de handicap.\nProfitez de chaque espace en vous impregnant de l'ambiance
+    g\xE9n\xE9ral.\n\nUne version interactive ce cette exposition existe avec des
+    mini jeux et un jeu de piste, pour y accedez selectionnez lersion immesrve dans
+    le menu.\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: a34d9a5179ab067429f45c13ff815d95, type: 2}
   m_sharedMaterial: {fileID: 5299756825578791580, guid: a34d9a5179ab067429f45c13ff815d95,
@@ -16032,7 +16033,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1079051744
 Transform:
   m_ObjectHideFlags: 0
@@ -20160,7 +20161,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1480578737
 Transform:
   m_ObjectHideFlags: 0
@@ -24203,7 +24204,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\nPrenez le temps, jouez, et d\xE9couvrez des \u0153uvres uniques, fortes
+  m_text: "Prenez le temps, jouez, et d\xE9couvrez des \u0153uvres uniques, fortes
     et expressives."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: a34d9a5179ab067429f45c13ff815d95, type: 2}
@@ -24268,7 +24269,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 218.46628, y: 468.23627, z: 220.48174, w: -238.85942}
+  m_margin: {x: 204.17343, y: 414.1956, z: 220.48174, w: -238.85942}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
