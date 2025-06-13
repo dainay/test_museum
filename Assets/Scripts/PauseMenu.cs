@@ -16,7 +16,11 @@ public class PauseMenu : MonoBehaviour
     [SerializeField] private Image volumeToggleImage;
     [SerializeField] private TextMeshProUGUI modeText;
     [SerializeField] private Slider volumeSlider;
-    [SerializeField] private DirectSceneTeleporter sceneTeleporter;
+
+    [Header("Scene Transition Settings")]
+    [SerializeField] private string fadeTag = "Fade";
+    [SerializeField] private string hintTextTag = "Hint";
+    [SerializeField] private float fadeDuration = 1f;
 
     public string spawnPointClassique = "SpawnPointClassique";
     public string spawnPointImmersive = "SpawnPointImmersive";
@@ -24,6 +28,8 @@ public class PauseMenu : MonoBehaviour
     private bool isMuted = false;
     private ModeManager.MuseumMode modeToSwitch;
     private Coroutine currentSceneChangeCoroutine = null;
+    private CanvasGroup fadeCanvasGroup;
+    private TextMeshProUGUI hintText;
 
     void Start()
     {
@@ -33,6 +39,16 @@ public class PauseMenu : MonoBehaviour
         Cursor.lockState = CursorLockMode.Locked;
         UpdateVolumeToggleImage();
         UpdateModeText();
+
+        // Initialize fade and hint text objects
+        GameObject fadeObj = GameObject.FindWithTag(fadeTag);
+        if (fadeObj != null) fadeCanvasGroup = fadeObj.GetComponent<CanvasGroup>();
+
+        GameObject hintObj = GameObject.FindWithTag(hintTextTag);
+        if (hintObj != null) hintText = hintObj.GetComponent<TextMeshProUGUI>();
+
+        if (hintText != null) hintText.text = "";
+        if (fadeCanvasGroup != null) fadeCanvasGroup.alpha = 0f;
 
         if (volumeSlider != null)
         {
@@ -104,21 +120,11 @@ public class PauseMenu : MonoBehaviour
 
     public void ConfirmModeSwitch()
     {
-        if (sceneTeleporter == null)
-        {
-            Debug.LogError("DirectSceneTeleporter is not assigned!");
-            return;
-        }
-
         GameObject player = GameObject.FindGameObjectWithTag("Player");
-        if (player != null)
-        {
-            sceneTeleporter.playerRef = player;
-            Debug.Log("Player reference set.");
-        }
-        else
+        if (player == null)
         {
             Debug.LogError("Player not found!");
+            return;
         }
 
         if (currentSceneChangeCoroutine != null)
@@ -127,31 +133,110 @@ public class PauseMenu : MonoBehaviour
             Debug.Log("Previous scene change coroutine stopped.");
         }
 
+        string targetSceneName;
+        string targetSpawnPoint;
+
         if (modeToSwitch == ModeManager.MuseumMode.Classic)
         {
             Debug.Log("Switching to Classic mode.");
             ModeManager.Instance.SetMode(ModeManager.MuseumMode.Interactive);
-            sceneTeleporter.sceneName = "SalleClassique";
-            sceneTeleporter.spawnPointName = spawnPointClassique;
+            targetSceneName = "SalleClassique";
+            targetSpawnPoint = spawnPointClassique;
         }
         else if (modeToSwitch == ModeManager.MuseumMode.Interactive)
         {
             Debug.Log("Switching to Immersive mode.");
             ModeManager.Instance.SetMode(ModeManager.MuseumMode.Classic);
-            sceneTeleporter.sceneName = "Main_scene";
-            sceneTeleporter.spawnPointName = spawnPointImmersive;
+            targetSceneName = "Main_scene";
+            targetSpawnPoint = spawnPointImmersive;
+        }
+        else
+        {
+            Debug.LogError("Unrecognized mode.");
+            return;
         }
 
-        Debug.Log($"Loading scene: {sceneTeleporter.sceneName} with spawn point: {sceneTeleporter.spawnPointName}");
-        currentSceneChangeCoroutine = StartCoroutine(HandleSceneChange(sceneTeleporter.FadeAndTeleport()));
+        Debug.Log($"Loading scene: {targetSceneName} with spawn point: {targetSpawnPoint}");
+        currentSceneChangeCoroutine = StartCoroutine(HandleSceneChange(targetSceneName, targetSpawnPoint, player));
 
         ResumeGame();
     }
 
-    private IEnumerator HandleSceneChange(IEnumerator fadeAndTeleportCoroutine)
+    private IEnumerator HandleSceneChange(string sceneName, string spawnPointName, GameObject player)
     {
-        yield return StartCoroutine(fadeAndTeleportCoroutine);
-        currentSceneChangeCoroutine = null;
+        yield return StartCoroutine(FadeToBlack());
+
+        AsyncOperation asyncOperation = SceneManager.LoadSceneAsync(sceneName, LoadSceneMode.Additive);
+
+        while (!asyncOperation.isDone)
+        {
+            yield return null;
+        }
+
+        Scene newScene = SceneManager.GetSceneByName(sceneName);
+        if (!newScene.IsValid() || !newScene.isLoaded)
+        {
+            Debug.LogError("Failed to load the new scene.");
+            yield break;
+        }
+
+        // Find the spawn point in the new scene
+        GameObject spawnPoint = null;
+        foreach (GameObject obj in newScene.GetRootGameObjects())
+        {
+            if (obj.name == spawnPointName)
+            {
+                spawnPoint = obj;
+                break;
+            }
+        }
+
+        if (spawnPoint != null)
+        {
+            player.transform.position = spawnPoint.transform.position;
+            player.transform.rotation = spawnPoint.transform.rotation;
+        }
+        else
+        {
+            Debug.LogError("Spawn point not found in the new scene.");
+        }
+
+        // Unload the previous scene
+        Scene currentScene = SceneManager.GetActiveScene();
+        yield return SceneManager.UnloadSceneAsync(currentScene.name);
+
+        // Set the new scene as active
+        SceneManager.SetActiveScene(newScene);
+
+        yield return StartCoroutine(FadeFromBlack());
+    }
+
+    private IEnumerator FadeToBlack()
+    {
+        if (fadeCanvasGroup == null) yield break;
+
+        float time = 0f;
+        while (time < fadeDuration)
+        {
+            fadeCanvasGroup.alpha = Mathf.Lerp(0f, 1f, time / fadeDuration);
+            time += Time.deltaTime;
+            yield return null;
+        }
+        fadeCanvasGroup.alpha = 1f;
+    }
+
+    private IEnumerator FadeFromBlack()
+    {
+        if (fadeCanvasGroup == null) yield break;
+
+        float time = 0f;
+        while (time < fadeDuration)
+        {
+            fadeCanvasGroup.alpha = Mathf.Lerp(1f, 0f, time / fadeDuration);
+            time += Time.deltaTime;
+            yield return null;
+        }
+        fadeCanvasGroup.alpha = 0f;
     }
 
     public void CancelModeSwitch()
