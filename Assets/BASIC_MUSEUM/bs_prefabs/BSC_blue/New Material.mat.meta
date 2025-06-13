@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/Scenes/Main_scene/LightingData.asset.meta
+guid: 98965c12e82e06345b87f52c71555673
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 112000000
+========
+guid: 02955a3b2218c7a488b08053fa24eb71
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+>>>>>>>> 04e2b0a2305a352518c1486d8e81693cd5545ed3:Assets/BASIC_MUSEUM/bs_prefabs/BSC_blue/New Material.mat.meta
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

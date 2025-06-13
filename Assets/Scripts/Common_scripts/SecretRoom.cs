@@ -41,6 +41,7 @@ public class SecretDoorTrigger : MonoBehaviour
                 videoPlayer.Play();
                 Debug.Log("▶️ Видео запущено при входе в зону двери.");
             }
+            Destroy(GetComponent<Collider>());
         }
     }
 }

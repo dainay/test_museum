@@ -13,6 +13,8 @@ public class VictoryTracker : MonoBehaviour
 
     [SerializeField] public bool globalSecretUnlocked = false;
 
+    public bool blackRoomShow = false;
+
 
     void Awake()
     {

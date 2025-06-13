@@ -12,7 +12,7 @@ public class GameManagerDropdown : MonoBehaviour
 
     private Camera mainCamera;
 
-
+    public bool blackRoomVictory = false;
 
     private void Awake()
     {
@@ -65,8 +65,13 @@ public class GameManagerDropdown : MonoBehaviour
         // ✅ Активируем все Canvas с описанием
         PaintingInfoManager.Instance.SetAllActive(true);
 
+        VictoryTracker.Instance.blackRoomShow = true;
+        Debug.Log("✅ Победа в чёрной комнате зарегистрирована через глобальную переменную.");
+
         Debug.Log("🎨 Painting Info shown and registered for: " + salleName);
         Invoke("ReturnToMainCamera", 3.4f);
+
+       
 
     }
     private void ReturnToMainCamera()

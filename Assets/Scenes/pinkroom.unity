@@ -654,6 +654,7 @@ MonoBehaviour:
   positionOffset: {x: 0.5, y: 1, z: -0.1}
   rotationOffset: {x: 0, y: 0, z: -41}
   openDuration: 1
+  ballAnimator: {fileID: 279165144}
   secondaryCamera: {fileID: 1310667350}
 --- !u!1 &90424969
 GameObject:
@@ -2142,6 +2143,33 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 276235747}
   m_CullTransparentMesh: 1
+--- !u!1 &279165138 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1242934280235907244, guid: 3f0a96bb40a03b8459e8ce176c3f14eb,
+    type: 3}
+  m_PrefabInstance: {fileID: 977738832}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &279165144
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 279165138}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: ac3b05547446ac944869680632f0b4df, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &295455412
 GameObject:
   m_ObjectHideFlags: 0
@@ -10612,7 +10640,7 @@ PrefabInstance:
     - target: {fileID: 6232324524690312049, guid: 3f0a96bb40a03b8459e8ce176c3f14eb,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -9.203
+      value: -9.53
       objectReference: {fileID: 0}
     - target: {fileID: 6232324524690312049, guid: 3f0a96bb40a03b8459e8ce176c3f14eb,
         type: 3}
@@ -10622,7 +10650,7 @@ PrefabInstance:
     - target: {fileID: 6232324524690312049, guid: 3f0a96bb40a03b8459e8ce176c3f14eb,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 22.15
+      value: 26.6
       objectReference: {fileID: 0}
     - target: {fileID: 6232324524690312049, guid: 3f0a96bb40a03b8459e8ce176c3f14eb,
         type: 3}
@@ -10667,7 +10695,11 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1242934280235907244, guid: 3f0a96bb40a03b8459e8ce176c3f14eb,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 279165144}
   m_SourcePrefab: {fileID: 100100000, guid: 3f0a96bb40a03b8459e8ce176c3f14eb, type: 3}
 --- !u!1 &978299122
 GameObject:
