@@ -2286,6 +2286,7 @@ MonoBehaviour:
   fadeTag: Fade
   hintMessage: Appuyez sur E pour entrer
   fadeDuration: 1
+  playerRef: {fileID: 0}
 --- !u!1 &798906332
 GameObject:
   m_ObjectHideFlags: 0
@@ -2572,6 +2573,11 @@ PrefabInstance:
     - target: {fileID: 5475964374770908942, guid: a807cdc5e2c0f9c4dac3f75227b368bb,
         type: 3}
       propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5813621500016759160, guid: a807cdc5e2c0f9c4dac3f75227b368bb,
+        type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -6144,6 +6150,7 @@ MonoBehaviour:
   fadeTag: Fade
   hintMessage: Appuyez sur E pour entrer
   fadeDuration: 1
+  playerRef: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

@@ -28,6 +28,8 @@ public class pinkroom_logic : MonoBehaviour
     [SerializeField] private Vector3 rotationOffset = new Vector3(0f, 90f, 0f);
     [SerializeField] private float openDuration = 1f;
 
+    [SerializeField] private Animator ballAnimator;
+
     [Header("Cameras")]
     [SerializeField] private Camera secondaryCamera;
 
@@ -268,5 +270,7 @@ public class pinkroom_logic : MonoBehaviour
         chestToOpen.position = endPos;
         chestToOpen.rotation = endRot;
         Debug.Log("[OpenChest] Coffre ouvert");
+
+        ballAnimator.SetTrigger("FlyBall");
     }
 }

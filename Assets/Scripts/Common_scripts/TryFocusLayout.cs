@@ -21,8 +21,7 @@ public class TryFocusLayout : MonoBehaviour
     private GameObject playerCanvas;
     private GameObject[] allLayouts;
     private List<GameObject> previouslyDisabledLayouts = new List<GameObject>();
-
-    [SerializeField] private string salleName = "s";
+ 
 
     void Awake()
     {
