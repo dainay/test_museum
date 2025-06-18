@@ -1886,7 +1886,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: -815}
+  m_AnchoredPosition: {x: 0, y: -863}
   m_SizeDelta: {x: 327.67, y: 384.3}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &141823587
@@ -1909,18 +1909,13 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Peinte \xE0 la R\xE9sidence du Maine, cette toile est l\u2019expression
-    brute des \xE9motions d\u2019Alexandra Mayolle. \r\nLes couleurs s\u2019y m\xEAlent
-    en un ensemble harmonieux et contrast\xE9. Des nuances de bleu d\xE9corent les
-    coins en haut \xE0 gauche et en bas \xE0 droite de la toile, tandis que les deux
-    autres coins oppos\xE9s sont peints de diff\xE9rentes teintes de jaune. ansparente,
-    o\xF9 chaque \xE9motion se transforme en un nuancier diversifi\xE9. \r\nPeinte
-    \xE0 la R\xE9sidence du Maine, cette toile est l\u2019expression brute des \xE9motions
-    d\u2019Alexandra Mayolle. \r\nLes couleurs s\u2019y m\xEAlent en un ensemble
-    harmonieux et contrast\xE9. Des nuances de bleu d\xE9corent les coins en haut
-    \xE0 gauche et en bas \xE0 droite de la toile, tandis que les deux autres coins
-    oppos\xE9s sont peints de diff\xE9rentes teintes de jaune. ansparente, o\xF9
-    chaque \xE9motion se transforme en un nuancier diversifi\xE9. \r\n\n\r\n"
+  m_text: "Je pense que c'est des fonds. Souvent, c'est ce que Jo\xEBlle lui faisait
+    faire, je pense. Elle faisait un fond noir. Et apr\xE8s, elle dessine dessus.
+    Ou plus compliqu\xE9 ? \xC7a, je l\u2019ai vu faire. Elle fait les couleurs et
+    apr\xE8s tout ce qu'il reste, elle le fait en noir, donc c'est plus compliqu\xE9.
+    Mais elle y arrive, vous voyez ce que je veux dire. C'est plus un fond qu'une
+    signification tristounette ou je ne sais pas quoi. \xC7a n'a rien \xE0 voir,
+    parce qu'elle est tout sauf triste."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 603f9c33538968642a3abb523b88a91b, type: 2}
   m_sharedMaterial: {fileID: -2012617884002664389, guid: 603f9c33538968642a3abb523b88a91b,
@@ -1984,7 +1979,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -27.970001, y: 0, z: -27.642944, w: 0}
+  m_margin: {x: -27.970001, y: 0, z: -27.642944, w: 224.54512}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -3217,7 +3212,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -1.9999084, y: -488.1}
+  m_AnchoredPosition: {x: -1.9999084, y: -322}
   m_SizeDelta: {x: 175, y: 55}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &314489976
@@ -3736,7 +3731,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   staticPreviewImage: {fileID: 0}
   interviewCanvas: {fileID: 0}
-  salleName: s
 --- !u!65 &362211892
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4037,7 +4031,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   staticPreviewImage: {fileID: 0}
   interviewCanvas: {fileID: 0}
-  salleName: s
 --- !u!65 &419950392
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5379,7 +5372,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -257}
+  m_AnchoredPosition: {x: 31, y: -257}
   m_SizeDelta: {x: 175, y: 55}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &623394132
@@ -9956,7 +9949,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: -496}
+  m_AnchoredPosition: {x: 0, y: -518}
   m_SizeDelta: {x: 417.14, y: 80.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1006966133
@@ -9979,7 +9972,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: What is your favoirute color?
+  m_text: "Quel r\xF4le a le noir dans la peinture d'Alexandra ?"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: a8d695c35f9f1e34a91cfdda27d9ea6b, type: 2}
   m_sharedMaterial: {fileID: -3360184566523924744, guid: a8d695c35f9f1e34a91cfdda27d9ea6b,
@@ -10043,7 +10036,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -39.125534, y: 0, z: -41.10161, w: 0}
+  m_margin: {x: -39.125534, y: 0, z: -53.575073, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -12930,7 +12923,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 353, y: 336}
+  m_AnchoredPosition: {x: 316.5, y: 336}
   m_SizeDelta: {x: 247.8, y: 444.75}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1322800213
@@ -15045,7 +15038,7 @@ Transform:
   m_GameObject: {fileID: 1570454921}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -45.71, y: 0, z: 0}
+  m_LocalPosition: {x: -49.17, y: 0, z: 0}
   m_LocalScale: {x: 0.014008562, y: 0.060000002, z: -0.1642935}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -15314,7 +15307,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: -138.63535, w: -456.35397}
+  m_margin: {x: 0, y: 0, z: -185.48535, w: -456.35397}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -15607,7 +15600,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   staticPreviewImage: {fileID: 969573653}
   interviewCanvas: {fileID: 1296547879}
-  salleName: s
 --- !u!65 &1649657935
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -19815,7 +19807,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   staticPreviewImage: {fileID: 0}
   interviewCanvas: {fileID: 0}
-  salleName: s
 --- !u!114 &1343658166034339315
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21418,6 +21409,16 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -1465.7
       objectReference: {fileID: 0}
+    - target: {fileID: 21481573261819413, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_Colors.m_FadeDuration
+      value: 1.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 21481573261819413, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_Colors.m_ColorMultiplier
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 68411319143057183, guid: 518dafb9ccee39747a410d95cb36e6f5,
         type: 3}
       propertyPath: m_StaticEditorFlags
@@ -21462,6 +21463,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 339886494479448172, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 339886494479448172, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 23.5
       objectReference: {fileID: 0}
     - target: {fileID: 432164420176546580, guid: 518dafb9ccee39747a410d95cb36e6f5,
         type: 3}
@@ -21585,6 +21596,21 @@ PrefabInstance:
         Tous les travaux manuels m'int\xE9ressent. Je fais du dessin, je fais du
         tricot, de la broderie. C\u2019est tout, je crois.\r"
       objectReference: {fileID: 0}
+    - target: {fileID: 891381094489751198, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 891381094489751198, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 891381094489751198, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 892672098565157912, guid: 518dafb9ccee39747a410d95cb36e6f5,
         type: 3}
       propertyPath: m_AnchorMax.y
@@ -21675,6 +21701,11 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
+    - target: {fileID: 1224341305340292700, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_fontStyle
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1230008461868036743, guid: 518dafb9ccee39747a410d95cb36e6f5,
         type: 3}
       propertyPath: m_StaticEditorFlags
@@ -21697,6 +21728,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1547689882008621904, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_text
+      value: Qu'est ce qu'un artiste ?
       objectReference: {fileID: 0}
     - target: {fileID: 1602843300670815582, guid: 518dafb9ccee39747a410d95cb36e6f5,
         type: 3}
@@ -22399,6 +22435,19 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -135.77
       objectReference: {fileID: 0}
+    - target: {fileID: 5724896692529921423, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_text
+      value: "Artiste, c\u2019est une personne qui fait quelque chose de ses mains.
+        Aussi bien artiste peintre, auteur, compositeur. C\u2019est vaste, artiste.
+        \u201CArtiste\u201D, c\u2019est quelqu\u2019un qui essaie de faire son maximum
+        pour \xEAtre expos\xE9. Et qu'il y ait des retours positifs au lieu de n\xE9gatifs."
+      objectReference: {fileID: 0}
+    - target: {fileID: 5724896692529921423, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_margin.y
+      value: 17.244186
+      objectReference: {fileID: 0}
     - target: {fileID: 5802375976072443858, guid: 518dafb9ccee39747a410d95cb36e6f5,
         type: 3}
       propertyPath: m_StaticEditorFlags
@@ -22453,6 +22502,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 6338035721315370780, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6338035721315370780, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -14
+      objectReference: {fileID: 0}
+    - target: {fileID: 6338035721315370780, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -240
       objectReference: {fileID: 0}
     - target: {fileID: 6360503105035736862, guid: 518dafb9ccee39747a410d95cb36e6f5,
         type: 3}
@@ -22903,6 +22967,11 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
+    - target: {fileID: 8854316238308014513, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -550
+      objectReference: {fileID: 0}
     - target: {fileID: 8855346551506155193, guid: 518dafb9ccee39747a410d95cb36e6f5,
         type: 3}
       propertyPath: m_StaticEditorFlags
@@ -23003,8 +23072,7 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 3048396564258492500, guid: 518dafb9ccee39747a410d95cb36e6f5, type: 3}
+    m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 4103991818432497167, guid: 518dafb9ccee39747a410d95cb36e6f5,

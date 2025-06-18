@@ -3568,7 +3568,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   staticPreviewImage: {fileID: 942365216512111790}
   interviewCanvas: {fileID: 3704395867256695240}
-  allLayouts: []
 --- !u!114 &7203696373511224816
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3819,7 +3818,6 @@ GameObject:
   m_Component:
   - component: {fileID: 2129506424427835635}
   - component: {fileID: 1691259566085659335}
-  - component: {fileID: 3048396564258492500}
   - component: {fileID: 8714877366072662385}
   m_Layer: 0
   m_Name: Camera
@@ -3837,7 +3835,7 @@ Transform:
   m_GameObject: {fileID: 5802375976072443858}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -45.71, y: 0, z: 0}
+  m_LocalPosition: {x: -51.67, y: 0, z: -0}
   m_LocalScale: {x: 0.014008562, y: 0.060000002, z: -0.1642935}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3894,14 +3892,6 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
---- !u!81 &3048396564258492500
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5802375976072443858}
-  m_Enabled: 1
 --- !u!114 &8714877366072662385
 MonoBehaviour:
   m_ObjectHideFlags: 0

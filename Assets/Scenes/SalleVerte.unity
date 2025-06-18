@@ -23,10 +23,10 @@ RenderSettings:
   m_AmbientSkyColor: {r: 0.5732501, g: 0.5719117, b: 0.6415094, a: 1}
   m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
   m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
-  m_AmbientIntensity: 1.28
+  m_AmbientIntensity: 2.15
   m_AmbientMode: 0
-  m_SubtractiveShadowColor: {r: 0.46907288, g: 0.46907288, b: 0.46907288, a: 1}
-  m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
+  m_SubtractiveShadowColor: {r: 0.1934371, g: 0.1934371, b: 0.1934371, a: 1}
+  m_SkyboxMaterial: {fileID: 2100000, guid: 56c9ed5ee739a324e8d8bdb9613f4890, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -35,7 +35,7 @@ RenderSettings:
   m_DefaultReflectionMode: 0
   m_DefaultReflectionResolution: 128
   m_ReflectionBounces: 1
-  m_ReflectionIntensity: 0.834
+  m_ReflectionIntensity: 0.031
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
   m_UseRadianceAmbientProbe: 0
@@ -3574,146 +3574,6 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
---- !u!1 &340661265
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 340661266}
-  - component: {fileID: 340661268}
-  - component: {fileID: 340661267}
-  m_Layer: 0
-  m_Name: FastAns (1)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
-  m_IsActive: 1
---- !u!224 &340661266
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 340661265}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1.3, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 2129373931}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 1}
-  m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: -942}
-  m_SizeDelta: {x: 327.67, y: 384.3}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &340661267
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 340661265}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_text: "Mme Semon voue une grande admiration aux artistes de la Renaissance tels
-    que Michel-Ange, Sandro Botticelli, Fra Angelico ou encore Frans Hals.\n\n\xC0
-    la Renaissance, le vert \xE9tait une couleur ambivalente : symbole de nature
-    et de fertilit\xE9, mais aussi parfois per\xE7ue comme maudite et toxique en
-    raison des pigments utilis\xE9s \xE0 sa conception. Catherine Semon se r\xE9approprie
-    aujourd\u2019hui cette teinte pour en faire un embl\xE8me d\u2019espoir.\n"
-  m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 603f9c33538968642a3abb523b88a91b, type: 2}
-  m_sharedMaterial: {fileID: -2012617884002664389, guid: 603f9c33538968642a3abb523b88a91b,
-    type: 2}
-  m_fontSharedMaterials: []
-  m_fontMaterial: {fileID: 0}
-  m_fontMaterials: []
-  m_fontColor32:
-    serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
-  m_enableVertexGradient: 0
-  m_colorMode: 3
-  m_fontColorGradient:
-    topLeft: {r: 1, g: 1, b: 1, a: 1}
-    topRight: {r: 1, g: 1, b: 1, a: 1}
-    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
-    bottomRight: {r: 1, g: 1, b: 1, a: 1}
-  m_fontColorGradientPreset: {fileID: 0}
-  m_spriteAsset: {fileID: 0}
-  m_tintAllSprites: 0
-  m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: -1183493901
-  m_overrideHtmlColors: 0
-  m_faceColor:
-    serializedVersion: 2
-    rgba: 4294967295
-  m_fontSize: 13
-  m_fontSizeBase: 13
-  m_fontWeight: 400
-  m_enableAutoSizing: 0
-  m_fontSizeMin: 18
-  m_fontSizeMax: 72
-  m_fontStyle: 0
-  m_HorizontalAlignment: 1
-  m_VerticalAlignment: 256
-  m_textAlignment: 65535
-  m_characterSpacing: 0
-  m_wordSpacing: 0
-  m_lineSpacing: 0
-  m_lineSpacingMax: 0
-  m_paragraphSpacing: 0
-  m_charWidthMaxAdj: 0
-  m_enableWordWrapping: 1
-  m_wordWrappingRatios: 0.4
-  m_overflowMode: 0
-  m_linkedTextComponent: {fileID: 0}
-  parentLinkedComponent: {fileID: 0}
-  m_enableKerning: 1
-  m_enableExtraPadding: 0
-  checkPaddingRequired: 0
-  m_isRichText: 1
-  m_parseCtrlCharacters: 1
-  m_isOrthographic: 1
-  m_isCullingEnabled: 0
-  m_horizontalMapping: 0
-  m_verticalMapping: 0
-  m_uvLineOffset: 0
-  m_geometrySortingOrder: 0
-  m_IsTextObjectScaleStatic: 0
-  m_VertexBufferAutoSizeReduction: 0
-  m_useMaxVisibleDescender: 1
-  m_pageToDisplay: 1
-  m_margin: {x: -27.970001, y: 0, z: -27.642944, w: 0}
-  m_isUsingLegacyAnimationComponent: 0
-  m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
-  m_baseMaterial: {fileID: 0}
-  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!222 &340661268
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 340661265}
-  m_CullTransparentMesh: 1
 --- !u!1001 &348336694
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7949,6 +7809,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Forest clearing 1 ground Sphere
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0576e75a0b2094e09a2f3aae1a8a5cc6,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8060,141 +7925,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 622345211}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &636866693
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 636866694}
-  - component: {fileID: 636866696}
-  - component: {fileID: 636866695}
-  m_Layer: 0
-  m_Name: FastQ (1)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
-  m_IsActive: 1
---- !u!224 &636866694
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 636866693}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.7699999, y: 0.9700001, z: 0.9700001}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 2129373931}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 1}
-  m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: -668}
-  m_SizeDelta: {x: 417.14, y: 80.5}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &636866695
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 636866693}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_text: La Renaissance
-  m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: a8d695c35f9f1e34a91cfdda27d9ea6b, type: 2}
-  m_sharedMaterial: {fileID: -3360184566523924744, guid: a8d695c35f9f1e34a91cfdda27d9ea6b,
-    type: 2}
-  m_fontSharedMaterials: []
-  m_fontMaterial: {fileID: 0}
-  m_fontMaterials: []
-  m_fontColor32:
-    serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
-  m_enableVertexGradient: 0
-  m_colorMode: 3
-  m_fontColorGradient:
-    topLeft: {r: 1, g: 1, b: 1, a: 1}
-    topRight: {r: 1, g: 1, b: 1, a: 1}
-    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
-    bottomRight: {r: 1, g: 1, b: 1, a: 1}
-  m_fontColorGradientPreset: {fileID: 0}
-  m_spriteAsset: {fileID: 0}
-  m_tintAllSprites: 0
-  m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: -1183493901
-  m_overrideHtmlColors: 0
-  m_faceColor:
-    serializedVersion: 2
-    rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
-  m_fontWeight: 400
-  m_enableAutoSizing: 0
-  m_fontSizeMin: 18
-  m_fontSizeMax: 72
-  m_fontStyle: 1
-  m_HorizontalAlignment: 1
-  m_VerticalAlignment: 256
-  m_textAlignment: 65535
-  m_characterSpacing: 0
-  m_wordSpacing: 0
-  m_lineSpacing: -46.48
-  m_lineSpacingMax: 0
-  m_paragraphSpacing: 0
-  m_charWidthMaxAdj: 0
-  m_enableWordWrapping: 1
-  m_wordWrappingRatios: 0.4
-  m_overflowMode: 0
-  m_linkedTextComponent: {fileID: 0}
-  parentLinkedComponent: {fileID: 0}
-  m_enableKerning: 1
-  m_enableExtraPadding: 0
-  checkPaddingRequired: 0
-  m_isRichText: 1
-  m_parseCtrlCharacters: 1
-  m_isOrthographic: 1
-  m_isCullingEnabled: 0
-  m_horizontalMapping: 0
-  m_verticalMapping: 0
-  m_uvLineOffset: 0
-  m_geometrySortingOrder: 0
-  m_IsTextObjectScaleStatic: 0
-  m_VertexBufferAutoSizeReduction: 0
-  m_useMaxVisibleDescender: 1
-  m_pageToDisplay: 1
-  m_margin: {x: -39.125534, y: 0, z: -41.10161, w: 0}
-  m_isUsingLegacyAnimationComponent: 0
-  m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
-  m_baseMaterial: {fileID: 0}
-  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!222 &636866696
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 636866693}
-  m_CullTransparentMesh: 1
 --- !u!1001 &642778232
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8387,7 +8117,7 @@ Light:
   m_Type: 1
   m_Shape: 0
   m_Color: {r: 0.11280703, g: 0.11900027, b: 0.14150941, a: 1}
-  m_Intensity: 4.3
+  m_Intensity: 2.9
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -10685,7 +10415,12 @@ PrefabInstance:
     - target: {fileID: 1547689882008621904, guid: 518dafb9ccee39747a410d95cb36e6f5,
         type: 3}
       propertyPath: m_text
-      value: "La th\xE9ologie"
+      value: "Quel r\xF4le a le vert dans la peinture d'Alexandra ?"
+      objectReference: {fileID: 0}
+    - target: {fileID: 1547689882008621904, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_margin.z
+      value: -54.557922
       objectReference: {fileID: 0}
     - target: {fileID: 1602843300670815582, guid: 518dafb9ccee39747a410d95cb36e6f5,
         type: 3}
@@ -10994,6 +10729,16 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -20.11
       objectReference: {fileID: 0}
+    - target: {fileID: 3103159524003484709, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -1036
+      objectReference: {fileID: 0}
+    - target: {fileID: 3103159524003484709, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -394.0003
+      objectReference: {fileID: 0}
     - target: {fileID: 3133474571143512534, guid: 518dafb9ccee39747a410d95cb36e6f5,
         type: 3}
       propertyPath: m_AnchorMax.y
@@ -11032,7 +10777,7 @@ PrefabInstance:
     - target: {fileID: 3327467621044916525, guid: 518dafb9ccee39747a410d95cb36e6f5,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -783
+      value: -919.0002
       objectReference: {fileID: 0}
     - target: {fileID: 3390999751268242063, guid: 518dafb9ccee39747a410d95cb36e6f5,
         type: 3}
@@ -11113,6 +10858,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 201
+      objectReference: {fileID: 0}
+    - target: {fileID: 3738534800305366859, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.004
+      objectReference: {fileID: 0}
+    - target: {fileID: 3738534800305366859, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.014
       objectReference: {fileID: 0}
     - target: {fileID: 3752746440917020684, guid: 518dafb9ccee39747a410d95cb36e6f5,
         type: 3}
@@ -11213,6 +10968,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 4415194889633676988, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 546
+      objectReference: {fileID: 0}
+    - target: {fileID: 4415194889633676988, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -325
       objectReference: {fileID: 0}
     - target: {fileID: 4425159416416277210, guid: 518dafb9ccee39747a410d95cb36e6f5,
         type: 3}
@@ -11434,9 +11199,17 @@ PrefabInstance:
     - target: {fileID: 5724896692529921423, guid: 518dafb9ccee39747a410d95cb36e6f5,
         type: 3}
       propertyPath: m_text
-      value: "La th\xE9ologie occupe une place centrale dans la vie de Catherine
-        Semon. C\u2019est donc naturellement qu\u2019elle appara\xEEt dans son art,
-        le prolongement d'elle-m\xEAm"
+      value: "Elle adore le vert. Et puis l\xE0, je pense que c'est de la lumi\xE8re
+        un peu. Elle a fait foncer clair. Et moi, ce que j'aime beaucoup quand elle
+        dessine, c'est ces cheveux-l\xE0... c\u2019est... je ne sais pas comme on
+        dit. Et le grand tableau dont je vous parlais, il y a \xE7a aussi dedans,
+        et \xE7a donne, je ne sais pas, moi j'ai l'impression que c'est l\xE9ger,
+        \xE7a vole, c'est tr\xE8s joli, c'est fin."
+      objectReference: {fileID: 0}
+    - target: {fileID: 5724896692529921423, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_margin.w
+      value: 239.43211
       objectReference: {fileID: 0}
     - target: {fileID: 5802375976072443858, guid: 518dafb9ccee39747a410d95cb36e6f5,
         type: 3}
@@ -11513,6 +11286,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 6338035721315370780, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -331.00018
       objectReference: {fileID: 0}
     - target: {fileID: 6360503105035736862, guid: 518dafb9ccee39747a410d95cb36e6f5,
         type: 3}
@@ -11999,6 +11777,11 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
+    - target: {fileID: 8854316238308014513, guid: 518dafb9ccee39747a410d95cb36e6f5,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -604
+      objectReference: {fileID: 0}
     - target: {fileID: 8855346551506155193, guid: 518dafb9ccee39747a410d95cb36e6f5,
         type: 3}
       propertyPath: m_StaticEditorFlags
@@ -12108,14 +11891,6 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
-    - targetCorrespondingSourceObject: {fileID: 2813045027492560607, guid: 518dafb9ccee39747a410d95cb36e6f5,
-        type: 3}
-      insertIndex: 1
-      addedObject: {fileID: 636866694}
-    - targetCorrespondingSourceObject: {fileID: 2813045027492560607, guid: 518dafb9ccee39747a410d95cb36e6f5,
-        type: 3}
-      insertIndex: 3
-      addedObject: {fileID: 340661266}
     - targetCorrespondingSourceObject: {fileID: 4103991818432497167, guid: 518dafb9ccee39747a410d95cb36e6f5,
         type: 3}
       insertIndex: -1
@@ -32667,12 +32442,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 7c24b47c3209d446b8c93170ae0a87b7,
     type: 3}
   m_PrefabInstance: {fileID: 837434447}
-  m_PrefabAsset: {fileID: 0}
---- !u!224 &2129373931 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 2813045027492560607, guid: 518dafb9ccee39747a410d95cb36e6f5,
-    type: 3}
-  m_PrefabInstance: {fileID: 734947699}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2133367146
 PrefabInstance:
