@@ -43,12 +43,16 @@ public class PauseMenu : MonoBehaviour
         // Initialize fade and hint text objects
         GameObject fadeObj = GameObject.FindWithTag(fadeTag);
         if (fadeObj != null) fadeCanvasGroup = fadeObj.GetComponent<CanvasGroup>();
+        Debug.Log("[PauseMenu] Fade object: " + (fadeObj != null ? "Found" : "MISSING"));
+
 
         GameObject hintObj = GameObject.FindWithTag(hintTextTag);
         if (hintObj != null) hintText = hintObj.GetComponent<TextMeshProUGUI>();
+        Debug.Log("[PauseMenu] Hint text: " + (hintObj != null ? "Found" : "MISSING"));
 
         if (hintText != null) hintText.text = "";
         if (fadeCanvasGroup != null) fadeCanvasGroup.alpha = 0f;
+        Debug.Log("Fade CanvasGroup missing!");
 
         if (volumeSlider != null)
         {
@@ -102,7 +106,7 @@ public class PauseMenu : MonoBehaviour
 
     public void ToggleModeModal()
     {
-        Debug.Log("ToggleModeModal called");
+        Debug.Log("[PauseMenu] ModeManager instance: " + (ModeManager.Instance != null ? "Exists" : "NULL"));
         modeToSwitch = ModeManager.Instance.CurrentMode == ModeManager.MuseumMode.Classic ? ModeManager.MuseumMode.Interactive : ModeManager.MuseumMode.Classic;
         volumeToggleUI.SetActive(false);
         modePanel.SetActive(false);
@@ -121,6 +125,7 @@ public class PauseMenu : MonoBehaviour
     public void ConfirmModeSwitch()
     {
         GameObject player = GameObject.FindGameObjectWithTag("Player");
+        Debug.Log("[PauseMenu] Player found: " + (player != null));
         if (player == null)
         {
             Debug.LogError("Player not found!");
@@ -166,47 +171,19 @@ public class PauseMenu : MonoBehaviour
     {
         yield return StartCoroutine(FadeToBlack());
 
-        AsyncOperation asyncOperation = SceneManager.LoadSceneAsync(sceneName, LoadSceneMode.Additive);
+        // Load new scene first
+        AsyncOperation asyncLoad = SceneManager.LoadSceneAsync(sceneName, LoadSceneMode.Additive);
+        yield return asyncLoad;
 
-        while (!asyncOperation.isDone)
-        {
-            yield return null;
-        }
-
+        // Find new scene and spawn point
         Scene newScene = SceneManager.GetSceneByName(sceneName);
-        if (!newScene.IsValid() || !newScene.isLoaded)
-        {
-            Debug.LogError("Failed to load the new scene.");
-            yield break;
-        }
+        GameObject spawnPoint = GameObject.Find(spawnPointName); // More reliable
 
-        // Find the spawn point in the new scene
-        GameObject spawnPoint = null;
-        foreach (GameObject obj in newScene.GetRootGameObjects())
-        {
-            if (obj.name == spawnPointName)
-            {
-                spawnPoint = obj;
-                break;
-            }
-        }
+        // Move player
+        if(spawnPoint) player.transform.SetPositionAndRotation(spawnPoint.transform.position, spawnPoint.transform.rotation);
 
-        if (spawnPoint != null)
-        {
-            player.transform.position = spawnPoint.transform.position;
-            player.transform.rotation = spawnPoint.transform.rotation;
-        }
-        else
-        {
-            Debug.LogError("Spawn point not found in the new scene.");
-        }
-
-        // Unload the previous scene
-        Scene currentScene = SceneManager.GetActiveScene();
-        yield return SceneManager.UnloadSceneAsync(currentScene.name);
-
-        // Set the new scene as active
-        SceneManager.SetActiveScene(newScene);
+        // Unload old scene AFTER everything is ready
+        SceneManager.UnloadSceneAsync(SceneManager.GetActiveScene());
 
         yield return StartCoroutine(FadeFromBlack());
     }
