@@ -52,6 +52,7 @@ MonoBehaviour:
   - yellow
   - white
   - green
+  - blue
   globalSecretUnlocked: 0
   blackRoomShow: 0
 --- !u!114 &1119733251396355531
@@ -2149,7 +2150,9 @@ MonoBehaviour:
   volumeToggleImage: {fileID: 7511438674563642233}
   modeText: {fileID: 5617136128883014701}
   volumeSlider: {fileID: 7332611048156437886}
-  sceneTeleporter: {fileID: 0}
+  fadeTag: Fade
+  hintTextTag: Hint
+  fadeDuration: 1
   spawnPointClassique: SpawnPoint
   spawnPointImmersive: SpawnStart
 --- !u!1 &5083844974306746243
