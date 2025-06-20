@@ -718,10 +718,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startYRotation: 93
   endYRotation: 270
-  rotationDuration: 7
+  rotationDuration: 5
   startX: -15.5
   endX: -17.5
-  moveDuration: 3
+  moveDuration: 1
   videoPlayer: {fileID: 1399045665}
 --- !u!114 &240114576
 MonoBehaviour:
@@ -738,7 +738,7 @@ MonoBehaviour:
   mainCamera: {fileID: 91225776}
   introCamera: {fileID: 240114573}
   hintText: {fileID: 2125625575}
-  delayBeforeHint: 4
+  delayBeforeHint: 1
 --- !u!1001 &257727675
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -23,7 +23,7 @@ RenderSettings:
   m_AmbientSkyColor: {r: 1.4142135, g: 1.4142135, b: 1.4142135, a: 1}
   m_AmbientEquatorColor: {r: 0.70315343, g: 0.70315343, b: 0.70315343, a: 1}
   m_AmbientGroundColor: {r: 0.11435151, g: 0.11435151, b: 0.11435151, a: 1}
-  m_AmbientIntensity: 2.93
+  m_AmbientIntensity: 6.09
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.12255931, g: 0.12255931, b: 0.12255931, a: 1}
   m_SkyboxMaterial: {fileID: 2100000, guid: 81f714daf7144784b8a2f42f1cd30927, type: 2}
@@ -12073,7 +12073,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 46035c0d7eb56d2479c7bad166d049d3,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 0
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 7202271454713460447, guid: 46035c0d7eb56d2479c7bad166d049d3,
         type: 3}
