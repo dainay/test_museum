@@ -2510,6 +2510,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: PLAYER
       objectReference: {fileID: 0}
+    - target: {fileID: 1306518130740026577, guid: a807cdc5e2c0f9c4dac3f75227b368bb,
+        type: 3}
+      propertyPath: globalSecretUnlocked
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1804624635052122963, guid: a807cdc5e2c0f9c4dac3f75227b368bb,
         type: 3}
       propertyPath: m_LocalPosition.z
