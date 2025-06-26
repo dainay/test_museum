@@ -1,4 +1,5 @@
 # Musée Virtuel - APF France Handicap
+https://github.com/dainay/test_museum/
 
 ## Contexte du Projet
 Ce projet est une collaboration avec APF France Handicap visant à créer un musée virtuel immersif et accessible. Le but est de mettre en lumière les œuvres d'artistes en situation de handicap. Le musée propose deux versions : une complète avec mini-jeux et interactions riches, et une version classique pour la consultation directe des œuvres.
@@ -16,7 +17,7 @@ Les objectifs principaux sont :
 
 Public cible :
 - Amateurs d'art et curieux.
-- Jeunes (12-30 ans).
+- Jeunes (12-40 ans).
 
 ## Fonctionnalités Clés
 - **Navigation et Interactions** :
@@ -25,11 +26,13 @@ Public cible :
 - **Accessibilité** :
   - Vidéos systématiquement sous-titrées.
 - **Gestion des Salles** :
-  - Salle Principale (Hub) reliant 4 salles thématiques :
+  - Salle Principale (Hub) reliant 6 salles thématiques :
     - Salle Blanche : Collecte de sphères formant une sphère lumineuse.
     - Salle Rose : Déverrouillage d'un coffre par code caché.
     - Salle Noire : Association de sphères texturées à des œuvres.
     - Salle Verte : Récupération d'objet avec changement de couleur.
+    - Salle Bleue : Recherche des mots-clés liés aux peintures.
+    - Salle Jaune : Associer les descriptions à chaque peinture.
   - Salle secrète contenant une vidéo de remerciement lorsque le joueur a obtenu toutes les sphères finales.
   - Salle d'introduction qui lance une vidéo explicative en mode didacticiel. Le joueur a le choix entre faire l'expérience classique ou l'expérience immersive en prenant une des deux portes correspondantes.
 - **Menu Principal** : Ajout d'un menu principal pour naviguer dans le musée et cahnger à tous moment de type d'expérience.
@@ -46,6 +49,7 @@ Le projet est organisé autour des salles thématiques et de la salle principale
 2. Importer le projet dans Unity.
 3. Configurer les assets et les scènes dans Unity.
 4. Exécuter le projet en mode éditeur pour tester les différentes salles.
+5. *Faire le build du projet pour obtenir un fichier .exe et tester le projet en mode plein écran.
 
 ## Contribution et Maintenance
 - Contribuer via la branche principale unique sur Git.
