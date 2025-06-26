@@ -30,7 +30,7 @@ public class VictoryTracker : MonoBehaviour
 
         if (scoreTracker == null)
         {
-            Debug.LogWarning("⚠️ ScoreTracker не привязан в инспекторе!");
+            Debug.LogWarning("⚠️ ScoreTracker is not attached in unity!");
         }
 
     }
@@ -61,7 +61,7 @@ public class VictoryTracker : MonoBehaviour
         {
             if (!victories.ContainsKey(salle) || !victories[salle])
             {
-                Debug.Log("⛔ Не все salles завершены. Секретная комната закрыта.");
+                Debug.Log("secret room is NOT OPEN yet, missing: " + salle);
                 return;
             }
         }

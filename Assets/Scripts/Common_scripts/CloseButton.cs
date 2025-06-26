@@ -9,7 +9,7 @@ public class CloseButton : MonoBehaviour
         if (interviewCanvas != null)
         {
             interviewCanvas.SetActive(false);
-            Debug.Log("❌ Interview canvas closed.");
+            Debug.Log("Interview canvas closed.");
         }
     }
 }

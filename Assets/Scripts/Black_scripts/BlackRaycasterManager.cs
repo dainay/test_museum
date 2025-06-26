@@ -32,9 +32,6 @@ public class BlackRaycasterManager : MonoBehaviour
         Ray ray = playerCamera.ScreenPointToRay(new Vector2(Screen.width / 2, Screen.height / 2));
         RaycastHit hit;
 
-        // Debug visualization in Scene view
-        //Debug.DrawRay(ray.origin, ray.direction * maxDistance, Color.yellow, 2f);
-
         if (Physics.Raycast(ray, out hit, maxDistance))
         {
             //Debug.Log("✅ Raycast hit: " + hit.transform.name);

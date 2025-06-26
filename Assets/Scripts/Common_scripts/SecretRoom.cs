@@ -17,16 +17,16 @@ public class SecretDoorTrigger : MonoBehaviour
             if (tracker != null && tracker.globalSecretUnlocked)
             {
                 door.localEulerAngles = new Vector3(0f, 0f, 95f); 
-                Debug.Log("🚪 Секретная дверь открыта!");
+                Debug.Log("secret door is opened");
             }
             else
             {
-                Debug.Log("🔒 Секретная дверь остаётся закрытой.");
+                Debug.Log("secret door is closed, globalSecretUnlocked is false");
             }
         }
         else
         {
-            Debug.LogWarning("⚠️ Объект с тегом 'VictoryTracker' не найден!");
+            Debug.LogWarning("no victroy tracker found in scene");
         }
     }
 
@@ -39,7 +39,7 @@ public class SecretDoorTrigger : MonoBehaviour
             if (videoPlayer != null && !videoPlayer.isPlaying)
             {
                 videoPlayer.Play();
-                Debug.Log("▶️ Видео запущено при входе в зону двери.");
+                Debug.Log("video player started playing");
             }
             Destroy(GetComponent<Collider>());
         }

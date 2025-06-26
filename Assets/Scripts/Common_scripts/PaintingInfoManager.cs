@@ -24,7 +24,7 @@ public class PaintingInfoManager : MonoBehaviour
     {
         GameObject[] found = GameObject.FindGameObjectsWithTag("PaintingInfo");
         infoCanvases.AddRange(found);
-        Debug.Log("📦 Сохранено PaintingInfo: " + infoCanvases.Count);
+        Debug.Log("saved PaintingInfo: " + infoCanvases.Count);
     }
 
     public List<GameObject> GetInfoCanvases()

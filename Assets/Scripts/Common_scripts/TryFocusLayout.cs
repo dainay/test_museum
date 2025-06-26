@@ -48,9 +48,9 @@ public class TryFocusLayout : MonoBehaviour
         {
             playerCanvas = GameObject.FindWithTag("PlayerCanvas");
             if (playerCanvas == null)
-                Debug.LogWarning("❗ PlayerCanvas не найден!");
+                Debug.LogWarning("no player canvas found in scene");
             else
-                Debug.Log("🎯 Найден PlayerCanvas: " + playerCanvas.name);
+                Debug.Log("player canvas is dound " + playerCanvas.name);
         }
     }
 
@@ -64,14 +64,14 @@ public class TryFocusLayout : MonoBehaviour
             {
                 previouslyDisabledLayouts.Add(layout);
                 layout.SetActive(false);
-                Debug.Log("🚫 Отключён layout: " + layout.name);
+                Debug.Log("layout is off " + layout.name);
             }
         }
 
         if (playerCanvas != null)
         {
             playerCanvas.SetActive(false);
-            Debug.Log("🛑 PlayerCanvas отключён");
+            Debug.Log("playercanvas is off");
         }
 
         isInLayoutMode = true;
@@ -82,9 +82,8 @@ public class TryFocusLayout : MonoBehaviour
         if (videoDisplayImage != null) videoDisplayImage.enabled = true;
 
 
-        Debug.Log("AAAAAAAAAAA: " + UnityEngine.SceneManagement.SceneManager.GetActiveScene().name);
 
-        // 🎯 Проверка только для "SalleBlack"
+        // only for "SalleBlack"
         if (UnityEngine.SceneManagement.SceneManager.GetActiveScene().name == "Black_scene")
         {
 
@@ -95,7 +94,7 @@ public class TryFocusLayout : MonoBehaviour
 
                 Debug.Log("Yes win black");
 
-                Debug.Log("✅ SalleBlack победена, активируем видео.");
+                Debug.Log("SalleBlack won, activate video players");
                 if (videoPlayerObject != null)
                 {
                     videoPlayerObject.SetActive(true);
@@ -108,7 +107,7 @@ public class TryFocusLayout : MonoBehaviour
             else
             {
                 Debug.Log("no no black win");
-                Debug.Log("🔒 SalleBlack НЕ завершена — видео недоступно.");
+                Debug.Log("SalleBlack is not finished, hide video");
                 if (videoDisplayImage != null)
                     videoDisplayImage.enabled = false;
                 if (videoPlayerObject != null)
@@ -117,7 +116,7 @@ public class TryFocusLayout : MonoBehaviour
         }
         else
         {
-            // Во всех остальных сценах видео работает всегда
+            // other scenes exept "SalleBlack" dont need to check victory
             if (videoPlayerObject != null)
             {
                 videoPlayerObject.SetActive(true);
@@ -132,7 +131,7 @@ public class TryFocusLayout : MonoBehaviour
         Cursor.visible = true;
         Cursor.lockState = CursorLockMode.None;
 
-        Debug.Log("📌 Layout активирован: " + gameObject.name);
+        Debug.Log("Layout is on: " + gameObject.name);
     }
 
     public void ExitLayoutMode()
@@ -149,7 +148,7 @@ public class TryFocusLayout : MonoBehaviour
         if (interviewCanvas != null && interviewCanvas.activeSelf)
         {
             interviewCanvas.SetActive(false);
-            Debug.Log("❌ InterviewCanvas отключён");
+            Debug.Log("InterviewCanvas is off");
         }
 
         Cursor.visible = false;
@@ -158,7 +157,7 @@ public class TryFocusLayout : MonoBehaviour
         if (playerCanvas != null)
         {
             playerCanvas.SetActive(true);
-            Debug.Log("✅ PlayerCanvas возвращён");
+            Debug.Log("PlayerCanvas is back on");
         }
 
         foreach (GameObject layout in previouslyDisabledLayouts)
@@ -166,13 +165,13 @@ public class TryFocusLayout : MonoBehaviour
             if (layout != null)
             {
                 layout.SetActive(true);
-                Debug.Log("✅ Возвращён layout: " + layout.name);
+                Debug.Log(" layout is on: " + layout.name);
             }
         }
 
         previouslyDisabledLayouts.Clear();
 
-        Debug.Log("🎮 Возврат к обычному виду");
+        Debug.Log("normal view");
     }
 
     void Update()

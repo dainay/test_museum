@@ -14,13 +14,13 @@ public class SalleInit : MonoBehaviour
     private IEnumerator DelayedInit()
     {
         yield return null;
-        Debug.Log("🕒 SceneInit запускается");
+        Debug.Log("SceneInit started");
 
         GameObject[] infoCanvases = GameObject.FindGameObjectsWithTag("PaintingInfo");
 
         if (VictoryTracker.Instance == null || PaintingInfoManager.Instance == null)
         {
-            Debug.LogWarning("❗ Не найдены менеджеры!");
+            Debug.LogWarning("no manager found in scene");
             yield break;
         }
 
@@ -33,11 +33,11 @@ public class SalleInit : MonoBehaviour
 
         if (prix != null)
         {
-            prix.SetActive(!show); // если победа уже есть — скрываем сферу
+            prix.SetActive(!show);
         }
         else
         {
-            Debug.LogWarning("⚠️ Сфера с prix не назначена!");
+            Debug.LogWarning("no attached prix object in scene");
         }
     }
 }

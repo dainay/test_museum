@@ -22,14 +22,13 @@ public class SceneTeleporter : MonoBehaviour
 
     private void Start()
     {
-        // Находим нужные элементы по тегам
+      
         GameObject fadeObj = GameObject.FindWithTag(fadeTag);
         if (fadeObj != null) fadeCanvasGroup = fadeObj.GetComponent<CanvasGroup>();
 
         GameObject hintObj = GameObject.FindWithTag(hintTextTag);
         if (hintObj != null) hintText = hintObj.GetComponent<TextMeshProUGUI>();
-
-        // Инициализация
+ 
         if (hintText != null) hintText.text = "";
         if (fadeCanvasGroup != null) fadeCanvasGroup.alpha = 0f;
     }

@@ -9,43 +9,43 @@ public class PlayerSpawnHandler : MonoBehaviour
     public void SetSpawnPointName(string name)
     {
         targetSpawnPointName = name;
-        Debug.Log($"📌 Установлена новая точка появления: {targetSpawnPointName}");
+        Debug.Log($"new spawn point {targetSpawnPointName}");
     }
 
     void Awake()
     {
-        Debug.Log("🌀 [PlayerSpawnHandler] Awake вызван");
+        Debug.Log("[PlayerSpawnHandler] Awake called");
         SceneManager.sceneLoaded += OnSceneLoaded;
     }
 
     void OnDestroy()
     {
-        Debug.Log("🛑 [PlayerSpawnHandler] OnDestroy вызван — отписка от события");
+        Debug.Log("[PlayerSpawnHandler] OnDestroy called");
         SceneManager.sceneLoaded -= OnSceneLoaded;
     }
 
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
-        Debug.Log($"📥 [PlayerSpawnHandler] Сцена загружена: {scene.name}, запускаем MoveToSpawn()");
+        Debug.Log($"[PlayerSpawnHandler] scene loaded {scene.name}, start MoveToSpawn()");
         StartCoroutine(MoveToSpawn());
     }
 
     private IEnumerator MoveToSpawn()
     {
-        Debug.Log("⏳ Ждём 1 кадр перед поиском точки входа...");
+        Debug.Log("wait 1 frame before moving to spawn point");
         yield return null;
 
-        Debug.Log($"🔎 Ищем точку входа: {targetSpawnPointName}");
+        Debug.Log($"loor for entrance point {targetSpawnPointName}");
         GameObject spawn = GameObject.Find(targetSpawnPointName);
         if (spawn != null)
         {
             transform.position = spawn.transform.position;
             transform.rotation = spawn.transform.rotation;
-            Debug.Log($"✅ Игрок перемещён в: {targetSpawnPointName}");
+            Debug.Log($"player is moved to  {targetSpawnPointName}");
         }
         else
         {
-            Debug.LogWarning($"⚠️ Не удалось найти точку входа: {targetSpawnPointName}");
+            Debug.LogWarning($"entrance point is not found {targetSpawnPointName}");
         }
     }
 }

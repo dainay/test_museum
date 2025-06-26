@@ -58,11 +58,9 @@ public class GameManagerDropdown : MonoBehaviour
         winCamera.gameObject.SetActive(true);
        
         glassAnimator.SetTrigger("Drop");
+ 
 
-        // ✅ Запоминаем победу
-        //VictoryTracker.Instance.SetVictory(salleName);
-
-        // ✅ Активируем все Canvas с описанием
+        // ✅ activate all canvas with info
         PaintingInfoManager.Instance.SetAllActive(true);
 
         VictoryTracker.Instance.blackRoomShow = true;

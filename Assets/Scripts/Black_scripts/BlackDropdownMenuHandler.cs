@@ -36,12 +36,12 @@ public class BlackDropdownMenuHandler : MonoBehaviour
             }
             else
             {
-                Debug.LogWarning("⚠️ Player найден, но внутри нет BlackRaycasterManager");
+                Debug.LogWarning("PLAYER is found but no RaycasterManager component found in Player");
             }
         }
         else
         {
-            Debug.LogWarning("❌ Объект с тегом Player не найден!");
+            Debug.LogWarning("PLAYER NOT FOUND");
         }
 
         //collect canvas
@@ -97,7 +97,7 @@ public class BlackDropdownMenuHandler : MonoBehaviour
                 Debug.Log("[Dropdown] PlayerCanvas disabled");
             }
 
-            // Активируем только нужный дочерний CanvasGroup
+            // active the canvas groups in the clicked object
             foreach (Transform child in hitObject.transform)
             {
                 if (child.CompareTag("CanvasPainter"))

@@ -39,7 +39,7 @@ public class ScoreTracker : MonoBehaviour
         }
         else
         {
-            Debug.LogWarning($"🎨 Aucune image trouvée pour la salle '{salleName}'");
+            Debug.LogWarning($"Aucune image trouvée pour la salle '{salleName}'");
         }
     }
 

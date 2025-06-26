@@ -20,7 +20,7 @@ public class SimpleDoorSceneLoader : MonoBehaviour
 
         if (player != null)
         {
-            // 🔍 Ищем объект с тегом "Hint" внутри игрока
+            
             Transform[] allChildren = player.GetComponentsInChildren<Transform>(true);
             foreach (var child in allChildren)
             {
@@ -28,8 +28,7 @@ public class SimpleDoorSceneLoader : MonoBehaviour
                 {
                     promptText = child.GetComponent<TextMeshProUGUI>();
                     if (promptText != null)
-                    {
-                        Debug.Log("✅ Найдена подсказка внутри Player");
+                    { 
                         promptText.gameObject.SetActive(false);
                     }
                     break;
@@ -50,7 +49,7 @@ public class SimpleDoorSceneLoader : MonoBehaviour
     {
         if (playerInTrigger && !isLoading && (Input.GetKeyDown(KeyCode.E) || Input.GetMouseButtonDown(0)))
         {
-            Debug.Log("🎬 Вход выполнен");
+            Debug.Log("player pressed E or clicked left mouse button");
             if (promptText != null)
                 promptText.gameObject.SetActive(false);
 
@@ -68,7 +67,7 @@ public class SimpleDoorSceneLoader : MonoBehaviour
             {
                 promptText.text = "Appuyez sur E ou cliquez gauche pour entrer";
                 promptText.gameObject.SetActive(true);
-                Debug.Log("🟢 Подсказка показана");
+                Debug.Log("hint is shown: " + promptText.text);
             }
         }
     }
@@ -82,7 +81,7 @@ public class SimpleDoorSceneLoader : MonoBehaviour
             if (promptText != null)
             {
                 promptText.gameObject.SetActive(false);
-                Debug.Log("🔴 Подсказка скрыта");
+                Debug.Log("hint is hidden");
             }
         }
     }

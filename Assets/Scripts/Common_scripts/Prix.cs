@@ -16,7 +16,7 @@ public class Prix : MonoBehaviour
 
         if (raycasterManager == null)
         {
-            Debug.LogError("⚠️ RaycasterManager не найден на объекте с тегом 'Raycaster' !");
+            Debug.LogError("RaycasterManager is not found");
         }
     }
 
